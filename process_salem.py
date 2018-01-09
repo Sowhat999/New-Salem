@@ -11,24 +11,45 @@ Example:
 from lxml import etree
 import os
 
-fname = "swp.xml"
+def mdFrontMatter(title,tags):
+    fm = "---\n"
+    fm_close = "\n---\n\n"
+    fm_vars = {}
+    fm_vars["title"] = title
+    fm_vars["tags"] = " ".join(tags)
+    for key in fm_vars.keys():
+        fm+=key+": "+fm_vars[key]+"\n"
+    fm+="---\n\n"
+    return(fm)
 
-parser = etree.HTMLParser()
-xml = etree.parse(fname,parser)
-root = xml.getroot()
-cases = root.xpath("//div1[@type='case']")
-for case in cases:
-    id = case.get("id")
-    tags = {x.get("key") for x in case.xpath(".//name[@type='person']")}
-    f = open("./cases_p4/"+id+".xml", 'w')
-    f.write(etree.tostring(case, encoding='unicode',method='xml'))
-    f.close()
-    os.system("./TEI-XSL/bin/p4totei ./cases_p4/"+id+".xml ./cases_tei/"+id+".xml")
-    os.system("./TEI-XSL/bin/teitomarkdown ./cases_tei/"+id+".xml ./cases_md/"+id+".md")
-    with open("./cases_md/"+id+".md", 'r+') as f:
-        content = f.read()
-        f.seek(0, 0)
-        f.write("---\ntags: ")
-        for tag in tags:
-            f.write(tag+" ")
-        f.write("\n---\n\n"+content)
+def main():
+    fname = "swp.xml"
+
+    parser = etree.HTMLParser()
+    xml = etree.parse(fname,parser)
+    root = xml.getroot()
+    cases = root.xpath("//div1[@type='case']")
+    for case in cases:
+        case_id = case.get("id")
+        title = case.xpath(".//name[@type='person']")[0].text    #assume that first person named is the case title
+        tags = {x.get("key") for x in case.xpath(".//name[@type='person']")}    #use tag system to index people
+        docs = case.xpath(".//div2")
+        doc_ids = []
+        for doc in docs:
+            doc_id = doc.get("id")
+            doc_p4 = open("./docs_p4/"+doc_id+".xml", 'w')
+            doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
+            doc_p4.close()
+            os.system("./TEI-XSL/bin/p4totei ./docs_p4/"+doc_id+".xml ./docs_tei/"+doc_id+".xml")
+            os.system("./TEI-XSL/bin/teitomarkdown ./docs_tei/"+doc_id+".xml ./docs_md/"+doc_id+".md")
+            doc_ids.append(doc_id)
+
+        with open("./cases_md/"+case_id+".md", 'w') as case_md:
+            case_md.write(mdFrontMatter(title,tags))
+            for doc_id in doc_ids:
+                doc_md = open("./docs_md/"+doc_id+".md", 'r')
+                case_md.write("\n\n# Document: "+doc_id+"\n\n")
+                case_md.write(doc_md.read())
+                doc_md.close()
+
+main()
