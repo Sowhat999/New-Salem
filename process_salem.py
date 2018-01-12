@@ -35,8 +35,12 @@ def main():
         tags = {x.get("key") for x in case.xpath(".//name[@type='person']")}    #use tag system to index people
         docs = case.xpath(".//div2")
         doc_ids = []
+        figures = {}
         for doc in docs:
             doc_id = doc.get("id")
+            for figure in doc.xpath(".//figure"):
+                if doc_id not in figures: figures[doc_id] = []
+                if figure.get("n"): figures[doc_id].append(figure.get("n"))
             doc_p4 = open("./docs_p4/"+doc_id+".xml", 'w')
             doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
             doc_p4.close()
@@ -49,6 +53,8 @@ def main():
             for doc_id in doc_ids:
                 doc_md = open("./docs_md/"+doc_id+".md", 'r')
                 case_md.write("\n\n# Document: "+doc_id+"\n\n")
+                for figure in figures.get(doc_id) or []:
+                    case_md.write("![Figure "+figure+"](/assets/thumb/"+figure+".jpg)\n")
                 case_md.write(doc_md.read())
                 doc_md.close()
 
