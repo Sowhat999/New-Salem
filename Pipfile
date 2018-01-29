@@ -12,3 +12,8 @@ name = "pypi"
 [packages]
 
 lxml = "*"
+-u = "*"
+pip = "*"
+setuptools = "*"
+wheel = "*"
+"ruamel.yaml" = "*"

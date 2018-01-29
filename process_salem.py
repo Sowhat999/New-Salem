@@ -11,13 +11,14 @@ Example:
 from lxml import etree
 import uuid
 import os
+from ruamel.yaml import YAML
 
 def mdFrontMatter(case_id, title,date,tags):
     fm = "---\n"
     fm_close = "\n---\n\n"
     fm_vars = {}
     fm_vars["layout"] = "post"
-    fm_vars["title"] = case_id + " " + title
+    fm_vars["title"] = case_id + " " + " ".join(title.split())
     fm_vars["date"] = date
     fm_vars["permalink"] = case_id
     fm_vars["category"] = "swp"
@@ -30,12 +31,35 @@ def mdFrontMatter(case_id, title,date,tags):
 def mdPerson(key, name):
     return("["+name+"](/tag/"+key+".html)")
 
+# Join all text within lxml element, ignoring nested child elements
+def xmlTextJoin(element):
+    return "".join([x for x in element.itertext()])
+
 def main():
     fname = "swp.xml"
 
     parser = etree.HTMLParser()
     xml = etree.parse(fname,parser)
     root = xml.getroot()
+
+    alltags = {}
+    # Use LCSH keywords list as definitive name, if the entry exists
+    for keywords in root.xpath("//keywords[@scheme='LCSH']"):
+        for keyword in keywords.xpath(".//term"):
+            personkey = keyword.get("id")
+            if personkey and personkey not in alltags:
+                alltags[personkey] = ' '.join(xmlTextJoin(keyword).split())
+
+    #Otherwise, use first instance of name
+    for person in root.xpath("//name[@type='person']"):
+        personkey = person.get("key")
+        if personkey not in alltags:
+            alltags[personkey] = ' '.join(xmlTextJoin(person).split())
+    with open("./tag_yaml/tags.yml", 'w') as tag_yaml:
+        yaml=YAML()
+        yaml.default_flow_style = False
+        yaml.dump(alltags, tag_yaml)
+
     cases = root.xpath("//div1[@type='case']")
     for case in cases:
         case_id = case.get("id")
@@ -56,7 +80,7 @@ def main():
                 if figure.get("n"): figures[doc_id].append(figure.get("n"))
             for person in doc.xpath(".//name[@type='person']"):
                 personkey = person.get("key")
-                name = "".join([x for x in person.itertext()]) #grab all child element text, in case of nested tags
+                name = xmlTextJoin(person)
                 persons[personkey+name] = [personkey,name]
                 tail = person.tail
                 person.clear()
