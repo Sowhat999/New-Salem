@@ -83,7 +83,6 @@ def main():
             for person in doc.xpath(".//name[@type='person']"):
                 if person.get("key") == "unknown":
                     print(' '.join(xmlTextJoin(person).split()) + " ("+doc_id+")")
-            continue
             #print("   Processing doc: "+doc_id)
             for figure in doc.xpath(".//figure"):
                 if doc_id not in figures: figures[doc_id] = []
@@ -97,12 +96,11 @@ def main():
                 person.text = str(hash(personkey+name)) # drop strikethrough, orig tags
                 person.tail = tail
             doc_p4 = open("./docs_p4/"+doc_id+".xml", 'w')
-            doc_p4.write(etree.tostring(doc, encoding='UTF-8',method='xml'))
+            doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
             doc_p4.close()
             os.system("./TEI-XSL/bin/p4totei ./docs_p4/"+doc_id+".xml ./docs_tei/"+doc_id+".xml")
             os.system("./TEI-XSL/bin/teitomarkdown ./docs_tei/"+doc_id+".xml ./docs_md/"+doc_id+".md")
             doc_ids.append(doc_id)
-        continue
         with open("./cases_md/"+date+"-"+case_id+".md", 'w') as case_md:
             case_md.write(mdFrontMatter(case_id,title,date,tags))
             for doc_id in doc_ids:
