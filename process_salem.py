@@ -11,6 +11,7 @@ Example:
 from lxml import etree
 import uuid
 import os
+import io
 from ruamel.yaml import YAML
 
 def mdFrontMatter(case_id, title,date,tags):
@@ -36,12 +37,14 @@ def xmlTextJoin(element):
     return "".join([x for x in element.itertext()])
 
 def main():
-    fname = "swp.xml"
-
-    parser = etree.HTMLParser()
-    xml = etree.parse(fname,parser)
+    f = open("swp.xml","r")
+    tei = f.read()
+    f.close()
+    tei = tei.replace("http://text.lib.virginia.edu/charent/","./")
+    tei = tei.replace('encoding="UTF-8"','')
+    parser = etree.XMLParser()
+    xml = etree.parse(io.StringIO(tei),parser)
     root = xml.getroot()
-
     alltags = {}
     # Use LCSH keywords list as definitive name, if the entry exists
     for keywords in root.xpath("//keywords[@scheme='LCSH']"):
@@ -51,22 +54,25 @@ def main():
                 alltags[personkey] = ' '.join(xmlTextJoin(keyword).split())
 
     #Otherwise, use first instance of name
+    unknowns = []
+    print("Non-LCSH persons:\n================")
     for person in root.xpath("//name[@type='person']"):
         personkey = person.get("key")
         if personkey not in alltags:
             alltags[personkey] = ' '.join(xmlTextJoin(person).split())
+            print(personkey+": "+alltags[personkey])
     with open("./tag_yaml/tags.yml", 'w') as tag_yaml:
         yaml=YAML()
         yaml.default_flow_style = False
         yaml.dump(alltags, tag_yaml)
-
-    cases = root.xpath("//div1[@type='case']")
+    cases = root.xpath("//div1")
+    print("Unknown key persons:\n================")
     for case in cases:
         case_id = case.get("id")
-        print("Processing case: "+case_id)
+        #print("Processing case: "+case_id)
         dates = case.xpath(".//date")
         date = dates[0].get("value") if len(dates)>0 else "1960-01-01" # use first date found (!) - TODO: No dates in n89!
-        title = case.xpath(".//name[@type='person']")[0].text    #assume that first person named is the case title
+        title = xmlTextJoin(case.xpath(".//head")[0])    #assume that title is the contents of the head
         tags = {x.get("key") for x in case.xpath(".//name[@type='person']")}    #use tag system to index people
         docs = case.xpath(".//div2")
         doc_ids = []
@@ -74,7 +80,11 @@ def main():
         persons = {}
         for doc in docs:
             doc_id = doc.get("id")
-            print("   Processing doc: "+doc_id)
+            for person in doc.xpath(".//name[@type='person']"):
+                if person.get("key") == "unknown":
+                    print(' '.join(xmlTextJoin(person).split()) + " ("+doc_id+")")
+            continue
+            #print("   Processing doc: "+doc_id)
             for figure in doc.xpath(".//figure"):
                 if doc_id not in figures: figures[doc_id] = []
                 if figure.get("n"): figures[doc_id].append(figure.get("n"))
@@ -87,12 +97,12 @@ def main():
                 person.text = str(hash(personkey+name)) # drop strikethrough, orig tags
                 person.tail = tail
             doc_p4 = open("./docs_p4/"+doc_id+".xml", 'w')
-            doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
+            doc_p4.write(etree.tostring(doc, encoding='UTF-8',method='xml'))
             doc_p4.close()
             os.system("./TEI-XSL/bin/p4totei ./docs_p4/"+doc_id+".xml ./docs_tei/"+doc_id+".xml")
             os.system("./TEI-XSL/bin/teitomarkdown ./docs_tei/"+doc_id+".xml ./docs_md/"+doc_id+".md")
             doc_ids.append(doc_id)
-
+        continue
         with open("./cases_md/"+date+"-"+case_id+".md", 'w') as case_md:
             case_md.write(mdFrontMatter(case_id,title,date,tags))
             for doc_id in doc_ids:
@@ -105,5 +115,4 @@ def main():
                     doc_content = doc_content.replace(str(hash(key)), mdPerson(persons[key][0],persons[key][1]))
                 case_md.write(doc_content)
                 doc_md.close()
-
 main()
