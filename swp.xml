@@ -4747,8 +4747,6 @@
 					<term id="abcdef">Mr. Burse</term>
 					<term id="aaaaaa">Brown Major</term>
 					<term id="vartho">Thomas Varney</term>
-
-					<term>LCSH </term>
 				</keywords>
 			</textClass>
 		</profileDesc>
@@ -5155,7 +5153,7 @@
 
 			<div1 id="n5" type="case">
 				<head>
-					<name type="person" key="abbheh2">Nehemiah Abbott Jr.</name>
+					<name type="person" key="abbneh2">Nehemiah Abbott Jr.</name>
 				</head>
 
 				<!-- <ID>n5</ID> -->
@@ -30330,7 +30328,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 						yt Hitherto she still struck Downe ye afflicted persons wth her Eyes &amp;
 						recovered<lb/> them again by laying Her Hand upon there Riste or armes ----
 						Being asked how<lb/> long it was since ye Divel seduced Her A: @ 3 years
-						agoe (Noate <name type="person" key="?">Lacey</name> &amp;<lb/>
+						agoe (Noate <name type="person" key="unknown">Lacey</name> &amp;<lb/>
 						<name type="person" key="sprmar">Sprauge</name> saw ye apperittions of ye
 						black man &amp; <name type="person" key="barwil1">Willm Barker</name>
 						standing<lb/> before sd <name type="person" key="marmar1">Mary
@@ -34232,7 +34230,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 					<p>[<date value="1692-09-07" certainty="confirmed">September 7, 1692. </date>]</p>
 					<p>The Testimony of <name type="person" key="dutmar">Martha Dutch</name> aged
 						about 36 years This Deponent Testifieth and saith that about 2 yeers Last
-						past <name type="person" key="jerjoh ">Jno Jarman </name> of Salem Coming in
+						past <name type="person" key="jerjoh">Jno Jarman </name> of Salem Coming in
 						from sea I This daponant &amp; <name type="person" key="parali">Alice parker
 						</name> of Salem Both of us standing Together said unto her w't a great
 						mercy itt was for to see Them Come home well and Through mercy I said my
@@ -39703,7 +39701,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 						as well before as after<lb/> Certaine detestable Arts called Witchcraft and
 						Sorceries<lb/> Wickedly Mallitiously and felloniously hath used<lb/>
 						practised and Exercised At and in the Towne of<lb/> Rowley in the County of
-						Essex Aforesaid in upon and<lb/> against one <name type="person" key="?">Mary Daniell</name> of Rowley<lb/> Aforesaid single Woman<lb/> by which
+						Essex Aforesaid in upon and<lb/> against one <name type="person" key="unknown">Mary Daniell</name> of Rowley<lb/> Aforesaid single Woman<lb/> by which
 						said Wicked Acts the said <name type="person" key="danmar">Mary Daniell</name> the
 						day<lb/> &amp; yeare Aforesaid and divers other days and times both
 						before and<lb/> after was and is Tortured Afflicted Consumed Pined
@@ -39831,7 +39829,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 				</div2>
 				<div2 id="n119.8" type="deposition" org="uniform" sample="complete" part="N">
 					<head>(<name type="person" key="neltho">Thomas Nelson</name> Vs. <name type="person" key="scomar">Margaret Scott</name>)</head>
-					<p> The Deposition of <name type="person" key="?">Thomas Nelson</name>, who
+					<p> The Deposition of <name type="person" key="unknown">Thomas Nelson</name>, who
 						saith, that,<lb/> about six yeares ago the last winter, <name type="person" key="scomar">Margaret Scot</name>, of<lb/> Rowley, widow, desired me to
 						bring her some wood,<lb/> and spake to me severall times for wood, and I
 						told<lb/> her, that I owed her ten shillings and I would bring her<lb/> wood
@@ -43818,7 +43816,7 @@ who this is?-->
 							<name type="place">in New England -- </name>
 						</dateline>
 					</opener>
-					<p>You are in theire Majest's names hereby required to Apprehend <name type="person" key="wijoh2">John Willard </name> of Salem Village
+					<p>You are in theire Majest's names hereby required to Apprehend <name type="person" key="wiljoh2">John Willard </name> of Salem Village
 						husbandman, if he may be found in your precints who stands charged with
 						sundry acts of Witchcraft by him donne or Committed on the Bodys of <name type="person" key="wilbra">Bray Wilkins</name>. and <name type="person" key="wildan">Daniell Wilkins</name> the son of <name type="person" key="wilhen">Henery Wilkins</name> both of Salem Village and others --
 						according to Complaint made before us by <name type="person" key="fultho2">Thomas fuller Jun'r</name> and <name type="person" key="wilben">Benj'n
@@ -44716,7 +44714,7 @@ separately?-->
 				</div2>
 				<pb n="837"/>
 				<div2 id="n137.15" type="section" org="uniform" sample="complete" part="N">
-					<head>(<name type="person" key="shesus">Susannah Sheldon</name> v. John Willard <name type="person" key="iljoh2"/> ) </head><figure n="ecca1243r"/>
+					<head>(<name type="person" key="shesus">Susannah Sheldon</name> v. <name type="person" key="wiljoh2">John Willard</name> ) </head><figure n="ecca1243r"/>
 					<p>This this Is the first to bee Read the <date value="1692-05-09" certainty="confirmed">9'th of may 1692 </date>
 						this #[this] Is the first to bee Read the testimony of <name type="person" key="shesus">Susanah Shelton</name> Aged 18'ten yers or there About
 						testifieth And saith the day of the date hereof I sawe At <name type="person" key="ingnat">natt Ingersons</name> house the Apparitions
@@ -52137,7 +52135,7 @@ Comment: -->
                                 <cell role="data" rows="1" cols="1">01:19:06</cell>
                             </row>
                             <row role="data">
-                                <cell role="data" rows="1" cols="1"><name type="person" key="?">Sarah Cole</name> Committed Octobr: 3d: 1692 was by ye
+                                <cell role="data" rows="1" cols="1"><name type="person" key="unknown">Sarah Cole</name> Committed Octobr: 3d: 1692 was by ye
                                     Sheriffe taken out<lb/> said 3d of Janury: wch is 12 weeks &amp;
                                     six days amounting to --------------</cell>
                                 <cell role="data" rows="1" cols="1">01:12:00</cell>
@@ -52145,7 +52143,7 @@ Comment: -->
                             <row role="data">
                                 <cell role="data" rows="1" cols="1"><name type="person" key="duslyd">Lydia Dastin</name>, <name type="person" key="dussar">Sarah
                                         Dastin</name>, <name type="person" key="coleli">Elizabeth
-                                        Colson</name>, <name type="person" key="?">Sarah Cole</name><lb/>
+                                        Colson</name>, <name type="person" key="unknown">Sarah Cole</name><lb/>
                                     <name type="person" key="toomar">Mary Toothaker</name> &amp;
                                         <name type="person" key="taymar">Mary Taylr</name>: were by
                                     order of ye Sheriffe<lb/> Committed Janury: 28th: 1692/3 &amp;
@@ -52156,17 +52154,17 @@ Comment: -->
                             <row role="data">
                                 <cell role="data" rows="1" cols="1"><name type="person" key="duslyd">Lydia Dastin</name>, <name type="person" key="dussar">Sarah
                                         Dastin</name>, <name type="person" key="coleli">Elizabeth
-                                        Colson</name> &amp; <name type="person" key="?">Sarah
+                                        Colson</name> &amp; <name type="person" key="unknown">Sarah
                                         Cole</name><lb/> were by the Sheriffs warrant (after the
                                     tryall of said persons)<lb/> Committted Februry: 11th: 1692/3 -
                                         <name type="person" key="coleli">Elizabeth Colson</name>
                                     went out of <lb/> Prison ye 2d of March following: <name type="person" key="duslyd">Lydia Dastin</name> dyed ye 10th
                                     of said March <lb/>
-                                    <name type="person" key="?">Sarah Cole</name> &amp; <name type="person" key="dussar">Sarah Dastin</name> went out of
+                                    <name type="person" key="unknown">Sarah Cole</name> &amp; <name type="person" key="dussar">Sarah Dastin</name> went out of
                                     Prison ye 23d of said March<lb/> the time of said persons
                                     Continuance in Prison from said -<lb/> Committmt: to their going
                                     out is as follows Viz:<lb/>
-                                    <name type="person" key="?">Sarah Cole</name> &amp; <name type="person" key="dussar">Sarah Dastin</name> 5 weeks &amp;
+                                    <name type="person" key="unknown">Sarah Cole</name> &amp; <name type="person" key="dussar">Sarah Dastin</name> 5 weeks &amp;
                                     5 days wch amounts to-</cell>
                                 <cell role="data" rows="1" cols="1">01:08:04</cell>
                             </row>
@@ -52192,7 +52190,7 @@ Comment: -->
                         prison<lb/> at Cambridge) account of the expense,<lb/> the number of weeks
                         spent in prison,<lb/> and when they left the jail, of persons<lb/> accused
                         of witchcraft. <name type="person" key="duslyd">Lydia</name> &amp; <name type="person" key="dussar">Sarah Dastin</name>,<lb/>
-                        <name type="person" key="colmar">Mary Colison</name>, <name type="person" key="coleli">Elizabeth Colison</name>, <name type="person" key="?">Sarah
+                        <name type="person" key="colmar">Mary Colison</name>, <name type="person" key="coleli">Elizabeth Colison</name>, <name type="person" key="unknown">Sarah
                             Cole</name>,<lb/>
                         <name type="person" key="toomar">Mary Toothacre</name>, <name type="person" key="taymar">Mary Taylor</name>, <name type="person" key="duslyd">Lydia
                             Dastin</name> died.<lb/> vol. [<hi rend="italics">words
