@@ -89,7 +89,7 @@ def main():
                 if figure.get("n"): figures[doc_id].append(figure.get("n"))
             for person in doc.xpath(".//name[@type='person']"):
                 personkey = person.get("key")
-                name = xmlTextJoin(person)
+                name = " ".join(xmlTextJoin(person).split())
                 persons[personkey+name] = [personkey,name]
                 tail = person.tail
                 person.clear()
