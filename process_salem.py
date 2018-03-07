@@ -13,20 +13,23 @@ import uuid
 import os
 import io
 from ruamel.yaml import YAML
+import json
 
 def mdFrontMatter(case_id, title,date,tags):
-    fm = "---\n"
-    fm_close = "\n---\n\n"
+    #fm = "---\n"
+    fm = ""
+    #fm_close = "\n---\n\n"
     fm_vars = {}
-    fm_vars["layout"] = "post"
-    fm_vars["title"] = case_id + " " + " ".join(title.split())
+    #fm_vars["layout"] = "post"
+    fm_vars["title"] = " ".join(title.split())
     fm_vars["date"] = date
-    fm_vars["permalink"] = case_id
+    fm_vars["slug"] = case_id
     fm_vars["category"] = "swp"
-    fm_vars["tags"] = " ".join(tags)
+    fm_vars["tags"] = ", ".join(tags)
     for key in fm_vars.keys():
         fm+=key+": "+fm_vars[key]+"\n"
-    fm+="---\n\n"
+    #fm+="---\n\n"
+    fm+="\n\n"
     return(fm)
 
 def mdPerson(key, name):
@@ -41,7 +44,9 @@ def main():
     tei = f.read()
     f.close()
     tei = tei.replace("http://text.lib.virginia.edu/charent/","./")
+    # Replace remote entity references with local
     tei = tei.replace('encoding="UTF-8"','')
+    # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
     xml = etree.parse(io.StringIO(tei),parser)
     root = xml.getroot()
@@ -52,7 +57,6 @@ def main():
             personkey = keyword.get("id")
             if personkey and personkey not in alltags:
                 alltags[personkey] = ' '.join(xmlTextJoin(keyword).split())
-
     #Otherwise, use first instance of name
     unknowns = []
     print("Non-LCSH persons:\n================")
@@ -61,10 +65,8 @@ def main():
         if personkey not in alltags:
             alltags[personkey] = ' '.join(xmlTextJoin(person).split())
             print(personkey+": "+alltags[personkey])
-    with open("./tag_yaml/tags.yml", 'w') as tag_yaml:
-        yaml=YAML()
-        yaml.default_flow_style = False
-        yaml.dump(alltags, tag_yaml)
+    with open("./tags/tags.json", 'w') as tag_list:
+        json.dump(alltags, tag_list, sort_keys=True)
     cases = root.xpath("//div1")
     print("Unknown key persons:\n================")
     for case in cases:
@@ -83,13 +85,12 @@ def main():
             for person in doc.xpath(".//name[@type='person']"):
                 if person.get("key") == "unknown":
                     print(' '.join(xmlTextJoin(person).split()) + " ("+doc_id+")")
-            #print("   Processing doc: "+doc_id)
             for figure in doc.xpath(".//figure"):
                 if doc_id not in figures: figures[doc_id] = []
                 if figure.get("n"): figures[doc_id].append(figure.get("n"))
             for person in doc.xpath(".//name[@type='person']"):
                 personkey = person.get("key")
-                name = xmlTextJoin(person)
+                name = " ".join(xmlTextJoin(person).split())
                 persons[personkey+name] = [personkey,name]
                 tail = person.tail
                 person.clear()
@@ -101,7 +102,7 @@ def main():
             os.system("./TEI-XSL/bin/p4totei ./docs_p4/"+doc_id+".xml ./docs_tei/"+doc_id+".xml")
             os.system("./TEI-XSL/bin/teitomarkdown ./docs_tei/"+doc_id+".xml ./docs_md/"+doc_id+".md")
             doc_ids.append(doc_id)
-        with open("./cases_md/"+date+"-"+case_id+".md", 'w') as case_md:
+        with open("./cases_md/"+case_id+".md", 'w') as case_md:
             case_md.write(mdFrontMatter(case_id,title,date,tags))
             for doc_id in doc_ids:
                 doc_md = open("./docs_md/"+doc_id+".md", 'r')
