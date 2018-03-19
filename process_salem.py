@@ -12,10 +12,9 @@ from lxml import etree
 import uuid
 import os
 import io
-from ruamel.yaml import YAML
 import json
 
-def mdFrontMatter(case_id, title,date,tags):
+def mdFrontMatter(case_id,cat,title,date,tags):
     #fm = "---\n"
     fm = ""
     #fm_close = "\n---\n\n"
@@ -24,7 +23,7 @@ def mdFrontMatter(case_id, title,date,tags):
     fm_vars["title"] = " ".join(title.split())
     fm_vars["date"] = date
     fm_vars["slug"] = case_id
-    fm_vars["category"] = "swp"
+    fm_vars["category"] = cat
     fm_vars["tags"] = ", ".join(tags)
     for key in fm_vars.keys():
         fm+=key+": "+fm_vars[key]+"\n"
@@ -39,10 +38,19 @@ def mdPerson(key, name):
 def xmlTextJoin(element):
     return "".join([x for x in element.itertext()])
 
-def main():
-    f = open("swp.xml","r")
+# Make directories if they don't exists
+def makedirs(file, dirs):
+    if not os.path.exists("./"+file):
+        os.makedirs("./"+file)
+    for d in dirs:
+        if not os.path.exists("./"+file+"/"+d):
+            os.makedirs("./"+file+"/"+d+"/")
+
+def processSWP(file="swp", post_tag="div1"):
+    f = open(file+".xml","r")
     tei = f.read()
     f.close()
+    makedirs(file, ["tags","docs_p4","docs_tei","pelican_md","docs_md"])
     tei = tei.replace("http://text.lib.virginia.edu/charent/","./")
     # Replace remote entity references with local
     tei = tei.replace('encoding="UTF-8"','')
@@ -65,9 +73,9 @@ def main():
         if personkey not in alltags:
             alltags[personkey] = ' '.join(xmlTextJoin(person).split())
             print(personkey+": "+alltags[personkey])
-    with open("./tags/tags.json", 'w') as tag_list:
+    with open("./"+file+"/tags/tags.json", 'w') as tag_list:
         json.dump(alltags, tag_list, sort_keys=True)
-    cases = root.xpath("//div1")
+    cases = root.xpath("//"+post_tag)
     print("Unknown key persons:\n================")
     for case in cases:
         case_id = case.get("id")
@@ -96,22 +104,58 @@ def main():
                 person.clear()
                 person.text = str(hash(personkey+name)) # drop strikethrough, orig tags
                 person.tail = tail
-            doc_p4 = open("./docs_p4/"+doc_id+".xml", 'w')
+            doc_p4 = open("./"+file+"/docs_p4/"+doc_id+".xml", 'w')
             doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
             doc_p4.close()
-            os.system("./TEI-XSL/bin/p4totei ./docs_p4/"+doc_id+".xml ./docs_tei/"+doc_id+".xml")
-            os.system("./TEI-XSL/bin/teitomarkdown ./docs_tei/"+doc_id+".xml ./docs_md/"+doc_id+".md")
+            os.system("./TEI-XSL/bin/p4totei ./"+file+"/docs_p4/"+doc_id+".xml ./"+file+"/docs_tei/"+doc_id+".xml")
+            os.system("./TEI-XSL/bin/teitomarkdown ./"+file+"/docs_tei/"+doc_id+".xml ./"+file+"/docs_md/"+doc_id+".md")
             doc_ids.append(doc_id)
-        with open("./cases_md/"+case_id+".md", 'w') as case_md:
-            case_md.write(mdFrontMatter(case_id,title,date,tags))
+        with open("./"+file+"/pelican_md/"+case_id+".md", 'w') as pelican_md:
+            pelican_md.write(mdFrontMatter(case_id,file,title,date,tags))
             for doc_id in doc_ids:
-                doc_md = open("./docs_md/"+doc_id+".md", 'r')
-                case_md.write("\n\n# Document: "+doc_id+"\n\n")
+                doc_md = open("./"+file+"/docs_md/"+doc_id+".md", 'r')
+                pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
                 for figure in figures.get(doc_id) or []:
-                    case_md.write("![Figure "+figure+"](/assets/thumb/"+figure+".jpg)\n")
+                    pelican_md.write("![Figure "+figure+"](/assets/thumb/"+figure+".jpg)\n")
                 doc_content = doc_md.read()
                 for key in persons:
                     doc_content = doc_content.replace(str(hash(key)), mdPerson(persons[key][0],persons[key][1]))
-                case_md.write(doc_content)
+                pelican_md.write(doc_content)
                 doc_md.close()
-main()
+
+def processSalVRec(file="SalVRec", post_tag="div3"):
+    makedirs(file, ["tags","docs_p4","docs_tei","docs_md","pelican_md"])
+    # lxml doesn't like parsing unicode strings if there is an encoding specified
+    parser = etree.XMLParser()
+    xml = etree.parse(file+".xml",parser)
+    root = xml.getroot()
+    docs = root.xpath("//"+post_tag)
+    print("Unknown key persons:\n================")
+    for doc in docs:
+        doc_id = doc.get("id")
+        date = doc.get("n")
+        title = xmlTextJoin(doc.xpath(".//head")[0])    #assume that title is the contents of the head
+        figures = {}
+        for figure in doc.xpath(".//figure"):
+            if doc_id not in figures: figures[doc_id] = []
+            if figure.get("n"): figures[doc_id].append(figure.get("n"))
+
+        doc_p4 = open("./"+file+"/docs_p4/"+doc_id+".xml", 'w')
+        doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
+        doc_p4.close()
+        os.system("./TEI-XSL/bin/p4totei ./"+file+"/docs_p4/"+doc_id+".xml ./"+file+"/docs_tei/"+doc_id+".xml")
+        os.system("./TEI-XSL/bin/teitomarkdown ./"+file+"/docs_tei/"+doc_id+".xml ./"+file+"/docs_md/"+doc_id+".md")
+
+        with open("./"+file+"/pelican_md/"+doc_id+".md", 'w') as pelican_md:
+            pelican_md.write(mdFrontMatter(doc_id,file,title,date,[]))
+            doc_md = open("./"+file+"/docs_md/"+doc_id+".md", 'r')
+            pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
+            for figure in figures.get(doc_id) or []:
+                pelican_md.write("![Figure "+figure+"](/assets/thumb/"+figure+".jpg)\n")
+            doc_content = doc_md.read()
+            pelican_md.write(doc_content)
+            doc_md.close()
+
+
+processSalVRec()
+processSWP()
