@@ -107,8 +107,8 @@ def processSWP(file="swp", post_tag="div1"):
             doc_p4 = open("./"+file+"/docs_p4/"+doc_id+".xml", 'w')
             doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
             doc_p4.close()
-            os.system("./TEI-XSL/bin/p4totei ./"+file+"/docs_p4/"+doc_id+".xml ./"+file+"/docs_tei/"+doc_id+".xml")
-            os.system("./TEI-XSL/bin/teitomarkdown ./"+file+"/docs_tei/"+doc_id+".xml ./"+file+"/docs_md/"+doc_id+".md")
+            os.system("./Stylesheets/bin/p4totei ./"+file+"/docs_p4/"+doc_id+".xml ./"+file+"/docs_tei/"+doc_id+".xml")
+            os.system("./Stylesheets/bin/teitomarkdown ./"+file+"/docs_tei/"+doc_id+".xml ./"+file+"/docs_md/"+doc_id+".md")
             doc_ids.append(doc_id)
         with open("./"+file+"/pelican_md/"+case_id+".md", 'w') as pelican_md:
             pelican_md.write(mdFrontMatter(case_id,file,title,date,tags))
@@ -130,7 +130,6 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
     xml = etree.parse(file+".xml",parser)
     root = xml.getroot()
     docs = root.xpath("//"+post_tag)
-    print("Unknown key persons:\n================")
     for doc in docs:
         doc_id = doc.get("id")
         date = doc.get("n")
