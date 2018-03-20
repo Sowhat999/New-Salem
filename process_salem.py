@@ -142,8 +142,8 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
         doc_p4 = open("./"+file+"/docs_p4/"+doc_id+".xml", 'w')
         doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
         doc_p4.close()
-        os.system("./TEI-XSL/bin/p4totei ./"+file+"/docs_p4/"+doc_id+".xml ./"+file+"/docs_tei/"+doc_id+".xml")
-        os.system("./TEI-XSL/bin/teitomarkdown ./"+file+"/docs_tei/"+doc_id+".xml ./"+file+"/docs_md/"+doc_id+".md")
+        os.system("./Stylesheets/bin/p4totei ./"+file+"/docs_p4/"+doc_id+".xml ./"+file+"/docs_tei/"+doc_id+".xml")
+        os.system("./Stylesheets/bin/teitomarkdown ./"+file+"/docs_tei/"+doc_id+".xml ./"+file+"/docs_md/"+doc_id+".md")
 
         with open("./"+file+"/pelican_md/"+doc_id+".md", 'w') as pelican_md:
             pelican_md.write(mdFrontMatter(doc_id,file,title,date,[]))
