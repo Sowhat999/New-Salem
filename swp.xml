@@ -6193,8 +6193,7 @@
 				<!-- <ID>n10</ID> -->
 
 				<div2 id="n10.1" type="examination">
-					<head>(Examination of <name type="person" key="barwil2">William Barker,
-						Jr.</name>) </head>
+					<head>(Examination of <name type="person" key="barwil2">William Barker,Jr.</name>) </head>
 					<p>[<date value="1692-09-12" certainty="confirmed">September 12, 1693 </date>]</p>
 					<figure n="S063r"/>
 					<figure n="S063v"/>
@@ -42043,7 +42042,7 @@ Comment: --> Where <name type="person" key="wilsar">Sarah Wilson</name>
 					<head>(Recognizance for <name type="person" key="tylmar">Martha Tyler</name> and
 							<name type="person" key="tyljoh">Johanna Tyler</name> ) </head>
 					<p>Memorandum </p>
-					<p>That on the <date value="1692-13-01" certainty="confirmed">Thirteenth day
+					<p>That on the <date value="1692-01-13" certainty="confirmed">Thirteenth day
 							of Jan'ry 1692</date>, in the Fourth year of the Reigne of our
 						Sovereigne Lord &amp; Lady William &amp; Mary by the Grace of God of
 						England &amp;c &amp; Queen Defenders of the faith &amp;c
