@@ -14,7 +14,7 @@ import os
 import io
 import json
 
-def mdFrontMatter(case_id,cat,title,date,tags):
+def mdFrontMatter(slug,cat,title,date,tags):
     #fm = "---\n"
     fm = ""
     #fm_close = "\n---\n\n"
@@ -22,7 +22,7 @@ def mdFrontMatter(case_id,cat,title,date,tags):
     #fm_vars["layout"] = "post"
     fm_vars["title"] = " ".join(title.split())
     fm_vars["date"] = date
-    fm_vars["slug"] = case_id
+    fm_vars["slug"] = slug
     fm_vars["category"] = cat
     fm_vars["tags"] = ", ".join(tags)
     for key in fm_vars.keys():
@@ -61,33 +61,33 @@ def figureMD(figure):
     print(figure)
     print(figure.startswith("S"))
     if figure.startswith("H"):
-        thumb = "assets/archives/MassHist/gifs/"+figureRename(figure)+".gif"
-        large = "assets/archives/MassHist/large/"+figureRename(figure)+".jpg"
+        thumb = "archives/MassHist/gifs/"+figureRename(figure)+".gif"
+        large = "archives/MassHist/large/"+figureRename(figure)+".jpg"
     elif figure.startswith("B"):
-        thumb = "assets/archives/BPL/gifs/"+figureRename(figure)+".gif"
-        large = "assets/archives/BPL/LARGE/"+figureRename(figure)+".jpg"
+        thumb = "archives/BPL/gifs/"+figureRename(figure)+".gif"
+        large = "archives/BPL/LARGE/"+figureRename(figure)+".jpg"
     elif figure.startswith("S"):
-        thumb = "assets/archives/Suffolk/small/"+figureRename(figure)+".jpg"
-        large = "assets/archives/Suffolk/large/"+figureRename(figure)+".jpg"
+        thumb = "archives/Suffolk/small/"+figureRename(figure)+".jpg"
+        large = "archives/Suffolk/large/"+figureRename(figure)+".jpg"
     elif figure.startswith("MA"):
-        thumb = "assets/archives/MA135/small/"+figure+".jpg"
-        large = "assets/archives/MA135/large/"+figure+".jpg"
+        thumb = "archives/MA135/small/"+figure+".jpg"
+        large = "archives/MA135/large/"+figure+".jpg"
     elif figure.startswith("eia"):
-        thumb = "assets/archives/essex/eia/gifs/"+figure+".gif"
-        large = "assets/archives/essex/eia/large/"+figure+".jpg"
+        thumb = "archives/essex/eia/gifs/"+figure+".gif"
+        large = "archives/essex/eia/large/"+figure+".jpg"
     elif figure.startswith("ecca"):
-        thumb = "assets/archives/ecca/thumb/"+figure+".jpg"
-        large = "assets/archives/ecca/large/"+figure+".jpg"
+        thumb = "archives/ecca/thumb/"+figure+".jpg"
+        large = "archives/ecca/large/"+figure+".jpg"
     elif figure.startswith("mehs"):
-        thumb = "assets/archives/MEHS/small/"+figureRename(figure)+".jpg"
-        large = "assets/archives/MEHS/large/"+figureRename(figure)+".jpg"
+        thumb = "archives/MEHS/small/"+figureRename(figure)+".jpg"
+        large = "archives/MEHS/large/"+figureRename(figure)+".jpg"
     elif figure.startswith("NYPL"):
-        thumb = "assets/archives/NYPL/SMALL/"+figureRename(figure)+".jpg"
-        large = "assets/archives/NYPL/LARGE/"+figureRename(figure)+".jpg"
+        thumb = "archives/NYPL/SMALL/"+figureRename(figure)+".jpg"
+        large = "archives/NYPL/LARGE/"+figureRename(figure)+".jpg"
     elif figure.startswith("SCJ"):
-        thumb = "assets/archives/SCJ/small/"+figureRename(figure)+".jpg"
-        large = "assets/archives/SCJ/large/"+figureRename(figure)+".jpg"
-    return "![Figure "+figure+"]("+thumb+")\n"
+        thumb = "archives/SCJ/small/"+figureRename(figure)+".jpg"
+        large = "archives/SCJ/large/"+figureRename(figure)+".jpg"
+    return'<a href="'+large+'" class="jqueryLightbox">![Figure '+figure+']('+thumb+')</a>\n'
 
 def processSWP(file="swp", post_tag="div1"):
     f = open(file+".xml","r")
@@ -125,7 +125,7 @@ def processSWP(file="swp", post_tag="div1"):
         #print("Processing case: "+case_id)
         dates = case.xpath(".//date")
         date = dates[0].get("value") if len(dates)>0 else "1960-01-01" # use first date found (!) - TODO: No dates in n89!
-        title = xmlTextJoin(case.xpath(".//head")[0])    #assume that title is the contents of the head
+        title = case_id[0]+case_id[1:].zfill(3)+": "+xmlTextJoin(case.xpath(".//head")[0])    #assume that title is the contents of the head
         tags = {x.get("key") for x in case.xpath(".//name[@type='person']")}    #use tag system to index people
         docs = case.xpath(".//div2")
         doc_ids = []
