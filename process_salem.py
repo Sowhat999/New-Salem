@@ -46,6 +46,49 @@ def makedirs(file, dirs):
         if not os.path.exists("./"+file+"/"+d):
             os.makedirs("./"+file+"/"+d+"/")
 
+# Only for certain archives, the figures names don't match up with the filenames for some reason
+def figureRename(figure):
+    if figure[-1] == 'r':
+        return figure[0:-1]+'A'
+    elif figure[-1] == 'v':
+        return figure[0:-1]+'B'
+    else:
+        return figure
+
+def figureMD(figure):
+    thumb = "assets/images/thumb/"+figure+".jpg"
+    large = "assets/images/large/"+figure+".jpg"
+    print(figure)
+    print(figure.startswith("S"))
+    if figure.startswith("H"):
+        thumb = "assets/archives/MassHist/gifs/"+figureRename(figure)+".gif"
+        large = "assets/archives/MassHist/large/"+figureRename(figure)+".jpg"
+    elif figure.startswith("B"):
+        thumb = "assets/archives/BPL/gifs/"+figureRename(figure)+".gif"
+        large = "assets/archives/BPL/LARGE/"+figureRename(figure)+".jpg"
+    elif figure.startswith("S"):
+        thumb = "assets/archives/Suffolk/small/"+figureRename(figure)+".jpg"
+        large = "assets/archives/Suffolk/large/"+figureRename(figure)+".jpg"
+    elif figure.startswith("MA"):
+        thumb = "assets/archives/MA135/small/"+figure+".jpg"
+        large = "assets/archives/MA135/large/"+figure+".jpg"
+    elif figure.startswith("eia"):
+        thumb = "assets/archives/essex/eia/gifs/"+figure+".gif"
+        large = "assets/archives/essex/eia/large/"+figure+".jpg"
+    elif figure.startswith("ecca"):
+        thumb = "assets/archives/ecca/thumb/"+figure+".jpg"
+        large = "assets/archives/ecca/large/"+figure+".jpg"
+    elif figure.startswith("mehs"):
+        thumb = "assets/archives/MEHS/small/"+figureRename(figure)+".jpg"
+        large = "assets/archives/MEHS/large/"+figureRename(figure)+".jpg"
+    elif figure.startswith("NYPL"):
+        thumb = "assets/archives/NYPL/SMALL/"+figureRename(figure)+".jpg"
+        large = "assets/archives/NYPL/LARGE/"+figureRename(figure)+".jpg"
+    elif figure.startswith("SCJ"):
+        thumb = "assets/archives/SCJ/small/"+figureRename(figure)+".jpg"
+        large = "assets/archives/SCJ/large/"+figureRename(figure)+".jpg"
+    return "![Figure "+figure+"]("+thumb+")\n"
+
 def processSWP(file="swp", post_tag="div1"):
     f = open(file+".xml","r")
     tei = f.read()
@@ -116,7 +159,7 @@ def processSWP(file="swp", post_tag="div1"):
                 doc_md = open("./"+file+"/docs_md/"+doc_id+".md", 'r')
                 pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
                 for figure in figures.get(doc_id) or []:
-                    pelican_md.write("![Figure "+figure+"](/assets/thumb/"+figure+".jpg)\n")
+                    pelican_md.write(figureMD(figure))
                 doc_content = doc_md.read()
                 for key in persons:
                     doc_content = doc_content.replace(str(hash(key)), mdPerson(persons[key][0],persons[key][1]))
@@ -150,11 +193,10 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
             doc_md = open("./"+file+"/docs_md/"+doc_id+".md", 'r')
             pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
             for figure in figures.get(doc_id) or []:
-                pelican_md.write("![Figure "+figure+"](/assets/thumb/"+figure+".jpg)\n")
+                pelican_md.write(figureMD(figure))
             doc_content = doc_md.read()
             pelican_md.write(doc_content)
             doc_md.close()
 
-
-processSalVRec()
 processSWP()
+processSalVRec()
