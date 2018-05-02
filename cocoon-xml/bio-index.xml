@@ -1,0 +1,82 @@
+<bios>
+<persname key="brisbri" residence="Salem" cats="G01" mbio="mb1" bio="b1" pics="p1" crt="c1">Bridget Bishop</persname>
+<persname key="burgeo" residence="Wells,Maine" cats="G01 G06" mbio="mb3" bio="b3" pics="p2">Rev. George Burroughs</persname>
+<persname key="carmar1" residence="Andover" cats="G01" mbio="mb4" bio="b4">Martha Carrier</persname>
+<persname key="corgil" residence="Salem Farms" cats="G01" mbio="mb6" bio="b11" pics="p3">Giles Cory</persname>
+<persname key="cormar" residence="Salem Village" cats="G01" mbio="mb35" bio="b35">Martha Cory</persname>
+<persname key="easmar" residence="Topsfield" cats="G01" mbio="mb9" bio="b8">Mary Easty</persname>
+<persname key="goosar" residence="Salem Village" cats="G01" mbio="mb12" bio="b12">Sarah Good</persname>
+<persname key="howeli" residence="Topsfield" cats="G01">Elizabeth How</persname>
+<persname key="jacgeo1" residence="Salem" cats="G01" mbio="mb13" bio="b13" pics="p4">George Jacobs Sr.</persname>
+<persname key="marsus" residence="Amesbury" cats="G01" mbio="mb17" bio="b17" pics="p6">Susannah Martin</persname>
+<persname key="nurreb" residence="Salem Village" cats="G01" mbio="mb21" crt="c2" pics="p7">Rebecca Nurse</persname>
+<persname key="parali" residence="Salem" cats="G01">Alice Parker</persname>
+<persname key="parmar" residence="Andover" cats="G01" mbio="mb42" bio="b42">Mary Parker</persname>
+<persname key="projoh" residence="Salem Farms" cats="G01" mbio="mb31" bio="b31">John Proctor, Sr.</persname>
+<persname key="pudann" residence="Salem" cats="G01" mbio="mb24" bio="b23">Ann Pudeator</persname>
+<persname key="reewil" residence="Marblehead" cats="G01">Wilmot Redd</persname>
+<persname key="scomar" residence="Rowley" cats="G01" mbio="mb43" bio="b43"> Margaret Scott</persname>
+<persname key="warsam" residence="Andover" cats="G01" mbio="mb26" bio="b25">Samuel Wardwell</persname>
+<persname key="wilsar" residence="Topsfield" cats="G01">Sarah Wilds</persname>
+<persname key="wiljoh4" residence="Salem Village" cats="G01" mbio="mb34" bio="b34">John Willard</persname>
+<persname key="duslyd" residence="Reading" cats="G02">Lydia Dastin</persname>
+<persname key="fosann" residence="Andover" cats="G02">Ann Foster</persname>
+<persname key="goosar2" residence="Salem Village" cats="G02">Infant Girl (daughter of Sarah Good)</persname>
+<persname key="osbsar" residence="Salem Village" cats="G02" mbio="mb22" bio="b21">Sarah Osborne</persname>
+<persname key="toorog" residence="Billerica" cats="G02">Roger Toothaker</persname>
+<persname key="phiwil" residence="Boston" cats="G03" mbio="mb23" bio="b22" pics="p8">Gov. Sir William Phips</persname>
+<persname key="phiwil" residence="Boston" cats="G03" mbio="mb23" bio="b22" pics="p8">Sir William Phips</persname>
+<persname key="stough" residence="Boston" cats="G03" court="C1">Chief Magistrate William Stoughton</persname>
+<persname key="corjoh" residence="Salem" cats="G03" court="C1">Associate Magistrate Jonathan Corwin</persname>
+<persname key="dantho" residence="Boston" cats="G03" court="C1">Associate Magistrate Thomas Danforth</persname>
+<persname key="gidbar" residence="Salem" cats="G03" court="C1">Associate Magistrate Bartholomew Gedney</persname>
+<persname key="hawjoh" residence="Salem" cats="G03" court="C1" mbio="mb14" bio="b16" pics="p5">Associate Magistrate John Hathorne</persname>
+<persname key="ricjoh" residence="Salem" cats="G03" court="C1">Associate Magistrate John Richards</persname>
+<persname key="salnat" residence="Haverhill" cats="G03" court="C1">Associate Magistrate Nathaniel Saltonstall</persname>
+<persname key="sarpet" residence="Boston" cats="G03" court="C1">Associate Magistrate Peter Sargent</persname>
+<persname key="sewsam" residence="Boston" cats="G03" court="C1" mbio="mb25" bio="b24" pics="p9">Associate Magistrate Samuel Sewall</persname>
+<persname key="sewall" residence="Salem" cats="G03" court="C1">Stephen Sewall, Clerk</persname>
+<persname key="winwai" residence="Boston" cats="G03" court="C1">Associate Magistrate Wait Winthrop</persname>
+<persname key="stough" residence="Boston" cats="G03" court="C1" mbio="mb40" bio="b40">William Stoughton</persname>
+<persname key="corjoh" residence="Salem" cats="G03" court="C1">Jonathan Corwin</persname>
+<persname key="dantho" residence="Boston" cats="G03" court="C1">Thomas Danforth</persname>
+<persname key="gidbar" residence="Salem" cats="G03" court="C1">Bartholomew Gedney</persname>
+<persname key="hawjoh" residence="Salem" cats="G03 G04" court="C1" mbio="mb14" bio="b16" pics="p5">John Hathorne</persname>
+<persname key="ricjoh" residence="Salem" cats="G03" court="C1">John Richards</persname>
+<persname key="salnat" residence="Haverhill" cats="G03" court="C1">Nathaniel Saltonstall</persname>
+<persname key="sarpet" residence="Boston" cats="G03" court="C1">Peter Sargent</persname>
+<persname key="sewsam" residence="Boston" cats="G03" court="C1" mbio="mb25" bio="b24" pics="p9">Samuel Sewall</persname>
+<persname key="sewall" residence="Salem" cats="G03" court="C1">Stephen Sewall</persname>
+<persname key="winwai" residence="Boston" cats="G03" court="C1">Wait Winthrop</persname>
+<persname key="bratho2" residence="Boston" cats="G05" mbio="mb2" bio="b2">Thomas Brattle</persname>
+<persname key="danfra1" residence="Andover" cats="G06" mbio="mb7" bio="b6">Francis Dane</persname>
+<persname key="lawdeo" residence="Scituate" cats="G06">Deodat Lawson</persname>
+<persname key="matcot" residence="Boston" cats="G06" mbio="mb5" bio="b5">Cotton Mather</persname>
+<persname key="matinc" residence="Boston" cats="G06" mbio="mb16" bio="b15">Increase Mather</persname>
+<persname key="parsam" residence="Salem Village" cats="G06 G08" mbio="mb39" bio="b27" pics="p10">Samuel Parris</persname>
+<persname key="wilsam2" residence="Boston" cats="G06" mbio="mb27" bio="b26">Samuel Willard</persname>
+<persname key="bibsar" residence="Wenham" cats="G07">Sarah Bibber</persname>
+<persname key="booeli" residence="Salem Village" cats="G07">Elizabeth Booth</persname>
+<persname key="chusar" residence="Salem Village" cats="G07" mbio="mb38" bio="b38">Sarah Churchill</persname>
+<persname key="hubeli" residence="Salem Village" cats="G07" mbio="mb15" bio="b14">Elizabeth Hubbard</persname>
+<persname key="lewmer" residence="Salem Village" cats="G07" mbio="mb37" bio="b19">Mercy Lewis</persname>
+<persname key="pareli" residence="Salem Village" cats="G07" mbio="mb11" bio="b10">Elizabeth Parris</persname>
+<persname key="putann2" residence="Salem Village" cats="G07" mbio="mb32" bio="b32">Ann Putnam Jr.</persname>
+<persname key="shesus" residence="Salem Village" cats="G07">Susanna Sheldon</persname>
+<persname key="warmar" residence="Salem Village" cats="G07" mbio="mb30" bio="b29">Mary Warren</persname>
+<persname key="walmar" residence="Salem Village" cats="G07" mbio="mb20" bio="b20">Mary Walcott</persname>
+<persname key="wilabi" residence="Salem Village" cats="G07" mbio="mb33" bio="b33">Abigail Williams</persname>
+<persname key="tituba" residence="Salem Village" cats="G08" mbio="mb29" bio="b28" pics="p11">Tituba</persname>
+<persname key="dolann" cats="G09" mbio="mb8" bio="b7">Ann Dolliver</persname>
+<persname key="engphi" cats="G09" mbio="mb10" bio="b9">Philip English</persname>
+<persname key="fauabi1" cats="G09">Abigail Faulkner</persname>
+<persname key="iremar" cats="G09" mbio="mb36" bio="b36">Mary Ireson</persname>
+<persname key="jacmar" cats="G09" mbio="mb18" bio="b18">Margaret Jacobs</persname>
+<persname key="porisr" cats="G10">Israel Porter</persname>
+<persname key="putjos" cats="G10">Joseph Putnam</persname>
+<persname key="childrn" cats="G09 G11" mbio="mb41" bio="b41">Children</persname>
+<persname key="gloswom" residence="Gloucester" cats="G09 G11" mbio="mb44" bio="b44">Gloucester Women</persname>
+<persname key="aldjoh" mbio="mb45" bio="b45" cats="G09">John Alden</persname>
+<persname key="puttho" mbio="mb46" bio="b46" cats="G08">Thomas Putnam</persname>
+<persname key="griwil" mbio="mb47" bio="b47">William Griggs</persname>
+</bios>

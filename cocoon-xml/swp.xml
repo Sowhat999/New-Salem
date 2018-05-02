@@ -10561,7 +10561,7 @@
 							Burroughs and Officer's Return</name> )
 						<lb/></head>
 					<p>[<date value="1692-04-30" certainty="confirmed">April 30, 1692 </date>]</p>
-					<figure n="H01r"/>
+					<figure n="`H01r`"/>
 					<figure n="H01v"/>
 					<p>
 						To <name type="person" key="parjoh1">Jno Partredg</name> field
