@@ -13,6 +13,8 @@ import uuid
 import os
 import io
 import json
+from urllib.request import urlopen
+from bs4 import BeautifulSoup, Tag
 
 def mdFrontMatter(slug,cat,title,date,tags):
     #fm = "---\n"
@@ -40,11 +42,11 @@ def xmlTextJoin(element):
 
 # Make directories if they don't exists
 def makedirs(file, dirs):
-    if not os.path.exists("./"+file):
-        os.makedirs("./"+file)
+    if not os.path.exists("./output/"+file):
+        os.makedirs("./output/"+file)
     for d in dirs:
-        if not os.path.exists("./"+file+"/"+d):
-            os.makedirs("./"+file+"/"+d+"/")
+        if not os.path.exists("./output/"+file+"/"+d):
+            os.makedirs("./output/"+file+"/"+d+"/")
 
 # Only for certain archives, the figures names don't match up with the filenames for some reason
 def figureRename(figure):
@@ -58,8 +60,6 @@ def figureRename(figure):
 def figureMD(figure):
     thumb = "assets/images/thumb/"+figure+".jpg"
     large = "assets/images/large/"+figure+".jpg"
-    print(figure)
-    print(figure.startswith("S"))
     if figure.startswith("H"):
         thumb = "archives/MassHist/gifs/"+figureRename(figure)+".gif"
         large = "archives/MassHist/large/"+figureRename(figure)+".jpg"
@@ -90,10 +90,10 @@ def figureMD(figure):
     return'<a href="'+large+'" class="jqueryLightbox">![Figure '+figure+']('+thumb+')</a>\n'
 
 def processSWP(file="swp", post_tag="div1"):
-    f = open(file+".xml","r")
+    f = open("./cocoon-xml/"+file+".xml","r")
     tei = f.read()
     f.close()
-    makedirs(file, ["tags","docs_p4","docs_tei","pelican_md","docs_md"])
+    makedirs(file, ["tags","_docs_p4","_docs_tei","pelican_md","_docs_md"])
     tei = tei.replace("http://text.lib.virginia.edu/charent/","./")
     # Replace remote entity references with local
     tei = tei.replace('encoding="UTF-8"','')
@@ -116,7 +116,7 @@ def processSWP(file="swp", post_tag="div1"):
         if personkey not in alltags:
             alltags[personkey] = ' '.join(xmlTextJoin(person).split())
             print(personkey+": "+alltags[personkey])
-    with open("./"+file+"/tags/tags.json", 'w') as tag_list:
+    with open("./output/"+file+"/tags/tags.json", 'w') as tag_list:
         json.dump(alltags, tag_list, sort_keys=True)
     cases = root.xpath("//"+post_tag)
     print("Unknown key persons:\n================")
@@ -128,6 +128,8 @@ def processSWP(file="swp", post_tag="div1"):
         title = case_id[0]+case_id[1:].zfill(3)+": "+xmlTextJoin(case.xpath(".//head")[0])    #assume that title is the contents of the head
         tags = {x.get("key") for x in case.xpath(".//name[@type='person']")}    #use tag system to index people
         docs = case.xpath(".//div2")
+        if len(docs)==0:
+            continue
         doc_ids = []
         figures = {}
         persons = {}
@@ -147,16 +149,16 @@ def processSWP(file="swp", post_tag="div1"):
                 person.clear()
                 person.text = str(hash(personkey+name)) # drop strikethrough, orig tags
                 person.tail = tail
-            doc_p4 = open("./"+file+"/docs_p4/"+doc_id+".xml", 'w')
+            doc_p4 = open("./output/"+file+"/_docs_p4/"+doc_id+".xml", 'w')
             doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
             doc_p4.close()
             os.system("./Stylesheets/bin/p4totei ./"+file+"/docs_p4/"+doc_id+".xml ./"+file+"/docs_tei/"+doc_id+".xml")
             os.system("./Stylesheets/bin/teitomarkdown ./"+file+"/docs_tei/"+doc_id+".xml ./"+file+"/docs_md/"+doc_id+".md")
             doc_ids.append(doc_id)
-        with open("./"+file+"/pelican_md/"+case_id+".md", 'w') as pelican_md:
+        with open("./output/"+file+"/pelican_md/"+case_id+".md", 'w') as pelican_md:
             pelican_md.write(mdFrontMatter(case_id,file,title,date,tags))
             for doc_id in doc_ids:
-                doc_md = open("./"+file+"/docs_md/"+doc_id+".md", 'r')
+                doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
                 pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
                 for figure in figures.get(doc_id) or []:
                     pelican_md.write(figureMD(figure))
@@ -167,10 +169,10 @@ def processSWP(file="swp", post_tag="div1"):
                 doc_md.close()
 
 def processSalVRec(file="SalVRec", post_tag="div3"):
-    makedirs(file, ["tags","docs_p4","docs_tei","docs_md","pelican_md"])
+    makedirs(file, ["tags","_docs_p4","_docs_tei","_docs_md","pelican_md"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
-    xml = etree.parse(file+".xml",parser)
+    xml = etree.parse("./cocoon-xml/"+file+".xml",parser)
     root = xml.getroot()
     docs = root.xpath("//"+post_tag)
     for doc in docs:
@@ -182,15 +184,15 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
             if doc_id not in figures: figures[doc_id] = []
             if figure.get("n"): figures[doc_id].append(figure.get("n"))
 
-        doc_p4 = open("./"+file+"/docs_p4/"+doc_id+".xml", 'w')
+        doc_p4 = open("./output/"+file+"/_docs_p4/"+doc_id+".xml", 'w')
         doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
         doc_p4.close()
-        os.system("./Stylesheets/bin/p4totei ./"+file+"/docs_p4/"+doc_id+".xml ./"+file+"/docs_tei/"+doc_id+".xml")
-        os.system("./Stylesheets/bin/teitomarkdown ./"+file+"/docs_tei/"+doc_id+".xml ./"+file+"/docs_md/"+doc_id+".md")
+        os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_docs_p4/"+doc_id+".xml ./output/"+file+"/_docs_tei/"+doc_id+".xml")
+        os.system("./Stylesheets/bin/teitomarkdown ./output/"+file+"/_docs_tei/"+doc_id+".xml ./output/"+file+"/_docs_md/"+doc_id+".md")
 
-        with open("./"+file+"/pelican_md/"+doc_id+".md", 'w') as pelican_md:
+        with open("./output/"+file+"/pelican_md/"+doc_id+".md", 'w') as pelican_md:
             pelican_md.write(mdFrontMatter(doc_id,file,title,date,[]))
-            doc_md = open("./"+file+"/docs_md/"+doc_id+".md", 'r')
+            doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
             pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
             for figure in figures.get(doc_id) or []:
                 pelican_md.write(figureMD(figure))
@@ -198,5 +200,103 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
             pelican_md.write(doc_content)
             doc_md.close()
 
+
+# Uses web scraping. Won't work after old-salem is deprecated.
+def processBiosWeb(file="bio-index", post_tag="persname"):
+    makedirs(file, [])
+    # lxml doesn't like parsing unicode strings if there is an encoding specified
+    parser = etree.XMLParser()
+    xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
+    root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
+    persons = root.xpath("//"+post_tag)
+    with open("./output/bios.html", 'w') as output:
+        for person in persons:
+            key = person.get("key")
+            residence = person.get("residence")
+            cats = person.get("cats")
+            name = person.text
+            soup = BeautifulSoup("",'html.parser')
+            person_div = soup.new_tag("div")
+            person_div["id"] = key
+            person_div["class"] = "person"
+            person_div["data-name"] = name
+            person_div["data-cats"] = cats
+            person_div["data-residence"] = residence
+            if not person.get("mbio"):
+                h4_name = soup.new_tag("h4")
+                h4_name.append(name)
+                person_div.insert(0,h4_name)
+                output.write(str(person_div))
+                continue
+            page = urlopen("http://salem.lib.virginia.edu/people?group.num=all&mbio.num="+person.get("mbio"))
+            html = BeautifulSoup(page, 'html.parser')
+            td = html.find('td', attrs={'style': 'width:80%;vertical-align:top;padding:12px;'})
+            for img in td.find_all('img'):
+                img["src"] = "../"+img["src"]
+            for img_link in td.find_all("a",{"class":"personsLightbox"}):
+                img_link['href'] = "../"+img_link['href']
+            for a_top in td.find_all("a",{"name":"top"}):
+                a_top.extract()
+            for a_toplink in td.find_all("a",{"href":"#top"}):
+                a_toplink.extract()
+            for content in reversed(td.contents):
+                person_div.insert(0, content.extract())
+            output.write(str(person_div))
+
+        #
+        #
+        # title = xmlTextJoin(doc.xpath(".//head")[0])    #assume that title is the contents of the head
+        # figures = {}
+        # for figure in doc.xpath(".//figure"):
+        #     if doc_id not in figures: figures[doc_id] = []
+        #     if figure.get("n"): figures[doc_id].append(figure.get("n"))
+        #
+        # doc_p4 = open("./output/"+file+"/_docs_p4/"+doc_id+".xml", 'w')
+        # doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
+        # doc_p4.close()
+        # os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_docs_p4/"+doc_id+".xml ./output/"+file+"/_docs_tei/"+doc_id+".xml")
+        # os.system("./Stylesheets/bin/teitomarkdown ./output/"+file+"/_docs_tei/"+doc_id+".xml ./output/"+file+"/_docs_md/"+doc_id+".md")
+        #
+        # with open("./output/"+file+"/pelican_md/"+doc_id+".md", 'w') as pelican_md:
+        #     pelican_md.write(mdFrontMatter(doc_id,file,title,date,[]))
+        #     doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
+        #     pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
+        #     for figure in figures.get(doc_id) or []:
+        #         pelican_md.write(figureMD(figure))
+        #     doc_content = doc_md.read()
+        #     pelican_md.write(doc_content)
+        #     doc_md.close()
+
+
+# Bad. Produces output, but badly mauls figures with built-in TEI XSLs. Use alternate webscraping function if available.
+def processBiosLocal(file="bio-index", post_tag="persname"):
+    makedirs(file, ["tags","_tei","_html"])
+    # lxml doesn't like parsing unicode strings if there is an encoding specified
+    parser = etree.XMLParser()
+    xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
+    root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
+    persons = root.xpath("//"+post_tag)
+    with open("./output/bios.html", 'w') as output:
+        for person in persons:
+            if not person.get("mbio"):
+                continue
+            key = person.get("key")
+            residence = person.get("residence")
+            cats = person.get("cats")
+            name = person.text
+            content = "<div1 id='"+key+"' class='person' data-cats='"+cats+"' data-residence='"+residence+"'>"
+            content += etree.tostring(xmls["mbio"].xpath("//div2[@id = '"+person.get("mbio")+"']")[0],encoding="unicode")+"\n\n" if person.get("mbio") is not None else ""
+            content += etree.tostring(xmls["bio"].xpath("//div2[@id = '"+person.get("bio")+"']")[0],encoding="unicode")+"\n\n" if person.get("bio") is not None else ""
+            content += etree.tostring(xmls["pics"].xpath("//div2[@id = '"+person.get("pics")+"']")[0],encoding="unicode")+"\n\n" if person.get("pics") is not None else ""
+            content += etree.tostring(xmls["crt"].xpath("//div2[@id = '"+person.get("crt")+"']")[0],encoding="unicode")+"\n\n" if person.get("crt") is not None else ""
+            content+="</div1>"
+            print(content)
+            p_tei = open("./output/"+file+"/_p4/"+key+".xml", 'w')
+            p_tei.write(content)
+            p_tei.close()
+            os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_p4/"+key+".xml ./output/"+file+"/_tei/"+key+".xml")
+            os.system("./Stylesheets/bin/teitohtml ./output/"+file+"/_tei/"+key+".xml ./output/"+file+"/_html/"+key+".html")
+
+processBiosWeb()
 processSWP()
 processSalVRec()
