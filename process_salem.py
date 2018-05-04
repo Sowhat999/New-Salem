@@ -209,8 +209,10 @@ def processBiosWeb(file="bio-index", post_tag="persname"):
     xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
     root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
     persons = root.xpath("//"+post_tag)
-    with open("./output/bios.html", 'w') as output:
+    with open("./output/"+file+"/index.html", 'w') as output:
         for person in persons:
+            if not person.get("mbio"):
+                continue
             key = person.get("key")
             residence = person.get("residence")
             cats = person.get("cats")
@@ -222,12 +224,6 @@ def processBiosWeb(file="bio-index", post_tag="persname"):
             person_div["data-name"] = name
             person_div["data-cats"] = cats
             person_div["data-residence"] = residence
-            if not person.get("mbio"):
-                h4_name = soup.new_tag("h4")
-                h4_name.append(name)
-                person_div.insert(0,h4_name)
-                output.write(str(person_div))
-                continue
             page = urlopen("http://salem.lib.virginia.edu/people?group.num=all&mbio.num="+person.get("mbio"))
             html = BeautifulSoup(page, 'html.parser')
             td = html.find('td', attrs={'style': 'width:80%;vertical-align:top;padding:12px;'})
