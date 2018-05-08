@@ -204,16 +204,17 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
 # Uses web scraping. Won't work after old-salem is deprecated.
 def processBiosWeb(file="bio-index", post_tag="persname"):
     makedirs(file, [])
-    # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
     xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
     root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
     persons = root.xpath("//"+post_tag)
+    bios = []
     with open("./output/"+file+"/index.html", 'w') as output:
         for person in persons:
             if not person.get("mbio"):
                 continue
             key = person.get("key")
+            bios.append(key)
             residence = person.get("residence")
             cats = person.get("cats")
             name = person.text
@@ -224,6 +225,11 @@ def processBiosWeb(file="bio-index", post_tag="persname"):
             person_div["data-name"] = name
             person_div["data-cats"] = cats
             person_div["data-residence"] = residence
+            swp_link_div = soup.new_tag("div")
+            swp_link_div["class"] = "link"
+            swp_link = soup.new_tag("a", href="../tag/"+key+".html")
+            swp_link.string = "Find in the Court Records"
+            swp_link_div.append(swp_link)
             page = urlopen("http://salem.lib.virginia.edu/people?group.num=all&mbio.num="+person.get("mbio"))
             html = BeautifulSoup(page, 'html.parser')
             td = html.find('td', attrs={'style': 'width:80%;vertical-align:top;padding:12px;'})
@@ -237,7 +243,10 @@ def processBiosWeb(file="bio-index", post_tag="persname"):
                 a_toplink.extract()
             for content in reversed(td.contents):
                 person_div.insert(0, content.extract())
+            person_div.append(swp_link_div)
             output.write(str(person_div))
+    with open("./output/"+file+"/bios.json", 'w') as output:
+        json.dump(bios,output)
 
 
 # Bad. Produces output, but badly mauls figures with built-in TEI XSLs. Use alternate webscraping function if available.
