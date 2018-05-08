@@ -239,30 +239,6 @@ def processBiosWeb(file="bio-index", post_tag="persname"):
                 person_div.insert(0, content.extract())
             output.write(str(person_div))
 
-        #
-        #
-        # title = xmlTextJoin(doc.xpath(".//head")[0])    #assume that title is the contents of the head
-        # figures = {}
-        # for figure in doc.xpath(".//figure"):
-        #     if doc_id not in figures: figures[doc_id] = []
-        #     if figure.get("n"): figures[doc_id].append(figure.get("n"))
-        #
-        # doc_p4 = open("./output/"+file+"/_docs_p4/"+doc_id+".xml", 'w')
-        # doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
-        # doc_p4.close()
-        # os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_docs_p4/"+doc_id+".xml ./output/"+file+"/_docs_tei/"+doc_id+".xml")
-        # os.system("./Stylesheets/bin/teitomarkdown ./output/"+file+"/_docs_tei/"+doc_id+".xml ./output/"+file+"/_docs_md/"+doc_id+".md")
-        #
-        # with open("./output/"+file+"/pelican_md/"+doc_id+".md", 'w') as pelican_md:
-        #     pelican_md.write(mdFrontMatter(doc_id,file,title,date,[]))
-        #     doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
-        #     pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
-        #     for figure in figures.get(doc_id) or []:
-        #         pelican_md.write(figureMD(figure))
-        #     doc_content = doc_md.read()
-        #     pelican_md.write(doc_content)
-        #     doc_md.close()
-
 
 # Bad. Produces output, but badly mauls figures with built-in TEI XSLs. Use alternate webscraping function if available.
 def processBiosLocal(file="bio-index", post_tag="persname"):
