@@ -29914,6 +29914,7 @@ Comment: --> did kill her: and Likewise Core
 				<!-- <ID>n89</ID> -->
 
 				<div2 id="n89.1" type="section">
+					<date value="1692-06-29" certainty="questionable"></date>
 					<head>(Testimony of <name type="person" key="brawil">William Bradford</name> ,
 							<name type="person" key="brarac">Rachel Bradford</name> , and <name type="person" key="raywil2">William Rayment, Jr.</name> ) </head>
 					<figure n="H38"/>
@@ -39974,6 +39975,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 				<div2 id="n121.1" type="section" org="uniform" sample="complete" part="N">
 					<head>( <name type="person" key="mourob">Robert Moulton</name> v. <name type="person" key="shesus">Susannah Sheldon</name>) </head>
 					<figure n="ecca2128r"/>
+					<date value="1692-06-29" certainty="confirmed"></date>
 					<p>the testimony of <name type="person" key="mourob">Robart Moulton sener</name>
 						who testifith and saith that I waching with <name type="person" key="shesus">Susannah Sheldon</name> sence she was afflicted I heard her say that
 						the witches halled her upone her bely through the yeard like a snacke and
@@ -45529,6 +45531,7 @@ Comment: --> struck at the <orig reg="apparitions">aperistions</orig>
 				<!-- <ID>n138</ID> -->
 
 				<div2 id="n138.1" type="section" org="uniform" sample="complete" part="N">
+					<date value="1692-06-29" certainty="confirmed"></date>
 					<head>( <name type="person" key="hutjos">Joseph Hutchinson</name> v. <name type="person" key="wilabi">Abigail Williams</name> ) </head>
 					<p><figure n="H47"/>The deposition of <name type="person" key="hutjos">Joseph
 							Hutchinson</name> aged 59: year doe testifie as fourth </p>
@@ -52509,7 +52512,8 @@ Comment: -->
                 </div2>
             </div1>
             <div1 id="n171b" type="section" org="uniform" sample="complete" part="N">
-                <head>Laws Passed</head>
+                <date value="1696-01-14"></date>
+				<head>Laws Passed</head>
                 <div2 type="section" id="n171b.1">
                     <head>(Province Laws (Resolves etc.) 1696-7. : Call for Day of Prayer with
                         Fasting)</head>
