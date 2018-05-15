@@ -13,6 +13,7 @@ import uuid
 import os
 import io
 import json
+import re
 from urllib.request import urlopen
 from bs4 import BeautifulSoup, Tag
 
@@ -87,7 +88,7 @@ def figureMD(figure):
     elif figure.startswith("SCJ"):
         thumb = "archives/SCJ/small/"+figureRename(figure)+".jpg"
         large = "archives/SCJ/large/"+figureRename(figure)+".jpg"
-    return'<a href="'+large+'" class="jqueryLightbox">![Figure '+figure+']('+thumb+')</a>\n'
+    return'[![Figure '+figure+']('+thumb+')]('+large+')\n'
 
 def processSWP(file="swp", post_tag="div1"):
     f = open("./cocoon-xml/"+file+".xml","r")
@@ -109,7 +110,6 @@ def processSWP(file="swp", post_tag="div1"):
             if personkey and personkey not in alltags:
                 alltags[personkey] = ' '.join(xmlTextJoin(keyword).split())
     #Otherwise, use first instance of name
-    unknowns = []
     print("Non-LCSH persons:\n================")
     for person in root.xpath("//name[@type='person']"):
         personkey = person.get("key")
@@ -125,7 +125,14 @@ def processSWP(file="swp", post_tag="div1"):
         #print("Processing case: "+case_id)
         dates = case.xpath(".//date")
         date = dates[0].get("value") if len(dates)>0 else "1960-01-01" # use first date found (!) - TODO: No dates in n89!
-        title = case_id[0]+case_id[1:].zfill(3)+": "+xmlTextJoin(case.xpath(".//head")[0])    #assume that title is the contents of the head
+        case_id_list = re.findall(r"[^\W\d_]+|\d+", case_id)
+        for i in range(len(case_id_list)):
+            try:
+                int(case_id_list[i])
+                case_id_list[i] = case_id_list[i].zfill(3)
+            except ValueError:
+                continue
+        title = "".join(case_id_list)+": "+xmlTextJoin(case.xpath(".//head")[0])    #assume that title is the contents of the head
         tags = {x.get("key") for x in case.xpath(".//name[@type='person']")}    #use tag system to index people
         docs = case.xpath(".//div2")
         if len(docs)==0:
@@ -152,20 +159,21 @@ def processSWP(file="swp", post_tag="div1"):
             doc_p4 = open("./output/"+file+"/_docs_p4/"+doc_id+".xml", 'w')
             doc_p4.write(etree.tostring(doc, encoding='unicode',method='xml'))
             doc_p4.close()
-            os.system("./Stylesheets/bin/p4totei ./"+file+"/docs_p4/"+doc_id+".xml ./"+file+"/docs_tei/"+doc_id+".xml")
-            os.system("./Stylesheets/bin/teitomarkdown ./"+file+"/docs_tei/"+doc_id+".xml ./"+file+"/docs_md/"+doc_id+".md")
+            os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_docs_p4/"+doc_id+".xml ./output/"+file+"/_docs_tei/"+doc_id+".xml")
+            os.system("./Stylesheets/bin/teitomarkdown ./output/"+file+"/_docs_tei/"+doc_id+".xml ./output/"+file+"/_docs_md/"+doc_id+".md")
             doc_ids.append(doc_id)
         with open("./output/"+file+"/pelican_md/"+case_id+".md", 'w') as pelican_md:
             pelican_md.write(mdFrontMatter(case_id,file,title,date,tags))
             for doc_id in doc_ids:
                 doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
-                pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
+                pelican_md.write('<div markdown class="doc" id="'+doc_id+'"># Document: '+doc_id+'\n\n')
                 for figure in figures.get(doc_id) or []:
                     pelican_md.write(figureMD(figure))
                 doc_content = doc_md.read()
                 for key in persons:
                     doc_content = doc_content.replace(str(hash(key)), mdPerson(persons[key][0],persons[key][1]))
                 pelican_md.write(doc_content)
+                pelican_md.write('</div>')
                 doc_md.close()
 
 def processSalVRec(file="SalVRec", post_tag="div3"):
@@ -193,11 +201,12 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
         with open("./output/"+file+"/pelican_md/"+doc_id+".md", 'w') as pelican_md:
             pelican_md.write(mdFrontMatter(doc_id,file,title,date,[]))
             doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
-            pelican_md.write("\n\n# Document: "+doc_id+"\n\n")
+            pelican_md.write('<div markdown class="doc" id="'+doc_id+'">\n\n')
             for figure in figures.get(doc_id) or []:
                 pelican_md.write(figureMD(figure))
             doc_content = doc_md.read()
             pelican_md.write(doc_content)
+            pelican_md.write('</div>')
             doc_md.close()
 
 
@@ -205,7 +214,7 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
 def processBiosWeb(file="bio-index", post_tag="persname"):
     makedirs(file, [])
     parser = etree.XMLParser()
-    xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
+    #xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
     root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
     persons = root.xpath("//"+post_tag)
     bios = []
@@ -257,26 +266,23 @@ def processBiosLocal(file="bio-index", post_tag="persname"):
     xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
     root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
     persons = root.xpath("//"+post_tag)
-    with open("./output/bios.html", 'w') as output:
-        for person in persons:
-            if not person.get("mbio"):
-                continue
-            key = person.get("key")
-            residence = person.get("residence")
-            cats = person.get("cats")
-            name = person.text
-            content = "<div1 id='"+key+"' class='person' data-cats='"+cats+"' data-residence='"+residence+"'>"
-            content += etree.tostring(xmls["mbio"].xpath("//div2[@id = '"+person.get("mbio")+"']")[0],encoding="unicode")+"\n\n" if person.get("mbio") is not None else ""
-            content += etree.tostring(xmls["bio"].xpath("//div2[@id = '"+person.get("bio")+"']")[0],encoding="unicode")+"\n\n" if person.get("bio") is not None else ""
-            content += etree.tostring(xmls["pics"].xpath("//div2[@id = '"+person.get("pics")+"']")[0],encoding="unicode")+"\n\n" if person.get("pics") is not None else ""
-            content += etree.tostring(xmls["crt"].xpath("//div2[@id = '"+person.get("crt")+"']")[0],encoding="unicode")+"\n\n" if person.get("crt") is not None else ""
-            content+="</div1>"
-            print(content)
-            p_tei = open("./output/"+file+"/_p4/"+key+".xml", 'w')
-            p_tei.write(content)
-            p_tei.close()
-            os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_p4/"+key+".xml ./output/"+file+"/_tei/"+key+".xml")
-            os.system("./Stylesheets/bin/teitohtml ./output/"+file+"/_tei/"+key+".xml ./output/"+file+"/_html/"+key+".html")
+    for person in persons:
+        if not person.get("mbio"):
+            continue
+        key = person.get("key")
+        residence = person.get("residence")
+        cats = person.get("cats")
+        content = "<div1 id='"+key+"' class='person' data-cats='"+cats+"' data-residence='"+residence+"'>"
+        content += etree.tostring(xmls["mbio"].xpath("//div2[@id = '"+person.get("mbio")+"']")[0],encoding="unicode")+"\n\n" if person.get("mbio") is not None else ""
+        content += etree.tostring(xmls["bio"].xpath("//div2[@id = '"+person.get("bio")+"']")[0],encoding="unicode")+"\n\n" if person.get("bio") is not None else ""
+        content += etree.tostring(xmls["pics"].xpath("//div2[@id = '"+person.get("pics")+"']")[0],encoding="unicode")+"\n\n" if person.get("pics") is not None else ""
+        content += etree.tostring(xmls["crt"].xpath("//div2[@id = '"+person.get("crt")+"']")[0],encoding="unicode")+"\n\n" if person.get("crt") is not None else ""
+        content+="</div1>"
+        p_tei = open("./output/"+file+"/_p4/"+key+".xml", 'w')
+        p_tei.write(content)
+        p_tei.close()
+        os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_p4/"+key+".xml ./output/"+file+"/_tei/"+key+".xml")
+        os.system("./Stylesheets/bin/teitohtml ./output/"+file+"/_tei/"+key+".xml ./output/"+file+"/_html/"+key+".html")
 
 processBiosWeb()
 processSWP()
