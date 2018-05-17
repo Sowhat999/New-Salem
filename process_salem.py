@@ -88,7 +88,7 @@ def figureMD(figure):
     elif figure.startswith("SCJ"):
         thumb = "archives/SCJ/small/"+figureRename(figure)+".jpg"
         large = "archives/SCJ/large/"+figureRename(figure)+".jpg"
-    return'[![Figure '+figure+']('+thumb+')]('+large+')\n'
+    return '\n\n<span markdown class="figure">[![Figure '+figure+']('+thumb+')]('+large+')</span>\n\n'
 
 def processSWP(file="swp", post_tag="div1"):
     f = open("./cocoon-xml/"+file+".xml","r")
@@ -166,14 +166,14 @@ def processSWP(file="swp", post_tag="div1"):
             pelican_md.write(mdFrontMatter(case_id,file,title,date,tags))
             for doc_id in doc_ids:
                 doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
-                pelican_md.write('<div markdown class="doc" id="'+doc_id+'"># Document: '+doc_id+'\n\n')
+                pelican_md.write('\n\n<div markdown class="doc" id="'+doc_id+'">\n\n# Document: '+doc_id+'\n\n')
                 for figure in figures.get(doc_id) or []:
                     pelican_md.write(figureMD(figure))
                 doc_content = doc_md.read()
                 for key in persons:
                     doc_content = doc_content.replace(str(hash(key)), mdPerson(persons[key][0],persons[key][1]))
                 pelican_md.write(doc_content)
-                pelican_md.write('</div>')
+                pelican_md.write('\n\n</div>\n\n')
                 doc_md.close()
 
 def processSalVRec(file="SalVRec", post_tag="div3"):
@@ -284,6 +284,6 @@ def processBiosLocal(file="bio-index", post_tag="persname"):
         os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_p4/"+key+".xml ./output/"+file+"/_tei/"+key+".xml")
         os.system("./Stylesheets/bin/teitohtml ./output/"+file+"/_tei/"+key+".xml ./output/"+file+"/_html/"+key+".html")
 
-processBiosWeb()
+#processBiosWeb()
 processSWP()
-processSalVRec()
+#processSalVRec()
