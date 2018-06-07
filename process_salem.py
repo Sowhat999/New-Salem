@@ -284,6 +284,6 @@ def processBiosLocal(file="bio-index", post_tag="persname"):
         os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_p4/"+key+".xml ./output/"+file+"/_tei/"+key+".xml")
         os.system("./Stylesheets/bin/teitohtml ./output/"+file+"/_tei/"+key+".xml ./output/"+file+"/_html/"+key+".html")
 
-#processBiosWeb()
+processBiosWeb()
 processSWP()
-#processSalVRec()
+processSalVRec()
