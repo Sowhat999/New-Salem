@@ -132,7 +132,8 @@ def processSWP(file="swp", post_tag="div1"):
                 case_id_list[i] = case_id_list[i].zfill(3)
             except ValueError:
                 continue
-        title = "".join(case_id_list)+": "+xmlTextJoin(case.xpath(".//head")[0])    #assume that title is the contents of the head
+        # assume that title is the contents of the head
+        title = "SWP No. "+"".join(case_id_list)[1:]+": "+xmlTextJoin(case.xpath(".//head")[0])
         tags = {x.get("key") for x in case.xpath(".//name[@type='person']")}    #use tag system to index people
         docs = case.xpath(".//div2")
         if len(docs)==0:
@@ -166,7 +167,7 @@ def processSWP(file="swp", post_tag="div1"):
             pelican_md.write(mdFrontMatter(case_id,file,title,date,tags))
             for doc_id in doc_ids:
                 doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
-                pelican_md.write('\n\n<div markdown class="doc" id="'+doc_id+'">\n\n# Document: '+doc_id+'\n\n')
+                pelican_md.write('\n\n<div markdown class="doc" id="'+doc_id+'">\n\n<div class="doc_id">SWP No. '+doc_id[1:]+'</div>\n\n')
                 for figure in figures.get(doc_id) or []:
                     pelican_md.write(figureMD(figure))
                 doc_content = doc_md.read()
@@ -284,6 +285,6 @@ def processBiosLocal(file="bio-index", post_tag="persname"):
         os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_p4/"+key+".xml ./output/"+file+"/_tei/"+key+".xml")
         os.system("./Stylesheets/bin/teitohtml ./output/"+file+"/_tei/"+key+".xml ./output/"+file+"/_html/"+key+".html")
 
-processBiosWeb()
+#processBiosWeb()
 processSWP()
-processSalVRec()
+#processSalVRec()
