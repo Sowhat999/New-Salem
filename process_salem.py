@@ -88,6 +88,9 @@ def figureMD(figure):
     elif figure.startswith("SCJ"):
         thumb = "archives/SCJ/small/"+figureRename(figure)+".jpg"
         large = "archives/SCJ/large/"+figureRename(figure)+".jpg"
+    elif figure.startswith("Uphv"):
+        thumb = "archives/upham/gifs/"+figureRename(figure)+".gif"
+        large = "archives/upham/large/"+figureRename(figure)+".jpg"
     return '\n\n<span markdown class="figure">[![Figure '+figure+']('+thumb+')]('+large+')</span>\n\n'
 
 def processSWP(file="swp", post_tag="div1"):
@@ -285,6 +288,47 @@ def processBiosLocal(file="bio-index", post_tag="persname"):
         os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_p4/"+key+".xml ./output/"+file+"/_tei/"+key+".xml")
         os.system("./Stylesheets/bin/teitohtml ./output/"+file+"/_tei/"+key+".xml ./output/"+file+"/_html/"+key+".html")
 
+
+def processUpham(file="Uph1Wit", post_tag="div1"):
+    makedirs(file, ["tags", "_docs_p4", "_docs_tei", "_docs_md", "pelican_md"])
+    # lxml doesn't like parsing unicode strings if there is an encoding specified
+    parser = etree.XMLParser()
+    xml = etree.parse("./cocoon-xml/"+file+".xml", parser)
+    root = xml.getroot()
+    docs = root.xpath("//"+post_tag)
+    for doc in docs:
+        doc_id = doc.get("id")
+        date = "01/01/1860"
+        # assume that title is the contents of the head
+        title = xmlTextJoin(doc.xpath(".//head")[0])
+        figures = {}
+        for figure in doc.xpath(".//figure"):
+            if doc_id not in figures:
+                figures[doc_id] = []
+            if figure.get("id"):
+                figures[doc_id].append(figure.get("id"))
+            figure.text = str(hash(figure.get("id")))
+        doc_p4 = open("./output/"+file+"/_docs_p4/"+doc_id+".xml", 'w')
+        doc_p4.write(etree.tostring(doc, encoding='unicode', method='xml'))
+        doc_p4.close()
+        os.system("./Stylesheets/bin/p4totei ./output/"+file+"/_docs_p4/" +
+                  doc_id+".xml ./output/"+file+"/_docs_tei/"+doc_id+".xml")
+        os.system("./Stylesheets/bin/teitomarkdown ./output/"+file +
+                  "/_docs_tei/"+doc_id+".xml ./output/"+file+"/_docs_md/"+doc_id+".md")
+
+        with open("./output/"+file+"/pelican_md/"+doc_id+".md", 'w') as pelican_md:
+            pelican_md.write(mdFrontMatter(doc_id, file, title, date, []))
+            doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
+            pelican_md.write('<div markdown class="doc" id="'+doc_id+'">\n\n')
+            doc_content = doc_md.read()
+            for figure in figures.get(doc_id) or []:
+                doc_content = doc_content.replace(str(hash(figure)), figureMD(figure))
+            pelican_md.write(doc_content)
+            pelican_md.write('</div>')
+            doc_md.close()
+
+
 #processBiosWeb()
-processSWP()
+#processSWP()
 #processSalVRec()
+processUpham()
