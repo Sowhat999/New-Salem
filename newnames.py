@@ -8,9 +8,7 @@ name_map = {}
 badnames = []
 ambiguous = []
 nomatch = []
-collisions = []
-
-new_ids = set()
+collisions = {}
 
 alphas = re.compile(r'[^\w ]+', re.UNICODE)
 
@@ -30,14 +28,16 @@ for id in names:
             name_map[id]=startswithid[0]+"."+".".join(nsplit)
         else:
             name_map[id]=startswithid[0]
-        if name_map[id] in new_ids:
-            collisions.append(id)
-        new_ids.add(name_map[id])
-        print(id+" -> "+name_map[id])
+        
+        if name_map[id] not in collisions:
+            collisions[name_map[id]] = [id]
+        else:
+            collisions[name_map[id]].append(id)
     else:
         badnames.append(id)
 
-inv_map = {v: k for k, v in name_map.items()}
+with open("./new_id_map.json", 'w') as output:
+        json.dump(name_map,output)
 
 print("\n\nBad names:")
 for bad in badnames:
@@ -49,5 +49,8 @@ print("\n\nNo match names:")
 for nom in nomatch:
     print(nom+" ("+names[nom]+")")
 print("\n\nCollision names:")
-for col in collisions:
-    print(col+" ("+names[col]+") with: "+inv_map[name_map[col]])
+collision_ids = list(filter(lambda x: len(collisions[x])>1, collisions))
+for col in collision_ids:
+    print(col+":")
+    for c in collisions[col]:
+        print("\t"+c+" ("+names[c]+")")
