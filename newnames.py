@@ -66,23 +66,37 @@ with open("./new_id_map.json", 'w') as output:
 print("\n\nBad names:")
 for bad in badnames:
     print(bad+" ("+names[bad]+")")
+
 print("\n\nAmbiguous names:")
 for amb in ambiguous:
     print(amb+" ("+names[amb]+")")
+
 print("\n\nNo match ID1 names:")
 for nom in nomatch:
     print(nom+" ("+names[nom]+")")
+
 print("\n\nNo match ID2 names:")
 for nom in nomatch2:
     print(nom+" ("+names[nom]+")")
+
 print("\n\nDuplicate names:")
+duplicate_ids = []
 for dup in duplicates:
     print(dup+":")
     for d in duplicates[dup]:
         print("\t"+d+" ("+names[d]+")")
+        duplicate_ids.append(d)
+
 print("\n\nCollision names:")
 collision_ids = list(filter(lambda x: len(collisions[x])>1, collisions))
 for col in collision_ids:
+    matched_in_duplicates = False
+    for c in collisions[col]:
+        if c in duplicate_ids:
+            matched_in_duplicates = True
+            break
+    if matched_in_duplicates:
+        continue
     print(col+":")
     for c in collisions[col]:
         print("\t"+c+" ("+names[c]+")")
