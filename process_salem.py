@@ -344,12 +344,9 @@ def processUpham(file="Uph1Wit", post_tag="div1"):
             doc_md.close()
 
 
-updateSWPIDs(file="swp", out="swp_new_id")
+#updateSWPIDs(file="swp", out="swp_new_id")
 processSWP(file="swp_new_id")
+
 #processBiosWeb()
-<<<<<<< HEAD
-processSWP()
-=======
->>>>>>> 40abca2d73dd859867ff5de3e77ef959f2ab1637
 #processSalVRec()
 #processUpham()
