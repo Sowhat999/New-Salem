@@ -123,6 +123,7 @@ def processSWP(file="swp", post_tag="div1"):
         json.dump(alltags, tag_list, sort_keys=True)
     cases = root.xpath("//"+post_tag)
     print("Unknown key persons:\n================")
+
     for case in cases:
         case_id = case.get("id")
         #print("Processing case: "+case_id)
@@ -149,6 +150,7 @@ def processSWP(file="swp", post_tag="div1"):
             for person in doc.xpath(".//name[@type='person']"):
                 if person.get("key") == "unknown":
                     print(' '.join(xmlTextJoin(person).split()) + " ("+doc_id+")")
+            continue
             for figure in doc.xpath(".//figure"):
                 if doc_id not in figures: figures[doc_id] = []
                 if figure.get("n"): figures[doc_id].append(figure.get("n"))
@@ -329,6 +331,6 @@ def processUpham(file="Uph1Wit", post_tag="div1"):
 
 
 #processBiosWeb()
-#processSWP()
+processSWP()
 #processSalVRec()
-processUpham()
+#processUpham()
