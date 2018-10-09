@@ -94,30 +94,17 @@ def figureMD(figure):
     return '\n\n<span markdown class="figure">[![Figure '+figure+']('+thumb+')]('+large+')</span>\n\n'
 
 
-
-def updateSWPIDs(file="swp", out="swp_new_id"):
-    tei = open("./cocoon-xml/"+file+".xml","r").read()
-    new_ids = json.load(open("./new_id_map.json", 'r'))
-    count = 1
-    for id in new_ids:
-        print("Processing ("+str(count)+"/"+str(len(new_ids))+") " + id + " -> "+new_ids[id])
-        regex = re.compile(r'<name type=\"person\" key=\"'+id+r'\"',re.IGNORECASE)
-        tei=regex.sub('<name type="person" key="'+new_ids[id]+'"', tei)
-        count+=1
-    
-    open("./cocoon-xml/"+out+".xml","w").write(tei)
-
-def processSWP(file="swp_new_id", post_tag="div1"):
-    f = open("./cocoon-xml/"+file+".xml","r")
+def processSWPTags(file="swp_new_id", post_tag="div1"):    
+    f = open("./cocoon-xml/"+file+".xml", "r")
     tei = f.read()
     f.close()
-    makedirs(file, ["tags","_docs_p4","_docs_tei","pelican_md","_docs_md"])
-    tei = tei.replace("http://text.lib.virginia.edu/charent/","./")
+    makedirs(file, ["tags"])
+    tei = tei.replace("http://text.lib.virginia.edu/charent/", "./")
     # Replace remote entity references with local
-    tei = tei.replace('encoding="UTF-8"','')
+    tei = tei.replace('encoding="UTF-8"', '')
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
-    xml = etree.parse(io.StringIO(tei),parser)
+    xml = etree.parse(io.StringIO(tei), parser)
     root = xml.getroot()
     alltags = {}
     # Use LCSH keywords list as definitive name, if the entry exists
@@ -135,8 +122,22 @@ def processSWP(file="swp_new_id", post_tag="div1"):
             print(personkey+": "+alltags[personkey])
     with open("./output/"+file+"/tags/tags.json", 'w') as tag_list:
         json.dump(alltags, tag_list, sort_keys=True)
+
+
+def processSWP(file="swp_new_id", post_tag="div1"):
+    processSWPTags(file=file)
+    f = open("./cocoon-xml/"+file+".xml","r")
+    tei = f.read()
+    f.close()
+    makedirs(file, ["_docs_p4","_docs_tei","pelican_md","_docs_md"])
+    tei = tei.replace("http://text.lib.virginia.edu/charent/","./")
+    # Replace remote entity references with local
+    tei = tei.replace('encoding="UTF-8"','')
+    # lxml doesn't like parsing unicode strings if there is an encoding specified
+    parser = etree.XMLParser()
+    xml = etree.parse(io.StringIO(tei),parser)
+    root = xml.getroot()
     cases = root.xpath("//"+post_tag)
-    print("Unknown key persons:\n================")
 
     for case in cases:
         case_id = case.get("id")
@@ -164,7 +165,6 @@ def processSWP(file="swp_new_id", post_tag="div1"):
             for person in doc.xpath(".//name[@type='person']"):
                 if person.get("key") == "unknown":
                     print(' '.join(xmlTextJoin(person).split()) + " ("+doc_id+")")
-            continue
             for figure in doc.xpath(".//figure"):
                 if doc_id not in figures: figures[doc_id] = []
                 if figure.get("n"): figures[doc_id].append(figure.get("n"))
@@ -197,7 +197,7 @@ def processSWP(file="swp_new_id", post_tag="div1"):
                 doc_md.close()
 
 def processSalVRec(file="SalVRec", post_tag="div3"):
-    makedirs(file, ["tags","_docs_p4","_docs_tei","_docs_md","pelican_md"])
+    makedirs(file, ["_docs_p4","_docs_tei","_docs_md","pelican_md"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
     xml = etree.parse("./cocoon-xml/"+file+".xml",parser)
@@ -280,7 +280,7 @@ def processBiosWeb(file="bio-index", post_tag="persname"):
 
 # Bad. Produces output, but badly mauls figures with built-in TEI XSLs. Use alternate webscraping function if available.
 def processBiosLocal(file="bio-index", post_tag="persname"):
-    makedirs(file, ["tags","_tei","_html"])
+    makedirs(file, ["_tei","_html"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
     xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
@@ -306,7 +306,7 @@ def processBiosLocal(file="bio-index", post_tag="persname"):
 
 
 def processUpham(file="Uph1Wit", post_tag="div1"):
-    makedirs(file, ["tags", "_docs_p4", "_docs_tei", "_docs_md", "pelican_md"])
+    makedirs(file, ["_docs_p4", "_docs_tei", "_docs_md", "pelican_md"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
     xml = etree.parse("./cocoon-xml/"+file+".xml", parser)
@@ -342,11 +342,3 @@ def processUpham(file="Uph1Wit", post_tag="div1"):
             pelican_md.write(doc_content)
             pelican_md.write('</div>')
             doc_md.close()
-
-
-#updateSWPIDs(file="swp", out="swp_new_id")
-processSWP(file="swp_new_id")
-
-#processBiosWeb()
-#processSalVRec()
-#processUpham()
