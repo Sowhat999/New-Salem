@@ -93,7 +93,21 @@ def figureMD(figure):
         large = "archives/upham/large/"+figureRename(figure)+".jpg"
     return '\n\n<span markdown class="figure">[![Figure '+figure+']('+thumb+')]('+large+')</span>\n\n'
 
-def processSWP(file="swp", post_tag="div1"):
+
+
+def updateSWPIDs(file="swp", out="swp_new_id"):
+    tei = open("./cocoon-xml/"+file+".xml","r").read()
+    new_ids = json.load(open("./new_id_map.json", 'r'))
+    count = 1
+    for id in new_ids:
+        print("Processing ("+str(count)+"/"+str(len(new_ids))+") " + id + " -> "+new_ids[id])
+        regex = re.compile(r'<name type=\"person\" key=\"'+id+r'\"',re.IGNORECASE)
+        tei=regex.sub('<name type="person" key="'+new_ids[id]+'"', tei)
+        count+=1
+    
+    open("./cocoon-xml/"+out+".xml","w").write(tei)
+
+def processSWP(file="swp_new_id", post_tag="div1"):
     f = open("./cocoon-xml/"+file+".xml","r")
     tei = f.read()
     f.close()
@@ -330,7 +344,12 @@ def processUpham(file="Uph1Wit", post_tag="div1"):
             doc_md.close()
 
 
+updateSWPIDs(file="swp", out="swp_new_id")
+processSWP(file="swp_new_id")
 #processBiosWeb()
+<<<<<<< HEAD
 processSWP()
+=======
+>>>>>>> 40abca2d73dd859867ff5de3e77ef959f2ab1637
 #processSalVRec()
 #processUpham()

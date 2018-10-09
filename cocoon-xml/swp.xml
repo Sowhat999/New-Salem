@@ -3685,7 +3685,7 @@
 					<term id="easeli1">Elizabath Eastman Sr.</term>
 					<term id="easeli2">Elizabeth Eastman Jr/</term>
 					<term id="easjoh">John Eastman</term>
-					<term id="easmar1">Sarah Eastman</term>
+					<term id="easmar1">Mary Eastman</term>
 					<term id="easnat">Nathaniel Eastman</term>
 					<term id="easrog">Roger Eastman</term>
 					<term id="eassam">Samuel Eastman</term>
@@ -3821,8 +3821,6 @@
 					<term id="galamb">Ambrose Gale</term>
 					<term id="galben">Benjamin Gale</term>
 					<term id="galedm">Edmond Gale</term>
-					<term id="galedw">Edmond Gale</term>
-					<term id="galedw7">Edward Gale</term>
 					<term id="galgoo">Goody Gale</term>
 					<term id="gartho">Thomas Gardner Jr.</term>
 					<term id="gasedw">Edward Gaskell</term>
@@ -3989,11 +3987,9 @@
 					<term id="howjam1">James How Sr.</term>
 					<term id="howjam2">James How</term>
 					<term id="howjoh">John How</term>
-					<term id="howjoh2">John How</term>
 					<term id="howmar">Mary How</term>
 					<term id="howmar1">Martha How</term>
 					<term id="howsar">Sarah How</term>
-					<term id="howjoh7">John Howard</term>
 					<term id="howjoh1">John Howard</term>
 					<term id="hownat">Nathaniel Howard</term>
 					<term id="hubeli">Elizabeth Hubbard</term>
@@ -4216,7 +4212,6 @@
 					<term id="nurben">Benjamin Nurse</term>
 					<term id="nurfra">Francis Nurse</term>
 					<term id="nurjoh">John Nurse</term>
-					<term id="nurreb">Rebecca Nurse</term>
 					<term id="nursam1">Samuel Nurse Sr.</term>
 					<term id="nursam2">Samuel Nurse Jr.</term>
 					<term id="nursar">Sarah Nurse</term>
@@ -4559,7 +4554,6 @@
 					<term id="thamrs">Mrs. Thatcher</term>
 					<term id="thasam">Samuel Thatcher</term>
 					<term id="thoeli">Elias Thomas</term>
-					<term id="thoeli7">Elizabeth Thomas</term>
 					<term id="thoeli1">Elizabeth Thomas</term>
 					<term id="thojam">James Thomson</term>
 					<term id="thojam7">James Thornboro</term>
@@ -4634,8 +4628,6 @@
 					<term id="wareli7">Elizabeth Warren</term>
 					<term id="warjoh">John Warner</term>
 					<term id="warmar">Mary Warren</term>
-
-					<term id="wrimar">Mercy Wardwell</term>
 					<term id="warmer">Mercy Wardwell</term>
 					<term id="warsam">Samuel Wardwell</term>
 					<term id="warsam2">Samuel Wardwell Jr.</term>
@@ -8758,7 +8750,7 @@
 									<name type="person" key="seveph">Ephraim Severans</name>
 								</cell>
 								<cell>
-									<name type="person" key="humat">Matthew Hubbard</name> his wyfe</cell>
+									<name type="person" key="hubmat">Matthew Hubbard</name> his wyfe</cell>
 							</row>
 							<row>
 								<cell>
@@ -10650,7 +10642,7 @@
 					</name> testifyed about the Gun &amp; <lb/> the Mallossoes<lb/> He denyed
 						that about the Mallossoes<lb/> About the Gun he said he took it before
 						the<lb/> lock &amp; rested it upon his breast<lb/>
-						<name type="person" key="brojoh1">John Brown</name>
+						<name type="person" key="brojoh">John Brown</name>
 						<hi rend="overstrike">test</hi> testifyed about a bll Cyder<lb/> He denyed
 						that his family was affrighted by a<lb/> white calf in his house.<lb/>
 						<name type="person" key="putjoh1">
@@ -32856,7 +32848,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 					</p>
 				</div2>
 				<div2 id="n94.19" type="section">
-					<head>( Deposition of <name type="person" key="parsam">Samuel Parris</name> , <name type="person" key="inghan">Nathaniel Ingersoll</name> , &amp; <name type="person" key="puttho">Thomas Putnam</name> v. <name type="person" key="urreb">Rebecca Nurse</name> ) </head>
+					<head>( Deposition of <name type="person" key="parsam">Samuel Parris</name> , <name type="person" key="inghan">Nathaniel Ingersoll</name> , &amp; <name type="person" key="puttho">Thomas Putnam</name> v. <name type="person" key="nurreb">Rebecca Nurse</name> ) </head>
 					<figure n="ecca1079r"/>
 					<figure n="ecca1079v"/>
 					<p>[+ <date value="1692-06-29" certainty="confirmed">June 29, 1692</date>]</p>
@@ -37053,7 +37045,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 					<p>
 						<name type="person" key="cogwil1">*William Cogswell se&nbar;</name>
 					</p>
-					<p>* <name type="person" key="cogjoh">Jonathan Cogswell</name>
+					<p>* <name type="person" key="cogjon">Jonathan Cogswell</name>
 					</p>
 					<p>
 						<name type="person" key="cogjoh2">*John Cogswell Jr; </name>
@@ -47204,7 +47196,7 @@ Comment: -->
                     <p>these are to certifie such Honor'd gentel men as may bee Concerned, that in
                         the persuance of the within written the Inhabytance of our Towne beeing
                         Asembled togeather on the 2'nd of this instant have made choice of <name type="person" key="lovjoh">John Louit se[n]'r</name> and <name type="person" key="cuerob">Roberd Cue</name> for the grand Jury and
-                            <name type="person" key="morsam">Samuel Morgan</name> and <name type="person" key="galedw">Edmong Gale </name> for the Jury of Tryals to
+                            <name type="person" key="morsam">Samuel Morgan</name> and <name type="person" key="galedm">Edmong Gale </name> for the Jury of Tryals to
                         attend the service of the court within named -- </p>
                     <p>p'r <name type="person" key="conjoh1">*John Conant</name>
                     </p>
@@ -48869,7 +48861,7 @@ Comment: -->
                         <name type="person" key="abbjoh">John Abby</name>
                     </p>
                     <p>
-                        <name type="person" key="galedw">Edmund Gale</name>
+                        <name type="person" key="galedm">Edmund Gale</name>
                     </p>
                     <p>
                         <name type="person" key="stoset">Seth Storey</name>
@@ -50946,7 +50938,7 @@ Comment: -->
                                 <cell role="data" rows="1" cols="1">00- 01- 6 </cell>
                             </row>
                             <row role="data">
-                                <cell role="data" rows="1" cols="1">to <name type="person" key="howjoh7">John houard</name> 1 pare of fetters </cell>
+                                <cell role="data" rows="1" cols="1">to <name type="person" key="howjoh1">John houard</name> 1 pare of fetters </cell>
                                 <cell role="data" rows="1" cols="1">00- 05- 0 </cell>
                             </row>
                             <row role="data">
@@ -56381,7 +56373,7 @@ Comment: -->
                         <name type="person" key="wrijoh">John Wright</name>
                     </p>
                     <p>
-                        <name type="person" key="barebi">Ebenezer Barker</name>
+                        <name type="person" key="barebe">Ebenezer Barker</name>
                     </p>
                     <p>
                         <name type="person" key="johfra">Francis Johnson</name> on behalf of his
@@ -57596,7 +57588,7 @@ Comment: -->
                             </row>
                             <row role="data">
                                 <cell role="data" rows="1" cols="1">Burrough and <name type="person" key="fowreb">Rebekah Fowle</name>
-                                    <name type="person" key="foxhan">Hanah Fox</name> &amp; <name type="person" key="thoeli7">Elizabeth Thomas</name> 4-2-0
+                                    <name type="person" key="foxhan">Hanah Fox</name> &amp; <name type="person" key="thoeli1">Elizabeth Thomas</name> 4-2-0
                                     each of us </cell>
                                 <cell role="data" rows="1" cols="1">20-10- 0 </cell>
                             </row>
@@ -57703,7 +57695,7 @@ Comment: -->
                     </p>
                     <p>Rec'd for Benj. Nurse fifty four shillings &amp; 6 d May 12, 1712. <name type="person" key="nursam">*Samuel nurs</name>
                     </p>
-                    <p>Rec'd for myself the subscriber &amp; for my Bro'r in Law <name type="person" key="thopet">Peter Thomas</name> in right of <name type="person" key="thoeli7">Elizabeth</name> his wife &amp; my sister <name type="person" key="foxhan">Hanah fox</name> wife of <name type="person" key="foxjab">mr Jabez fox</name> &amp; <name type="person" key="fowreb">Rebecca fowles</name> four pounds Ten shillings. </p>
+                    <p>Rec'd for myself the subscriber &amp; for my Bro'r in Law <name type="person" key="thopet">Peter Thomas</name> in right of <name type="person" key="thoeli1">Elizabeth</name> his wife &amp; my sister <name type="person" key="foxhan">Hanah fox</name> wife of <name type="person" key="foxjab">mr Jabez fox</name> &amp; <name type="person" key="fowreb">Rebecca fowles</name> four pounds Ten shillings. </p>
                     <p>
                         <name type="person" key="burgeo">*George burroughs</name>
                     </p>
@@ -57836,7 +57828,7 @@ Comment: -->
                     <p> ] <name type="person" key="howmar1">Martha How</name> ] </p>
 
                     <p> ] &amp; <name type="person" key="howsar">Sarah How</name> ] </p>
-                    <p>being the children of her only son <name type="person" key="howjoh2">John
+                    <p>being the children of her only son <name type="person" key="howjoh">John
                             How</name> Decd. </p>
                     <pb n="1039"/>
                     <p> </p>
@@ -58136,7 +58128,7 @@ Comment: -->
                     <closer>
                         <signed>The <seg part="N">
                                 <figure entity="BS31041a"/>
-                            </seg> mark of <name type="person" key="thoeli7">Eliz. Thomas</name>
+                            </seg> mark of <name type="person" key="thoeli1">Eliz. Thomas</name>
                         </signed>
                         <seg part="N">
                             <name type="person" key="burjer">*Jeremi Burrough</name>
