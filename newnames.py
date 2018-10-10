@@ -120,4 +120,4 @@ def update_swp_ids(file="swp", out="swp_new_id"):
     open("./cocoon-xml/"+out+".xml", "w").write(tei)
 
 generate_new_ids()
-#update_swp_ids()
+update_swp_ids()
