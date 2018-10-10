@@ -183,7 +183,7 @@ def processSWP(file="swp_new_id", post_tag="div1"):
             os.system("./Stylesheets/bin/teitomarkdown ./output/"+file+"/_docs_tei/"+doc_id+".xml ./output/"+file+"/_docs_md/"+doc_id+".md")
             doc_ids.append(doc_id)
         with open("./output/"+file+"/pelican_md/"+case_id+".md", 'w') as pelican_md:
-            pelican_md.write(mdFrontMatter(case_id,file,title,date,tags))
+            pelican_md.write(mdFrontMatter(case_id,"swp",title,date,tags))
             for doc_id in doc_ids:
                 doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
                 pelican_md.write('\n\n<div markdown class="doc" id="'+doc_id+'">\n\n<div class="doc_id">SWP No. '+doc_id[1:]+'</div>\n\n')

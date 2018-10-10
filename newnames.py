@@ -15,7 +15,7 @@ def generate_new_ids():
     nomatch2 = []
     duplicates = collections.defaultdict(list)
     collisions = collections.defaultdict(list)
-
+    
     alphas = re.compile(r'[^\w ]+', re.UNICODE)
 
     for dupe_name in [name for name, count in collections.Counter([alphas.sub('',n.lower()) for n in names.values()]).items() if count > 1]:
@@ -56,7 +56,7 @@ def generate_new_ids():
                     # or sometimes there's no secondary ID. Add it to the list, but make a note of it.
                     new_id.extend(nsplit)
                     nomatch2.append(id)
-            name_map[id]=".".join(new_id)
+            name_map[id]="_".join(new_id)
             collisions[name_map[id]].append(id)
 
         else:
