@@ -3490,10 +3490,9 @@
 					<term id="burroughs_mary">Mary Burroughs</term>
 					<term id="burroughs_s">S Burroughs</term>
 					<term id="burt_mary">Mary Burt</term>
-					<term id="busse_john">John Busse</term>
 					<term id="buss_elizabeth">Elizabeth Buss</term>
 					<term id="buss_elizabeth_jr">Elizabeth Buss Jr.</term>
-					<term id="buss_john">John Buss</term>
+					<term id="busse_john_rev">Rev. John Busse</term>
 					<term id="buswell_isaac">Isaac Buswell</term>
 					<term id="buswell_sarah">Sarah Buswell</term>
 					<term id="buswell_william">William Buswell</term>
@@ -3597,7 +3596,6 @@
 					<term id="cook_isaac">Isaac Cook</term>
 					<term id="cook_john">John Cook</term>
 					<term id="coolidge_nathaniel">Nathaniel Coolidge</term>
-					<term id="core_elizabeth">Elizabeth Core </term>
 					<term id="corey_elizabeth">Elizabeth Corey</term>
 					<term id="corey_giles">Giles Corey</term>
 					<term id="corey_martha">Martha Corey</term>
@@ -4676,7 +4674,6 @@
 					<term id="wilds_john">John Wilds</term>
 					<term id="wilkins_john">John Wilkins</term>
 					<term id="willard_john">John Willard</term>
-
 					<term id="wilson_joseph">Joseph Wilson</term>
 					<term id="willington_benjamin">Benjamin Willington</term>
 					<term id="wilkins_lydia">Lydia Wilkins</term>
@@ -4688,7 +4685,6 @@
 					<term id="wilkins_samuel">Samuel Wilkins</term>
 					<term id="wilds_sarah">Sarah Wilds</term>
 					<term id="wilson_jno">Jno. Wilson</term>
-					<term id="wilson_sarah_sr">Sarah Wilson Sr.</term>
 					<term id="wilson_sarah_sr">Sarah Wilson Sr.</term>
 					<term id="wilson_sarah_jr">Sarah Wilson Jr.</term>
 					<term id="willard_simon">Simon Willard</term>
@@ -4724,7 +4720,6 @@
 					<term id="varney_thomas">Thomas Varney</term>
 					<term id="nurse_rebecca">Rebecca Nurse</term>
 					<term id="gidneys_widow">Widow Gidneys</term>
-					<term id="burse_mr">Mr. Burse</term>
 				</keywords>
 			</textClass>
 		</profileDesc>
@@ -5147,7 +5142,7 @@
 					<p>[<date value="1692-04-22" certainty="confirmed">April 22, 1692 </date>]</p>
 
 					<p>The examination of <name type="person" key="abbott_nehemiah_jr">Nehemiah Abbot</name> ,
-						at a court at Salem village, <lb/> by <name type="person" key="hawthorne_john">John
+						at a court at Salem village, <lb/> by <name type="person" key="hathorn_john">John
 							Hawthorne</name> and <name type="person" key="corwil_jonathan">Jonathan
 							Corwin</name> Esqrs. <date value="1692-04-22" certainty="confirmed">22nd
 							April 1692 </date>. </p>
@@ -5199,7 +5194,7 @@
 						him. </p>
 					<closer>
 						<signed>
-							<name type="person" key="hawthorne_john">John Hawthorne</name> , <lb/>
+							<name type="person" key="hathorn_john">John Hawthorne</name> , <lb/>
 							<name type="person" key="corwil_jonathan">Jona. Corwin</name> , &lcub; <lb/>
 							Assistants. </signed>
 						<seg>
@@ -5232,7 +5227,7 @@
 
 						<p>[<date value="1692-05-31" certainty="confirmed">May 31, 1692 </date>]</p>
 						<p>To the Constable of Salem </p>
-						<p>Essex Ss Whereas Complaint hath been made unto us <name type="person" key="hawthorne_john">John Hathorne </name>
+						<p>Essex Ss Whereas Complaint hath been made unto us <name type="person" key="hathorn_john">John Hathorne </name>
 						&amp; <name type="person" key="corwil_jonathan">Jonathan Corwin</name> Esq'rs by
 						severall persons of Salem <orig reg="Village">Village </orig> that
 						Cap't <name type="person" key="alden_john">John Alden</name> of Boston Marrin'r
@@ -5248,7 +5243,7 @@
 						And in the fourth year of the Reigne of our <lb/> Sovereigne Lord and Lady
 						William &amp; Mary now King and Queen <lb/> over England &amp;c </p>
 					<closer>
-						<signed> &Pbar; us <name type="person" key="hawthorne_john">* John Hathorne</name>
+						<signed> &Pbar; us <name type="person" key="hathorn_john">* John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">* Jonathan. Corwin</name> &lcub; <lb/>
 						Assis'ts </signed>
@@ -5323,7 +5318,7 @@
 						Witches; <lb/> and being sent by <name type="person" key="stoughton_william">Mr.
 							Stoughton</name> , arrived there the <date value="1692-05-31" certainty="confirmed">31st of May</date>, <lb/> and appeared at
 						Salem-Village, before <name type="person" key="gidney_bartholomew">Mr. Gidney</name> ,
-							<name type="person" key="hawthorne_john">Mr. Hathorn,</name>
+							<name type="person" key="hathorn_john">Mr. Hathorn,</name>
 						<lb/> and <name type="person" key="corwil_jonathan">Mr. Curwin.</name>
 					</p>
 					<p>Those Wenches being present, who plaid their jugling tricks, <lb/> falling
@@ -5398,7 +5393,7 @@
 					<p>Whereas Captain John <name type="person" key="alden_john">Aldin</name> of Boston,
 						Marriner, and <name type="person" key="rice_sarah">Sarah Rice</name> , <lb/>
 						Wife of <name type="person" key="rice_nicholas">Nicholas Rice</name> of Reding,
-						Husbandman, have been this day <lb/> brought before us, <name type="person" key="hawthorne_john">John Hathorn</name> and <name type="person" key="corwil_jonathan">Jonathan Curwin</name> , Esquires; <lb/>
+						Husbandman, have been this day <lb/> brought before us, <name type="person" key="hathorn_john">John Hathorn</name> and <name type="person" key="corwil_jonathan">Jonathan Curwin</name> , Esquires; <lb/>
 						<pb n="54"/> being accused and suspected of perpetrating divers acts of
 						Witchcraft, <lb/> contrary to the form of the Statute, in that Case made and
 						provided: <lb/> These are therefore in Their Majesties, King William and
@@ -5415,7 +5410,7 @@
 					</p>
 					<closer>
 						<signed>
-							<name type="person" key="hawthorne_john">John Hathorn</name> , <lb/>
+							<name type="person" key="hathorn_john">John Hathorn</name> , <lb/>
 							<name type="person" key="corwil_jonathan">Jonathan Curwin</name> , &lcub; <lb/>
 							<hi rend="italics">Assistants </hi>. </signed>
 						<seg>To Boston <name type="person" key="alden_john">Aldin</name> was carried by
@@ -5567,7 +5562,7 @@
 					<p>
 						<date value="1692-08-29" certainty="confirmed">29 August 1692. </date>
 						Before <name type="person" key="gidney_bartholomew">Maj'r Gidney</name>
-						<name type="person" key="hawthorne_john">Mr. Hauthorn</name> and <name type="person" key="corwil_jonathan">Mr. <orig reg="Corwin">Corwin </orig></name> </p>
+						<name type="person" key="hathorn_john">Mr. Hauthorn</name> and <name type="person" key="corwil_jonathan">Mr. <orig reg="Corwin">Corwin </orig></name> </p>
 					<p> The Examination and confession of <name type="person" key="barker_mary">Mary
 						Barker</name> of Andover </p>
 
@@ -5643,7 +5638,7 @@
 
 						<date value="1692-08-29" certainty="confirmed">29'th August 1692 </date>
 						Before <name type="person" key="gidney_bartholomew">Maj'r Gidney</name>
-						<name type="person" key="hawthorne_john">M'r Hathorne</name>
+						<name type="person" key="hathorn_john">M'r Hathorne</name>
 						<name type="person" key="corwil_jonathan">M'r <orig reg="Corwin">Corwin
 						</orig></name> <lb/> The Examination And Confession of <name type="person" key="barker_mary">Mary Barker</name> of <orig reg="Andivor">Andivor
 							</orig> <lb/> afte Several Questions Propounded &amp; Neagative ans'rs <lb/>
@@ -5865,7 +5860,7 @@
 						<lb/> Coram <lb/>
 						<name type="person" key="gidney_bartholomew">Mag'r Gidney</name>
 						<lb/>
-						<name type="person" key="hawthorne_john">m'r hathorn</name>
+						<name type="person" key="hathorn_john">m'r hathorn</name>
 						<lb/>
 						<name type="person" key="corwil_jonathan">m'r Corwin</name>
 						<lb/>
@@ -5898,16 +5893,16 @@
 						that all persones should be equall; that their should be no <lb/> day of
 						resurection or of judgement, and neither punishment nor <lb/> shame for sin.
 						-- He sayth there was a Sacrament at that meeting, <lb/> theire was also
-						bread &amp; wyne m'r <name type="person" key="burse_mr">Burse</name>
+						bread &amp; wyne m'r <name type="person" key="busse_john_rev">Burse</name>
 						was a ringleader in that <orig reg="meeting">meet- <lb/> ing </orig> and
 						named several persones that were there at the meeting, It was <lb/> proposed
 						at the meeting to make as many witches as they could, <lb/> And they were
-						all by m'r <name type="person" key="burse_mr">Burse</name> and the black man
+						all by m'r <name type="person" key="busse_john_rev">Burse</name> and the black man
 						exhorted to pull <lb/> down the Kingdome of christ and set up the Kingdome
 						of the devil, <lb/> He said he knew <name type="person" key="burroughs_george">mr
 							Burroughs</name> and <name type="person" key="how_elizabeth">Goody How</name>
 						to be such persones, <lb/> And that he heard a trumpet sounded at the
-						meeting and thinks it <lb/> was <name type="person" key="burse_mr">Burse</name>
+						meeting and thinks it <lb/> was <name type="person" key="busse_john_rev">Burse</name>
 						that did it, The sound is heard many myles off, And then <lb/> they all come
 						one efter another -- In the spring of the yeare the <orig reg="witches">wit-
 							<lb/> ches </orig> came from Connecticut to afflict at Salem Village but
@@ -5933,7 +5928,7 @@
 						<seg>(In left margin) he owned this is the Court of Oyre &amp; Terminer as
 							<lb/> on the back Side </seg>
 						<seg>(Reverse) Wm Barkers Exa. <lb/> acused. <lb/>
-							<name type="person" key="burse_mr"> mr Buse</name> <lb/> <name type="person" key="burroughs_george">mr
+							<name type="person" key="busse_john_rev"> mr Buse</name> <lb/> <name type="person" key="burroughs_george">mr
 								Buroughs</name> <lb/> <name type="person" key="how_elizabeth">Goody How</name> <lb/>
 							Coneticut witches <lb/> &amp; Severall others <lb/>
 							aflicted <lb/> <name type="person" key="sprague_martha">martha Sprage</name> <lb/> <name type="person" key="foster_rose">Rose foster</name> <lb/> <name type="person" key="martin_abigail">Abigall martin</name> <lb/>
@@ -5961,7 +5956,7 @@
 						<name type="person" key="barker_william_sr">Wm Barker Sen'r</name> of Andivers
 						Examination <lb/> </p>
 					<p>Confession <lb/> Before <name type="person" key="gidney_bartholomew">Maj'r Gidney</name>
-						<name type="person" key="hawthorne_john">M'r Hathorne</name>
+						<name type="person" key="hathorn_john">M'r Hathorne</name>
 						<name type="person" key="corwil_jonathan">M'r Corwine</name>
 						<name type="person" key="higginson_john">Jn'o Higginson</name> Esq'rs <lb/> He
 						Confesses he has been in the Snare of the <corr sic="Devil">Divel</corr>
@@ -5993,7 +5988,7 @@
 						<lb/> Burse<del rend="overstrike">ughs</del> was a Ring Leader in that Metting &amp; Named Several p'rsons
 						<lb/> that ware there at the Metting It was proposed at the Metting to <lb/>
 						<pb n="68"/> Make as Many witches as they Could &amp; they were al by
-						<name type="person" key="burse_mr">M'r Burse</name><del rend="overstrike">ughs</del>
+						<name type="person" key="busse_john_rev">M'r Burse</name><del rend="overstrike">ughs</del>
 						<lb/> &amp; the black Man Exhorted to pull dwone ye Kingdome of of Christ <lb/>
 						&amp; Sett Up the Kingdome of the <orig reg="Devil">Divel</orig>, He S'd he
 						knew <name type="person" key="burroughs_george">M'r Burooughs</name>
@@ -6178,7 +6173,7 @@
 
 					<p>2nd Paper </p>
 					<p><date value="1692-09-12" certainty="confirmed">Sep't 92</date> <lb/> Before <name type="person" key="gidney_bartholomew">Maj'r Gidney</name>
-						<name type="person" key="hawthorne_john">m'r Hawthorn</name>
+						<name type="person" key="hathorn_john">m'r Hawthorn</name>
 						<name type="person" key="corwil_jonathan">m'r Corwin</name> &amp; <name type="person" key="higginson_john">Cap't <lb/> Higginsone</name>.
 					</p>
 					<p>The Examination and confession of <name type="person" key="barker_william_jr">W'm
@@ -6265,7 +6260,7 @@
 					<p><date value="1692-09-01" certainty="confirmed">1 Sep'r 92 </date> Before
 
 						<name type="person" key="gidney_bartholomew">Maj'r Gidney</name>
-						<name type="person" key="hawthorne_john">M'r Hathorne</name>
+						<name type="person" key="hathorn_john">M'r Hathorne</name>
 						<name type="person" key="corwil_jonathan">M'r Corwin</name>
 						<name type="person" key="higginson_john">Jn'o <orig reg="Higginson">Higginson
 						</orig></name> Esq'r </p>
@@ -6594,14 +6589,14 @@
 					<figure n="ecca2120v"/>
 					<p>[++ <date value="1692-06-29">June 29, 1692</date>]</p>
 					<p>The Testimony of <name type="person" key="fowler_joseph">Joseph fowler</name>, who
-						Testifieth that <name type="person" key="bibber_goodman">Goodman Bibber</name> <lb/>
+						Testifieth that <name type="person" key="bibber_john">Goodman Bibber</name> <lb/>
 						&amp; his wife, Lived at my house, and I did observe and take <lb/> notice,
 						that <name type="person" key="bibber_sara">Goodwife Bibber</name> was a woman,
 						who was very idle in <lb/> her calling And very much given to tatling &amp;
 						tale Bareing makeing <lb/> mischeif amongst her neighbo'rs, &amp; very much
 						given to speak bad <lb/> words and would call her husband bad names &amp;
 						was a woman of a <lb/> very turbulent unruly spirit </p>
-					<p>(Reverse) Against <name type="person" key="bibber_goodman">Bibber</name> &amp; <name type="person" key="bibber_sara">Wife</name> <lb/> <name type="person" key="fowler_joseph">Joseph fowler</name>
+					<p>(Reverse) Against <name type="person" key="bibber_john">Bibber</name> &amp; <name type="person" key="bibber_sara">Wife</name> <lb/> <name type="person" key="fowler_joseph">Joseph fowler</name>
 					</p>
 					<p>
 						<ref>( <hi rend="italics">Essex County Court Archives, Salem - Witchcraft, vol. 2, no. 120.</hi>) </ref>
@@ -6627,7 +6622,7 @@
 						<lb/> to wich ill wichches to horselfe and hor chilldren and allso to
 						others: <lb/> the nayborhud werr she liveued
 						amonkes aftor <lb/> she bered: hor
-						fust housbon hes tolld us that this <name type="person" key="bibber_goodman">John bibbor</name> wife <lb/> coud fall into <orig reg="fits">fitts</orig>
+						fust housbon hes tolld us that this <name type="person" key="bibber_john">John bibbor</name> wife <lb/> coud fall into <orig reg="fits">fitts</orig>
 						as often as she plesed ["d" written over "s"] </p>
 					<p>(Reverse) <name type="person" key="jacobs_thomas">Tho. Jacobs</name> <lb/>
 						<name type="person" key="bibber_sara">goody fiber</name>
@@ -6698,7 +6693,7 @@
 					<p rend="center">The Examination of <name type="person" key="bishop_bridget">Bridget
 						Byshop</name> at Salem village <lb/> <date value="1692-04-19" certainty="confirmed">19. Apr. <hi rend="italics">1692 </hi> ["2" written
 						over "3"]</date>
-						<lb/> By <name type="person" key="hawthorne_john">John Hauthorn</name> &amp; <name type="person" key="corwil_jonathan">Jonath: Corwin</name> Esq'rs </p>
+						<lb/> By <name type="person" key="hathorn_john">John Hauthorn</name> &amp; <name type="person" key="corwil_jonathan">Jonath: Corwin</name> Esq'rs </p>
 					<p>As soon as she came near all fell into fits <lb/>
 						<name type="person" key="bishop_bridget">Bridget Byshop</name>, You are now brought
 						before Authority to give acc'o <lb/> of what witchcrafts you are conversant
@@ -6779,7 +6774,7 @@
 						-- </p>
 					<closer>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 						</signed> <lb/>
 						(Reverse) The Examocon of <name type="person" key="bishop_bridget">Bridget Byshop</name> <date value="1692-04-19" certainty="confirmed">19. Apr
 								1692</date> <lb/>
@@ -7220,7 +7215,7 @@
 						<lb/> before us </p>
 					<closer>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name> ) <lb/> )
+							<name type="person" key="hathorn_john">*John Hathorne</name> ) <lb/> )
 							Assis'ts <lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ) </signed>
 						<lb/>
@@ -7285,7 +7280,7 @@
 							<date value="1692-05-30" certainty="confirmed">May 30'th 1692 </date>
 							<lb/> Before mee </dateline>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name> Assis't </signed>
+							<name type="person" key="hathorn_john">*John Hathorne</name> Assis't </signed>
 						<seg>(Reverse) <name type="person" key="gray_samuel">Sam'll Grays</name>
 							Evedence <lb/> <name type="person" key="bishop_bridget">Bridgett Bishopp</name>
 						</seg>
@@ -7579,7 +7574,7 @@
 							<lb/> Before mee </dateline>
 						<lb/>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorn[ ]</name>
+							<name type="person" key="hathorn_john">*John Hathorn[ ]</name>
 						</signed> <lb/>
 						<name type="person" key="coman_richard">Richard C[  ]</name><lb/>
 						als <name type="person" key="bishop_bridget">Olliver</name>.
@@ -7662,7 +7657,7 @@
 						</dateline>
 						<lb/>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assis'ts </signed>
@@ -8340,7 +8335,7 @@
 						<lb/> Charge of the afflicted persons then present Wee Committed s'd <lb/>
 						<name type="person" key="black_mary">Mary black</name> . </p>
 					<closer>
-						<signed> &Pbar; us <name type="person" key="hawthorne_john">*John Hathorne</name>
+						<signed> &Pbar; us <name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assis'ts </signed>
@@ -9517,7 +9512,7 @@
 						<signed>
 							<name type="person" key="gidney_bartholomew">*Bartho Gedney</name>
 							<lb/>
-							<name type="person" key="hawthorne_john">*John: Hathorne</name>
+							<name type="person" key="hathorn_john">*John: Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
 							<lb/>
@@ -9908,7 +9903,7 @@
 						 by the Constab'e as the afflicted had Said <lb/> and as to
 						the number of witches the afflicted S'd their Saw @ 200 <lb/> at Chandlers
 						Metting Soe S'd those two they thought their was <lb/> @ 200, Soe also <name type="person" key="post_susannah">Susana Post</name> in her Confession Sayth
-						She Saw @ 200, <lb/> at a witch Metting at the Village <name type="person" key="bridges_mary">Mary Bridges</name> Said in her <orig reg="Conffesion">Con-
+						She Saw @ 200, <lb/> at a witch Metting at the Village Mary Bridges Said in her <orig reg="Conffesion">Con-
 							<lb/> ffesion </orig> Sayd She Saw @ 100 at a witch Metting that She was
 						at -- </p>
 					<p>
@@ -10324,9 +10319,8 @@
 					<figure n="MA045r"/>
 					<figure n="MA045v"/>
 					<p>The Deposistion of <name type="person" key="hubbard_elizabeth">Eliz. Hubberd </name> who
-						testifieth and saith that I <lb/> cannot say that ever <name type="person" key="buckley_sarah">goody Buckly</name> hurt me but on the 18'th may 1692 being
-						the day of the Exami&nbar; of <name type="person" key="buckley_sarah">Sarah
-							Buckly</name> the wife of <name type="person" key="buckley_william"><orig reg="worwil">wil- <lb/> liam </orig> Buckly</name> I saw hir or
+						testifieth and saith that I <lb/> cannot say that ever <name type="person" key="buckley_sarah">goody Buckly</name> hurt me but on the 18'th may 1692 being						the day of the Exami&nbar; of <name type="person" key="buckley_sarah">Sarah
+							Buckly</name> the wife of <name type="person" key="buckley_william"><orig reg="bucwil">wil- <lb/> liam </orig> Buckly</name> I saw hir or
 						Apperan[c]e torment and <orig reg="afflict">afflete</orig>
 						<name type="person" key="walcott_mary">mary <lb/> walcott</name> and <name type="person" key="putnam_ann_jr">Ann putnam</name> #[&amp; also severall
 						times sence] &amp; I do <orig reg="beleve">be- <lb/> leve </orig>: that the
@@ -10482,7 +10476,7 @@
 								1692</date>
 						</seg>
 						<seg>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan Corwin</name> &lcub; <lb/>
 							Assis'ts </seg>
@@ -11254,7 +11248,7 @@
 					</closer>
 				</div2>
 				<div2 id="n22.20" type="section">
-					<head>(Letter of <name type="person" key="putnam_thomas_jr">Thomas Putnam</name> to <name type="person" key="hawthorne_john">John Hathorne</name>
+					<head>(Letter of <name type="person" key="putnam_thomas_jr">Thomas Putnam</name> to <name type="person" key="hathorn_john">John Hathorne</name>
 						&amp; <lb/> <name type="person" key="corwil_jonathan">Jonathan Corwin</name> )
 					</head>
 					<opener>
@@ -11629,7 +11623,7 @@
 					</p>
 					<p>
 						<name type="person" key="hobbs_abigail">Abigaile Hobbs</name> then confessed before
-							<name type="person" key="hawthorne_john">John Hathorn</name> &amp; <name type="person" key="corwil_jonathan">Jonathan <orig reg="corwin">cor- <lb/> win
+							<name type="person" key="hathorn_john">John Hathorn</name> &amp; <name type="person" key="corwil_jonathan">Jonathan <orig reg="corwin">cor- <lb/> win
 							</orig></name> Esq'rs That at the generall meeting of the Witches in the
 						feild <lb/> near <name type="person" key="parris_samuel">Mr Parrisse's </name>
 						house she saw <name type="person" key="burroughs_george">Mr George Burroughs</name> ,
@@ -11662,7 +11656,7 @@
 						</dateline>
 						<lb/>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan Corwin</name> &lcub; <lb/>
 							Assis'ts </signed>
@@ -12067,7 +12061,7 @@
 					<p>SALEM, Monday, <date value="1692-07-04" certainty="confirmed">July 4, 1692
 						</date>. The examination of <name type="person" key="candy">Candy</name>, a
 						<lb/> negro woman, before <name type="person" key="gidney_bartholomew">Bartholomew
-							Gedney</name> and <name type="person" key="hawthorne_john">John Hawthorne</name>
+							Gedney</name> and <name type="person" key="hathorn_john">John Hawthorne</name>
 						<lb/> Esqrs. <name type="person" key="noyes_nicholas">Mr. Nicholas Noyes</name> also
 						present. </p>
 					<p>Q. <name type="person" key="candy">Candy</name> ! are you a witch? A. <name type="person" key="candy">Candy</name> no witch in her country. <lb/>
@@ -12097,7 +12091,7 @@
 						dreadful fits almost choaked, and the other was violently running <lb/> down
 						to the river, but was stopped. </p>
 					<closer>
-						<signed>Attest. <name type="person" key="hawthorne_john">John Hawthorne</name> ,
+						<signed>Attest. <name type="person" key="hathorn_john">John Hawthorne</name> ,
 							Just. Peace. </signed>
 						<seg>
 							<ref>( <hi rend="italics">Thomas Hutchinson, </hi> History of
@@ -12286,7 +12280,7 @@
 						</dateline>
 						<lb/>
 						<signed> per us <lb/>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan.Corwin</name>
 							<lb/> Assis'ts </signed>
@@ -13084,7 +13078,7 @@
 						<signed>
 							<name type="person" key="gidney_bartholomew">*Bartho' Gedney</name>
 							<lb/>
-							<name type="person" key="hawthorne_john">*John Hathorn</name>
+							<name type="person" key="hathorn_john">*John Hathorn</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
 							<lb/>
@@ -13420,7 +13414,7 @@
 						</date>
 					</p>
 					<p>It was asked <name type="person" key="carrier_sarah">Sarah Carrier</name> by the
-						Magistrates or Justices <name type="person" key="hawthorne_john">John <lb/>
+						Magistrates or Justices <name type="person" key="hathorn_john">John <lb/>
 							Hawthorne</name> Esq; and others: How long hast thou been a witch? A.
 						<lb/> Ever since I was six years old. Q. How old are you now? A. Near <lb/>
 						eight years old, brother <name type="person" key="phelps_richard">Richard</name>
@@ -13625,7 +13619,7 @@
 						went to <orig reg="Salem-Village">Salem- <lb/> Village </orig>, to see if
 				  	the afflicted did know her; we arrived there, 24 May, it happened to be a
 						day appointed for Examination; <orig reg="accordingly">accord- <lb/> ingly
-						</orig> soon after our arrival, <name type="person" key="hawthorne_john">Mr.
+						</orig> soon after our arrival, <name type="person" key="hathorn_john">Mr.
 							Hathorn</name> and <name type="person" key="corwil_jonathan">Mr. Curwin</name> ,
 						etc., went <lb/> to the Meeting-house, which was the place appointed for
 						that Work, <lb/> the Minister began with Prayer, and having taken care to
@@ -13782,7 +13776,7 @@
 						<name type="person" key="trask_john">John Trask's</name> Child, (whose Child dyed
 						about that <lb/> tyme) &amp; said <name type="person" key="bishop_sarah">Bishop</name>
 						alias Olliver afflicted her as alsoe did old
-							<name type="person" key="jacobs_george">George <lb/> Jacobs</name> , and before
+							George <lb/> Jacobs , and before
 						that time this Examin't being afflicted could not <lb/> doe her service as
 						formerly and her s'd <name type="person" key="jacobs_george_sr">Master Jacobs</name>
 						called her bitch <lb/> witch &amp; ill names &amp; then afflicted her as
@@ -13799,7 +13793,7 @@
 						<signed>
 							<name type="person" key="churchill_sarah">Sarah Churchill</name>
 						</signed>
-						<seg>This Confession was taken before <name type="person" key="hawthorne_john">John
+						<seg>This Confession was taken before <name type="person" key="hathorn_john">John
 								Hathorne</name> and <name type="person" key="corwil_jonathan">Jonathan <lb/>
 								Corwin</name> Esq'rs 1' o[f] June 1692, as attests </seg>
 						<seg>
@@ -13948,7 +13942,7 @@
 						<date value="1692-08-04" certainty="confirmed">4't Agust 1692. </date>
 					</p>
 					<p>The Examination of <name type="person" key="clarke_mary">Mary Clark</name> . of.
-						Haverhill Taken before. <name type="person" key="hawthorne_john">Jno <lb/>
+						Haverhill Taken before. <name type="person" key="hathorn_john">Jno <lb/>
 							Hauthorn</name> Esq'r and other their majesties justices of the peace.
 						The <lb/> accused <name type="person" key="clarke_mary">mary Clark</name> being
 						called, it was enquyred of <name type="person" key="walcott_mary">Mary
@@ -15097,7 +15091,7 @@
 						<signed>
 							<name type="person" key="gidney_bartholomew">*Bartho Gedney</name>
 							<lb/>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
 							<lb/>
@@ -15199,7 +15193,7 @@
 						</dateline>
 						<lb/>
 						<signed> &Pbar; us <lb/>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan.Corwin</name> &lcub; <lb/>
 							Assis'ts </signed>
@@ -15242,7 +15236,7 @@
 						</dateline>
 						<lb/>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name> -- <lb/>
+							<name type="person" key="hathorn_john">*John Hathorne</name> -- <lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> -- <lb/>
 							&Pbar; ord'r of the Govern'r &amp; Councill </signed>
 						<seg>
@@ -15412,7 +15406,7 @@
 						</dateline>
 						<lb/>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan.Corwin</name> <lb/>
 							Assis'ts </signed>
@@ -15973,7 +15967,7 @@
 						<signed>p us <lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
 							<lb/>
-							<name type="person" key="hawthorne_john">*John:Hathorne</name>
+							<name type="person" key="hathorn_john">*John:Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assists </signed>
@@ -16018,7 +16012,7 @@
 						<date value="1692-03-21" certainty="confirmed">21 March 1691/2</date>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">Mr Hathorne.</name>
+						<name type="person" key="hathorn_john">Mr Hathorne.</name>
 					</p>
 					<p>You are now in the hands of Authority tell me now <lb/> why you hurt these
 						persons </p>
@@ -16052,7 +16046,7 @@
 					<p>Interrupted her &amp; bid her not begin with a lye <lb/> &amp; so
 						<name type="person" key="putnam_edward">Edw'd Putman</name> declared the matter </p>
 					<p>
-						<name type="person" key="hawthorne_john">Mr Hath:</name>
+						<name type="person" key="hathorn_john">Mr Hath:</name>
 					</p>
 					<p>Who told you that </p>
 					<p>
@@ -16065,7 +16059,7 @@
 					<p>you speak falsly </p>
 					<p>Then <name type="person" key="putnam_edward">Edw: Putman</name> read again </p>
 					<p>
-						<name type="person" key="hawthorne_john">Mr H.</name>
+						<name type="person" key="hathorn_john">Mr H.</name>
 					</p>
 					<p>Why did you ask if the child told w't cloths you wore </p>
 					<p>My husband told me the others told </p>
@@ -16080,7 +16074,7 @@
 					</p>
 					<p> -- </p>
 					<p>
-						<name type="person" key="hawthorne_john">H.</name>
+						<name type="person" key="hathorn_john">H.</name>
 					</p>
 					<p>Who hurtes these children now look upon them. </p>
 					<p>
@@ -16088,7 +16082,7 @@
 					</p>
 					<p>I cannot help it </p>
 					<p>
-						<name type="person" key="hawthorne_john">H.</name>
+						<name type="person" key="hathorn_john">H.</name>
 					</p>
 					<p>Did you not say you would tell the truth why you <lb/> askt that question:
 						how come you to the knowledge -- </p>
@@ -16101,7 +16095,7 @@
 					</p>
 					<p>No body </p>
 					<p>
-						<name type="person" key="hawthorne_john">H.</name>
+						<name type="person" key="hathorn_john">H.</name>
 					</p>
 					<p>How came you to know that the children would be <lb/> examined what cloth you
 						wore </p>
@@ -16162,7 +16156,7 @@
 					<p>Here are more than two that accuse you for witchcraft </p>
 					<p>What do you say </p>
 					<p>I am innocent </p>
-					<p>Then <name type="person" key="hawthorne_john">mr Hathorn</name> read farther of
+					<p>Then <name type="person" key="hathorn_john">mr Hathorn</name> read farther of
 						Croslys evidence </p>
 					<p>What did you mean by that the Devil could not stand <lb/> before you </p>
 					<p>She denyed it </p>
@@ -16256,7 +16250,7 @@
 					<p>Were you to serve the Devil ten years tell how many </p>
 					<p>She laught </p>
 					<p>The Children cryed there was a yellow bird with her </p>
-					<p>When <name type="person" key="hawthorne_john">Mr Hathorn</name> askt her about it she
+					<p>When <name type="person" key="hathorn_john">Mr Hathorn</name> askt her about it she
 						laught </p>
 					<p>When her hands were at liberty the afflicted persons <lb/> were pincht </p>
 					<p>Why do not you tell how the Devil comes in your <lb/> shape &amp; hurts
@@ -16318,7 +16312,7 @@
 
 					<closer>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assis'ts </signed>
@@ -16432,7 +16426,7 @@
 						</dateline>
 						<lb/>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/> p vs <name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
 							<lb/> Assis'ts </signed>
 						<seg>(Reverse) <name type="person" key="good_sarah">Sarah Good</name>
@@ -17130,7 +17124,7 @@
 						<date value="1692-05-23" certainty="confirmed">May. 23. 1692 </date>. </p>
 					<closer>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
 							<lb/> P ord'r of the Govern'r <lb/> &amp; Councill </signed>
@@ -17172,7 +17166,7 @@
 						<signed>P us <lb/>
 							<name type="person" key="gidney_bartholomew">*Bartho Gedney</name>
 							<lb/>
-							<name type="person" key="hawthorne_john">*John. Hathorne</name>
+							<name type="person" key="hathorn_john">*John. Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
 							<lb/> Just'es of the peace </signed>
@@ -17306,7 +17300,7 @@
 						nott to fayle att your perrill. date Salem <date value="1692-04-30" certainty="confirmed">Aprill. 30'th 1692</date>
 					</p>
 					<closer>
-						<signed>P us <name type="person" key="hawthorne_john">*John Hathorne</name>
+						<signed>P us <name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assis'ts </signed>
@@ -17418,7 +17412,7 @@
 							<name type="recipient">To the Constable of Redding </name>
 						</dateline>
 						<lb/>
-						<signed>P us <name type="person" key="hawthorne_john">*John Hathorne</name>
+						<signed>P us <name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assis'ts </signed>
@@ -17712,7 +17706,7 @@
 					<figure n="eia29v"/>
 					<p>
 						<date value="1692-08-31" certainty="confirmed">August 31't: 1692 </date>
-						Present <name type="person" key="hawthorne_john">Jn'o Hathorne</name>
+						Present <name type="person" key="hathorn_john">Jn'o Hathorne</name>
 						<name type="person" key="corwil_jonathan">Jona't Corwin</name> Esq'r </p>
 					<p>
 						<name type="person" key="eames_rebecca">Rebeca Eames</name> further acknowledgeth
@@ -17720,8 +17714,8 @@
 						Mile pond and that her <lb/> son Daniell was also then baptized by the
 						<orig reg="Devil">Divell</orig>, and that her son <lb/> Daniell hath benne a
 						Wizard aboute thurteene Yeares and that [] <lb/> Toothaker
-						Widow, and <name type="person" key="faulkner_abigail">Abigail
-							faulkner</name> are both Witches and that <lb/> her son and both them
+						Widow, and Abigail
+							faulkner are both Witches and that <lb/> her son and both them
 						have benne in Company with her in <orig reg="Andover">Ando- <lb/> ver </orig>
 						<orig reg="afflicting">afflicteing</orig> of <name type="person" key="swan_timothy">
 							Timothy Swan</name> and further Confirmes what she <lb/>
@@ -18009,7 +18003,7 @@
 						</dateline>
 						<lb/>
 						<signed>
-							<name type="person" key="hawthorne_john">*John: Hathorne.</name> Assist <lb/> p
+							<name type="person" key="hathorn_john">*John: Hathorne.</name> Assist <lb/> p
 							order of the Councill. </signed>
 						<seg>I have taken the body of the above named <name type="person" key="esty_mary">Mary Estiee</name> and <lb/> brought her att the time
 							and place above named </seg>
@@ -18030,7 +18024,7 @@
 					<p>At a Court held at Salem village <date value="1692-04-22" certainty="confirmed">22. Apr. <hi rend="italics">1692 </hi>
 						</date>
 					</p>
-					<p>By the Wop. [=worshipful] <name type="person" key="hawthorne_john">John Hathorne</name> &amp; <name type="person" key="corwil_jonathan">Jonathan Corwin.</name>
+					<p>By the Wop. [=worshipful] <name type="person" key="hathorn_john">John Hathorne</name> &amp; <name type="person" key="corwil_jonathan">Jonathan Corwin.</name>
 					</p>
 					<p>At the bringing in of the the accused severall fell into fits. </p>
 					<p>Doth this woman hurt you? </p>
@@ -18103,7 +18097,7 @@
 						Goale </p>
 					<closer>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assists </signed>
@@ -18485,7 +18479,7 @@
 							<date value="1692-05-23" certainty="confirmed">May 23rd. 1692 </date>
 						</dateline>
 						<lb/>
-						<signed>before us <name type="person" key="hawthorne_john">*John Hathorne</name>
+						<signed>before us <name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan Corwin</name> &lcub; <lb/>
 							Assists </signed>
@@ -18604,7 +18598,7 @@
 						<lb/>
 
 						<signed>Before us <lb/>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assists </signed>
@@ -18662,7 +18656,7 @@
 						</dateline>
 						<lb/>
 						<signed>Before us <lb/>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assists. </signed>
@@ -19136,7 +19130,7 @@
 						<signed>
 							<name type="person" key="gidney_bartholomew">*Bartho. Gedney</name>
 							<lb/>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
 							<lb/>
@@ -19378,7 +19372,7 @@
 						</dateline>
 						<lb/>
 						<signed>pe'r us<lb/>
-							<name type="person" key="hawthorne_john">*John. Hathorne</name>
+							<name type="person" key="hathorn_john">*John. Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &lcub; <lb/>
 							Assist's </signed>
@@ -19447,7 +19441,7 @@
 					</p>
 					<closer>
 						<signed> per us <lb/>
-							<name type="person" key="hawthorne_john">*John:Hathorne</name>
+							<name type="person" key="hathorn_john">*John:Hathorne</name>
 							<lb/>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
 							<lb/> Assist's </signed>
@@ -20013,10 +20007,10 @@
 						<name type="person" key="faulkner_abigail_sr">Abig'l Folkner</name> examined
 						<date value="1692-08-11" certainty="confirmed">August. 11: 1692 </date>. </p>
 					<p>
-						<name type="person" key="hawthorne_john">Mr Hauthorn;</name>
+						<name type="person" key="hathorn_john">Mr Hauthorn;</name>
 						<name type="person" key="corwil_jonathan">Mr Corwin:</name> &amp;
 						<name type="person" key="higginson_john">Cap: Higginson</name> pressent when she was <lb/> brought
-						into the room: the afflicted persons fell down <name type="person" key="hawthorne_john">Mr Ha:</name> You <lb/> are:heare:
+						into the room: the afflicted persons fell down <name type="person" key="hathorn_john">Mr Ha:</name> You <lb/> are:heare:
 						aprehended:for:witchcraft: but Answ'd: I know nothing <lb/> of it with: the
 						cast of her eye: <name type="person" key="walcott_mary">mary:walcot:</name> &amp;
 						the rest afflicted: <lb/>
@@ -20078,7 +20072,7 @@
 						<signed>Attest <lb/>
 							<name type="person" key="willard_simon">*Simon Willard</name>
 						</signed>
-						<seg>The aboves'd Examination was before <name type="person" key="hawthorne_john">John Hathorne</name> Just peace <lb/>
+						<seg>The aboves'd Examination was before <name type="person" key="hathorn_john">John Hathorne</name> Just peace <lb/>
 							<name type="person" key="faulkner_abigail_sr">Abigaiel Falknors</name> Examination </seg>
 						<seg>
 							<ref>( <hi rend="italics">Essex County Court Archives, Salem -- Witchcraft
@@ -20268,14 +20262,14 @@
 						day of hir examination I saw <name type="person" key="faulkner_abigail_sr">Abigail
 							Falkner</name> or hir <lb/> Apperance most greviously <orig reg="afflict">afflect</orig> and torment <name type="person" key="walcott_mary">mary walcott</name>
 						<name type="person" key="putnam_ann_jr">Ann <lb/> putnam</name> and <name type="person" key="phelps_sarah">sarah phelps</name> and I veryly beleve that
-							<name type="person" key="faulkner_abigail">Abigail Falkner</name>
+							Abigail Falkner
 						<lb/> is a <orig reg="witch">wicth</orig> and that she has often <orig reg="afflicted">afflected</orig> me and severall other by <lb/> acts of
 							<orig reg="witchcraft">wicthcraft</orig>
 					</p>
 					<p><name type="person" key="warren_mary">Mary Waren:</name>own'dupon her oath::to the
 						grand Inquest that the <lb/> above written evidence is the truth: <date value="1692-09-17" certainty="confirmed">Sep'r 17: 1692</date>
 					</p>
-					<p>(Reverse) <name type="person" key="warren_mary">Mary Warren</name> Depo agst <name type="person" key="faulkner_abigail">Abigail Falkner</name> Jurat in Curia </p>
+					<p>(Reverse) <name type="person" key="warren_mary">Mary Warren</name> Depo agst Abigail Falkner Jurat in Curia </p>
 					<p>
 						<ref>( <hi rend="italics">Essex County Court Archives, Salem -- Witchcraft Vol. 2
 								no. 43 </hi>) </ref>
@@ -20992,8 +20986,8 @@
 						their or either of their Lands and Tenniments, goods &amp; Chattles for the
 						use of our s'd: sovereigne Lord &amp; Lady the King &amp; Queen or survivor
 						of them on Condition that <name type="person" key="faulkner_dorothy">Dorathy
-							Forkner</name> and <name type="person" key="faulkner_abigail">Abigaile
-							Forkner</name> haveing stood committed for Suspition of Witchcraft shall
+							Forkner</name> and Abigaile
+							Forkner haveing stood committed for Suspition of Witchcraft shall
 						make their p'sonall appearance before the Justices of our s'd: Sovereigne
 						Lord &amp; Lady the King &amp; Queen at the next Court of Assizes and
 						Generall Goal Delivery to be holden for the County of Essex then &amp; there
@@ -21059,7 +21053,7 @@
 					<p>The abovesayd Complaint was Exhibited before us Salem <date value="1692-05-30" certainty="confirmed">May the. 30th 1692</date>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assist's </p>
+						<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assist's </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb;
 						Assist's</p>
@@ -21106,7 +21100,7 @@
 					</p>
 					<p>P us</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assist's </p>
+						<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assist's </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb;
 						Assist's</p>
@@ -21559,7 +21553,7 @@
 					</p>
 					<p>Per us </p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assists. </p>
+						<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assists. </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb; Assists. </p>
 					<p><date value="1692-03-23" certainty="confirmed">March 23d. 1691/2</date>. I
@@ -21735,7 +21729,7 @@
 						faile at your perile Dated Salem, <date value="1692-02-28" certainty="confirmed">febr 29th 1691/2</date>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assists. </p>
+						<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assists. </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan.Corwin</name> &rsqb; Assists. </p>
 					<p>To <name type="person" key="locker_george">Constable George Locker</name>
@@ -21859,7 +21853,7 @@
 						Witchcraft by her Committed and thereby much Injury don to the Bodys of
 							<name type="person" key="parris_elizabeth">Elizabeth parris</name>
 						<name type="person" key="williams_abigail">Abigaile Williams</name>
-						<name type="person" key="putnam_anna">Anna putnam</name> &amp;
+						<name type="person" key="putnam_ann_jr">Anna putnam</name> &amp;
 						<name type="person" key="hubbard_elizabeth">Elizabeth Hubert</name> all of Salem Village
 						afore'd according to theire Complaints as p'r warrants. </p>
 					<p>Dated Salem <date value="1692-03-29" certainty="questionable">March 29th,
@@ -21896,7 +21890,7 @@
 						also sundry <pb n="359"/> other Questions put to her &amp; Answers given
 						thereunto by her. according as is also given in.</p>
 					<p>
-						<name type="person" key="hawthorne_john">John Hathorne</name> Assists. </p>
+						<name type="person" key="hathorn_john">John Hathorne</name> Assists. </p>
 					<p>per us</p>
 						<p><name type="person" key="corwil_jonathan">Jonathan. Corwin</name> </p>
 
@@ -21945,7 +21939,7 @@
 							<date value="1692-05-25" certainty="confirmed">May the 25t 1692 </date>
 						</dateline>
 						<seg>
-							<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assists. </seg>
+							<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assists. </seg>
 						<seg>
 							<name type="person" key="corwil_jonathan">*Jonathan Corwin</name> &rsqb;
 							Assists</seg>
@@ -22535,7 +22529,7 @@
 					<p>The Deposistion of <name type="person" key="herrick_joseph_sr">Joseph Herrick
 							senr.</name> who testifieth and saith that on the first day of March
 						1691/2: I being then Constable for Salem: there was delivered to me by
-						warrant from the worshipfull <name type="person" key="hawthorne_john">Jno.
+						warrant from the worshipfull <name type="person" key="hathorn_john">Jno.
 							Hathorne</name> and <name type="person" key="corwil_jonathan">Jonathan
 							Corwin</name> Esqrs. <name type="person" key="good_sarah">Sarah good</name>
 						for me to cary to their majesties Gaol at Ipswich and that night I sett a
@@ -23373,7 +23367,7 @@
 					<p><figure n="eia24-9v"/>
 						<date value="1692-09-01" certainty="confirmed">1 Se&pbar;.. 1692/ </date>
 						Before <name type="person" key="gidney_bartholomew">Maj'r Gidney</name>
-						<name type="person" key="hawthorne_john">Mr Hathorne</name>
+						<name type="person" key="hathorn_john">Mr Hathorne</name>
 						<name type="person" key="corwil_jonathan">Mr Corwin</name>
 						<name type="person" key="higginson_john">Jno Higginson</name> Esq'r The Examination
 						&amp; Confession of <name type="person" key="hawkes_sarah">Sarah Hawks</name>
@@ -23728,7 +23722,7 @@
 					<p>Sworne-Salem Village <date value="1692-05-23" certainty="confirmed">May 23:
 							1692</date>
 					</p>
-					<p>before us. <name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb;
+					<p>before us. <name type="person" key="hathorn_john">*John Hathorne</name> &rsqb;
 						Assists </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan Corwin</name> &rsqb; Assists </p>
@@ -24293,7 +24287,7 @@
 					<figure n="H54v"/>
 					<p>
 						The Examination of <name type="person" key="hobbs_abigail">Abigail Hobbs</name>, at Salem Village, <date value="1692-04-19" certainty="confirmed">19 April, 1692, </date> by
-							<name type="person" key="hawthorne_john">John Hawthorn</name> and <name type="person" key="corwil_jonathan">Jonath. Corwin</name>, Esqs., and Assistants. </p>
+							<name type="person" key="hathorn_john">John Hawthorn</name> and <name type="person" key="corwil_jonathan">Jonath. Corwin</name>, Esqs., and Assistants. </p>
 					<p>
 						<name type="person" key="hobbs_abigail">Abig. Hobbs</name> . you are brought before
 						Authority to answere to sundry acts of witchcraft, committed by you against
@@ -24461,7 +24455,7 @@
 						charge of the persons then present, wee comitted said Abigail Hobs to theire
 						Majestie's Gaole </p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> , &rsqb;
+						<name type="person" key="hathorn_john">*John Hathorne</name> , &rsqb;
 						Assis'tts.</p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan Corwin</name> , &rsqb; Assis'tts. </p>
@@ -24875,7 +24869,7 @@
 								<hi rend="underline">1692 </hi>
 						</date> At a Court held at Salem village by </p>
 					<p>
-						<name type="person" key="hawthorne_john">John Hauthorn</name> &rsqb; Esq'rs </p>
+						<name type="person" key="hathorn_john">John Hauthorn</name> &rsqb; Esq'rs </p>
 					<p>
 						<name type="person" key="corwil_jonathan">Jonath: Corwin</name> &rsqb; Esq'rs</p>
 					<p><name type="person" key="lewis_mercy">Mercy Lewes</name> do you know her that
@@ -25034,7 +25028,7 @@
 						Charg of the afflicted persons against them, Wee Committed her. </p>
 					<closer>
 						<signed>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 						</signed>
 						<seg>(Reverse) The Examination of (1) <name type="person" key="hobbs_deliverance">Deliverance Hobbs</name>
 							<date value="1692-04-22" certainty="confirmed">22.Apr. <hi rend="underline">1692 </hi></date>
@@ -25382,7 +25376,7 @@
 						appears, whom you are to secure in order to their further Examination. Fail
 						not. </p>
 					<p>
-						<name type="person" key="hawthorne_john">JOHN HATHORN</name> , &rsqb; <hi rend="italics">Assistants</hi>. </p>
+						<name type="person" key="hathorn_john">JOHN HATHORN</name> , &rsqb; <hi rend="italics">Assistants</hi>. </p>
 					<p>
 						<name type="person" key="corwil_jonathan">JONA. CURWIN</name> , &rsqb; <hi rend="italics">Assistants</hi>.</p>
 					<closer>
@@ -25404,7 +25398,7 @@
 					<p>You are in their Majesties Names hereby required to convey the above-named to
 						the Goal at Salem. Fail not. </p>
 					<p>
-						<name type="person" key="hawthorne_john">JOHN HATHORN</name> , &rsqb; <hi rend="italics">Assistants </hi>. </p>
+						<name type="person" key="hathorn_john">JOHN HATHORN</name> , &rsqb; <hi rend="italics">Assistants </hi>. </p>
 					<p>
 						<name type="person" key="corwil_jonathan">JONA. CURWIN</name> , &rsqb; <hi rend="italics">Assistants </hi>
 					</p>
@@ -25511,7 +25505,7 @@
 						</dateline>
 						<seg> per us.</seg>
 						<seg>
-							<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assists </seg>
+							<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assists </seg>
 						<seg>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb;
 							Assists</seg>
@@ -26920,7 +26914,7 @@
 							<name type="place">Dated Salem </name>
 							<date value="1692-06-04" certainty="confirmed">June 4t 1692 </date>
 						</dateline>
-						<seg> &Pbar; us &lsqb; <name type="person" key="hawthorne_john">*John
+						<seg> &Pbar; us &lsqb; <name type="person" key="hathorn_john">*John
 								Hathorne</name>
 							<name type="person" key="gidney_bartholomew">*Bartho Gedney</name>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb; J:peace </seg>
@@ -27055,7 +27049,7 @@
 							<name type="person" key="gidney_bartholomew">*Bartho Gedney</name>
 						</seg>
 						<seg>
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 						</seg>
 						<seg>* <name type="person" key="corwil_jonathan">Jonathan. Corwin</name>
 						</seg>
@@ -27090,7 +27084,7 @@
 					<p><figure n="S032"/>
 						<name type="person" key="jackson_john_sr">Jno Jaxon sen'r</name> examined Before
 						their Majest's Justices In salem <date value="1692-08-27" certainty="confirmed">August 27th 1692 </date>
-						<name type="person" key="hawthorne_john">Jno. Hawthorne</name> Esq'rs &amp; others </p>
+						<name type="person" key="hathorn_john">Jno. Hawthorne</name> Esq'rs &amp; others </p>
 					<p>The afflicted persons fell into a bad <orig reg="fit">fitt</orig>: before s'd
 							<name type="person" key="jackson_john_sr">Jaxon</name> came into the room &amp;
 						s'd he is coming </p>
@@ -27331,7 +27325,7 @@
 						witchcraft by them both Committed on Sundry persons in Salem to theire great
 						wrong and Injury and hereof faile not. Dated Salem <date value="1692-05-10" certainty="confirmed">May 10th 1692 </date>
 					</p>
-					<p>per us. <name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb;
+					<p>per us. <name type="person" key="hathorn_john">*John Hathorne</name> &rsqb;
 						Assists. </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb; Assists</p>
@@ -27366,7 +27360,7 @@
 						husbandman (Torn) </p>
 					<p>of Salem farmes husbandman <name type="person" key="hobbs_william">William
 							Hobs</name> of (Torn) </p>
-					<p>husbandman, <name type="person" key="bisedw">Edward Bushop</name> of Salem
+					<p>husbandman, Edward Bushop of Salem
 						Village Husband. (Torn) <name type="person" key="bishop_bridget">Bushop Alias
 							Olliver</name> the wife of <name type="person" key="bishop_edward_sr">Edward
 							Bushop</name> of Salem Sawyer <name type="person" key="wilds_sarah">Sarah
@@ -27390,7 +27384,7 @@
 						order of Law, and here of you are not to faile Dated Salem <date value="1692-05-12" certainty="confirmed">May the 12th 1692</date>
 					</p>
 					<p>
-						Pys  <name type="person" key="hawthorne_john">*John Hathorne</name> Assists. </p>
+						Pys  <name type="person" key="hathorn_john">*John Hathorne</name> Assists. </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb;
 						Assists.</p>
@@ -28143,7 +28137,7 @@ Comment: --> did kill her: and Likewise Core
 							<date value="1692-05-17" certainty="confirmed">May. 17th 1692 </date>
 						</dateline>
 						<seg>
-							<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; By order
+							<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; By order
 							of the Governour </seg>
 						<seg>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb; By
@@ -28355,7 +28349,7 @@ Comment: --> did kill her: and Likewise Core
 					</p>
 					<p>&pbar; us</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John. Hathorne</name> &rsqb; Assists </p>
+						<name type="person" key="hathorn_john">*John. Hathorne</name> &rsqb; Assists </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb; Assists</p>
 					<p>(Reverse) </p>
@@ -28593,7 +28587,7 @@ Comment: --> did kill her: and Likewise Core
 						<seg>
 							<name type="person" key="gidney_bartholomew">*Bartho Gedney</name>
 						</seg>
-						<seg>* <name type="person" key="hawthorne_john">John Hathorne</name>
+						<seg>* <name type="person" key="hathorn_john">John Hathorne</name>
 						</seg>
 						<seg>
 							<name type="person" key="higginson_john">*John Higginson</name>
@@ -28648,14 +28642,15 @@ Comment: --> did kill her: and Likewise Core
 							<name type="person" key="carrier_martha">Goody Carriers</name> A that time who
 						came w'th the <orig reg="Devil">Divel</orig> when he came to you first did
 							<name type="person" key="barker_william_jr">W'm. Bark'r</name> No he has not been
-						oh Soe long it was my Sister <name type="person" key="faulkner_abigail">Abigail
-							Falkner</name> -- who stands before you now is it not the Sister <name type="person" key="faulkner_abigail">falkner</name> A Yes She Threattens to Tear
+						oh Soe long it was my Sister 
+						Abigail
+							Falkner -- who stands before you now is it not the Sister falkner A Yes She Threattens to Tear
 						me in peices if I confses Q. how long hath She ben one A no longer then I
 						Where did the <orig reg="Devil">Divel</orig> baptize you A at 5 mile pond
-						who ware baptized when you was A My Sister <name type="person" key="faulkner_abigail">falkner</name> &amp; a great many more -- <name type="person" key="how_james_jr">Jeames How</name> was one how many times have you been at
+						who ware baptized when you was A My Sister falkner &amp; a great many more -- <name type="person" key="how_james_jr">Jeames How</name> was one how many times have you been at
 						the witch metting at the Village A butt once Unlese I was Their in my
 						Spirit. Q how did you goe thither one Horse back as far as I know but after
-						wards S'd She was Carried thither upon a pole &amp; that her sister <name type="person" key="faulkner_abigail">falkner</name> was there &amp; <name type="person" key="barker_william_jr">William Barker</name> others She new not for
+						wards S'd She was Carried thither upon a pole &amp; that her sister falkner was there &amp; <name type="person" key="barker_william_jr">William Barker</name> others She new not for
 						She did not know folk Q but did you give the Children to the <orig reg="Devil">Divel</orig> A No I do not know that this Girle is a witch
 						w't number of witches be there in all. A it may be I doe not know w't did
 						they agre to doe at the metting at the Village A to afflict people &amp;
@@ -28664,7 +28659,7 @@ Comment: --> did kill her: and Likewise Core
 						they are daly brought out A the <orig reg="Devil">Divel</orig> makes them
 						doe it Q. how many was their at that Metting at Chandlers A 20 or 30 I dont
 						know how many what did you doe their A drink wine, where did you gett Your
-						wine A from Boston I think butt I doe not know how brought it <name type="person" key="busse_john">Mr Busse</name> was Their did you drink A yes
+						wine A from Boston I think butt I doe not know how brought it <name type="person" key="busse_john_rev">Mr Busse</name> was Their did you drink A yes
 						how did it tast A it has been bitt'r to me I am Sure butt who were the
 						Company A I do not know any but them that are brought out Q. was <name type="person" key="emerson_martha">Martha Emerson</name> there A I know not Was
 							<name type="person" key="eames_daniell">Dan'll Eames</name> of the Comp'y A yes
@@ -28695,7 +28690,7 @@ Comment: --> did kill her: and Likewise Core
 						above ever nor that she had set her Seal to the book but She had Set her
 						hand to the book at Salem Village when the Combination was she owned [she]
 						had Eat &amp; drink at the Mett'g at Chand's butt no where Else She s'd
-							<name type="person" key="burroughs_george">Burroughs</name> &amp; <name type="person" key="busse_john">Buss</name> ware at the Village Metting &amp;
+							<name type="person" key="burroughs_george">Burroughs</name> &amp; <name type="person" key="busse_john_rev">Buss</name> ware at the Village Metting &amp;
 						Buss was at the Mett'g at Chand's &amp; bid them Stand to the faith &amp;
 						truth She s'd the <orig reg="Devil">Divel</orig> propounded 30 Years <pb n="502"/> to her to Serve him &amp; he had promised her al glory &amp;
 						happines &amp; Joy But as yett performed nothing -- She S'd her familliar
@@ -28760,7 +28755,7 @@ Comment: --> did kill her: and Likewise Core
 					<p>
 						<name type="person" key="johnson_elizabeth_jr">Eliz Jonsons: Jun'r</name> Confession:
 							<date value="1692-08-11" certainty="confirmed">August: the 11th 1692
-						</date> before: <name type="person" key="hawthorne_john">Jno' Hauthorne</name> Esq'r
+						</date> before: <name type="person" key="hathorn_john">Jno' Hauthorne</name> Esq'r
 						&amp; others their majests Justices the Majestrates s'd: to her you have
 						alredy confessed: you are a wich how long have you bin soe A: four year: she
 						s'd the <orig reg="devil">devill</orig> like a blak man &amp; <name type="person" key="carrier_martha">good wife Carrier</name> perswaded: her to
@@ -28871,7 +28866,7 @@ Comment: --> did kill her: and Likewise Core
 					<p>[++ <date value="1692-01-07" certainty="questionable">January 7, 1692 </date>]</p>
 					<figure n="S039r"/><figure n="S039v"/>
 
-						<p>The Examination of <name type="person" key="johnson_rebecca">Rebecka Johnson</name> , widow, Taken before <name type="person" key="hawthorne_john">Jno Hauthorn</name> Esq'd &amp; other their
+						<p>The Examination of <name type="person" key="johnson_rebecca">Rebecka Johnson</name> , widow, Taken before <name type="person" key="hathorn_john">Jno Hauthorn</name> Esq'd &amp; other their
 						Majesties Justices. </p>
 					<p>she denyed what she was acused of, But she acknowledged the turneing of the
 						sieve, in her house by hir daughter, whom she Desyred to no if her brother
@@ -28972,7 +28967,7 @@ Comment: --> did kill her: and Likewise Core
 					<p><figure n="eia24-10r"/>
 						<date value="1692-09-01" certainty="confirmed">1st Sept: 92 </date>
 						Before <name type="person" key="gidney_bartholomew">Maj'r: Gidney</name>
-						<name type="person" key="hawthorne_john">Mr: Hathorne</name>
+						<name type="person" key="hathorn_john">Mr: Hathorne</name>
 						<name type="person" key="corwil_jonathan">Mr: Corwin</name> &amp; <name type="person" key="higginson_john">Jno Higginson</name> Esq'r: </p>
 					<p>The Examination &amp; Confession of <name type="person" key="johnon_stephen">Steph'n:
 							Johnson</name> aged 14 Yeares -- </p>
@@ -29045,7 +29040,7 @@ Comment: --> did kill her: and Likewise Core
 						dignity &amp; the laws in that Case Made &amp; provided -- </p>
 					<p>(Reverse) Steph Johnson bewitching <name type="person" key="sprague_martha">Martha
 							Sprague</name>
-						<name type="person" key="lacmar">Mary Lasey</name> and <name type="person" key="foster_rose">Rose foster</name> Billa vera: <name type="person" key="payne_robert">Robert Payne</name> foreman </p>
+						Mary Lasey and <name type="person" key="foster_rose">Rose foster</name> Billa vera: <name type="person" key="payne_robert">Robert Payne</name> foreman </p>
 					<p>
 						<ref>( <hi rend="italics">Massachusetts Archive Collection, Vol. 135 No. 42. Massachusetts Archives, Boston. </hi>) </ref>
 					</p>
@@ -29193,7 +29188,7 @@ Comment: --> did kill her: and Likewise Core
 						<lb/>
 						<name type="person" key="corwil_jonathan">Jona'h Corwin</name>
 						<lb/>
-						<name type="person" key="hawthorne_john">Jno Hathorne</name>
+						<name type="person" key="hathorn_john">Jno Hathorne</name>
 						<lb/>
 						<name type="person" key="higginson_john">Jno Higginson</name> &rsqb;</p>
 
@@ -29214,7 +29209,7 @@ Comment: --> did kill her: and Likewise Core
 						<date value="1692-07-21" certainty="confirmed">21 July 1692. </date> A
 						part of <name type="person" key="lacey_mary_sr">Goody Laceyes</name> 2d
 						Examination and confession to be added to the first. Before Mag'r <name type="person" key="gidney_bartholomew">Gedney</name>
-						<name type="person" key="hawthorne_john">Mr Hauthorn</name> &amp; <name type="person" key="corwil_jonathan">Mr Corwin.</name></p>
+						<name type="person" key="hathorn_john">Mr Hauthorn</name> &amp; <name type="person" key="corwil_jonathan">Mr Corwin.</name></p>
 					<p>When <name type="person" key="foster_rose">Goody foster</name> was upon
 						examination the second tyme, <name type="person" key="lacey_mary_sr">Goody
 							Lacey</name> was brought in also, who said to her mother
@@ -29423,7 +29418,7 @@ Comment: --> did kill her: and Likewise Core
 						<name type="person" key="gidney_bartholomew">*Bartho. Gedney</name>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name>
+						<name type="person" key="hathorn_john">*John Hathorne</name>
 					</p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
@@ -29459,7 +29454,7 @@ Comment: --> did kill her: and Likewise Core
 						<figure n="eia24-3r"/>
 						<figure n="eia24-3v"/>
 						<figure n="eia24-4r"/>
-						<figure n="eia24-4v"/>Severall Examinations Before <name type="person" key="gidney_bartholomew">Bartho Gidny</name> . <name type="person" key="hawthorne_john">John Hathorne</name>
+						<figure n="eia24-4v"/>Severall Examinations Before <name type="person" key="gidney_bartholomew">Bartho Gidny</name> . <name type="person" key="hathorn_john">John Hathorne</name>
 						<name type="person" key="corwil_jonathan">Jonat Corwin</name> &amp; <name type="person" key="higginson_john">John Higginson</name> Esq'rs </p>
 					<p><date value="1692-07-21" certainty="confirmed">21: July 1692</date>: </p>
 					<p>
@@ -29808,9 +29803,9 @@ Comment: --> did kill her: and Likewise Core
 							Sen'r</name> of the towne &amp; County afores'd shall well &amp; truely
 						Keep the afores'd <name type="person" key="lacey_mary_jr">Mary Lacy</name> and her
 						secure until they shall Receive order from <name type="person" key="corwine_george">George Corwin</name> Sheriff of the County of Essex then to deliver the
-						afores'd <name type="person" key="lacmar">Mary Laycy</name> unto <name type="person" key="dowton_william">William Dounton</name> now Keeper of their
+						afores'd Mary Laycy unto <name type="person" key="dowton_william">William Dounton</name> now Keeper of their
 						Majesties Goale in Salem or to any other who the afores'd <name type="person" key="corwine_george">George Corwin</name> shall apoint that then
-						they shall according to his order forthwith Deliver the afores'd <name type="person" key="lacmar">Mary <pb n="534"/> Lacy</name> and if the
+						they shall according to his order forthwith Deliver the afores'd Mary <pb n="534"/> Lacy and if the
 						above bound doe performe the above mentioned articles &amp; shall pay unto
 							<name type="person" key="corwine_george">George Corwin</name> Sheriff afores'd
 						the forfitture of s'd Bond for their Majesties use in Case of default Then
@@ -29974,7 +29969,7 @@ Comment: --> did kill her: and Likewise Core
 					<p>Attest <name type="person" key="willard_simon">*Simon Willard.</name>
 					</p>
 					<p>Mary Coulston examined before said Justices for the Maj'ties <date value="1692-09-05" certainty="confirmed">Sept. 5. 1692</date>
-						<name type="person" key="hawthorne_john">Jno. Hathorn</name> Esq're <name type="person" key="colson_mary">Mary Coultson:</name> you are here acused for
+						<name type="person" key="hathorn_john">Jno. Hathorn</name> Esq're <name type="person" key="colson_mary">Mary Coultson:</name> you are here acused for
 						afflicting <name type="person" key="marshall_mary">Mrs Mary Marshall</name> by
 						witchcraft <name type="person" key="marshall_mary">Mrs Marshall</name> with others
 						fell Down at her Coming into the Court. s'd <name type="person" key="colson_mary">Coultson</name> helped <name type="person" key="marshall_mary">Mrs
@@ -29994,7 +29989,7 @@ Comment: --> did kill her: and Likewise Core
 						asked when they were well agayn who hurt: them &amp; s'd it was <name type="person" key="colson_mary">Coultson</name> it was told <name type="person" key="colson_mary">Coultson</name> it was evident that she acted
 						witchcraft now before them: &amp; it was like to apear that she had a hand
 						in <name type="person" key="hooper_william">W'm Hoopers</name> Death &amp; in <name type="person" key="marshall_edward">Ed Marshals</name> Death: And she s'd if she
-						should Confes she should be by her selfe: examined before <name type="person" key="hawthorne_john">Jno. Hawthorn</name> Esq're: &amp; others
+						should Confes she should be by her selfe: examined before <name type="person" key="hathorn_john">Jno. Hawthorn</name> Esq're: &amp; others
 						their Majests: Justice. </p>
 					<p>this is the substance of what <name type="person" key="colson_mary">Mary
 							Coultson</name> s'd at her examination, </p>
@@ -30141,7 +30136,7 @@ Comment: --> did kill her: and Likewise Core
 					<figure n="MA047r"/>
 					<figure n="MA047v"/>
 					<p>Before <name type="person" key="gidney_bartholomew">Maj'r Gidney</name>
-						<name type="person" key="hawthorne_john">Mr Hauthorn</name> &amp; <name type="person" key="higginson_john">Cap'n Higginson</name>
+						<name type="person" key="hathorn_john">Mr Hauthorn</name> &amp; <name type="person" key="higginson_john">Cap'n Higginson</name>
 					</p>
 					<p>
 						<date value="1692-08-29" certainty="confirmed">29 Agust 1692 </date> The
@@ -30304,7 +30299,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						yt Hitherto she still struck Downe ye afflicted persons wth her Eyes &amp;
 						recovered<lb/> them again by laying Her Hand upon there Riste or armes ----
 						Being asked how<lb/> long it was since ye Divel seduced Her A: @ 3 years
-						agoe (Noate <name type="person" key="unknown">Lacey</name> &amp;<lb/>
+						agoe (Noate Lacey &amp;<lb/>
 						<name type="person" key="sprague_martha">Sprauge</name> saw ye apperittions of ye
 						black man &amp; <name type="person" key="barker_william_sr">Willm Barker</name>
 						standing<lb/> before sd <name type="person" key="marston_mary">Mary
@@ -30379,7 +30374,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							30th 1692</date>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John. Hathorne</name> &rsqb; Assists </p>
+						<name type="person" key="hathorn_john">*John. Hathorne</name> &rsqb; Assists </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan Corwin</name> &rsqb; Assists </p>
 					<p>(Reverse) according this warrant I have apprehended susanna <name type="person" key="martin_susannah">Martin</name> widdow of Amsbery and have
@@ -30427,7 +30422,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							</date>
 						</dateline>
 						<seg>
-							<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assists </seg>
+							<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assists </seg>
 						<seg>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb;
 							Assists</seg>
@@ -31980,7 +31975,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						Village in order to her Examination Relateing to the aboves'd premises and
 						hereof you are not to faile Salem <date value="1692-03-23" certainty="confirmed">March the 23'd 1691/2</date>
 					</p>
-					<p>per us <name type="person" key="hawthorne_john">*John. Hathorne</name> &rsqb; Assists </p>
+					<p>per us <name type="person" key="hathorn_john">*John. Hathorne</name> &rsqb; Assists </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan Corwin</name> &rsqb; Assists</p>
 					<p><date value="1692-03-24" certainty="confirmed">March 24'th 1691/2</date> I
@@ -32168,7 +32163,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						Goale in Salem as p a Mittimus then given out, in order to farther
 						Examination </seg>
 					<seg>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assis'ts </seg>
+						<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assis'ts </seg>
 					<seg>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb; Assis'ts </seg>
 
@@ -32991,7 +32986,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						come out of prison she had power to <orig reg="afflict">afflet</orig> me and
 						that now she would <orig reg="afflict">afflect</orig> me all this day long
 						and would kil me if she could for she tould me she had kiled <name type="person" key="holton_benjamin">benjamine Holton</name> and <name type="person" key="fuller_john">John fuller</name> and Rebekah Shepard: and
-						she also tould me that she and her sister <name type="person" key="cloyce_sarah">Cloyes</name> and <name type="person" key="bisedw">Ed: Bhishop </name>
+						she also tould me that she and her sister <name type="person" key="cloyce_sarah">Cloyes</name> and Ed: Bhishop
 						wife of of Salem village had kiled young <name type="person" key="putnam_john_jr">Jno putnams </name> Child because yong <name type="person" key="putnam_john_jr">Jno putnam</name> had said that it was no wonder they were
 						witches for their mother was so before them and because they could not aveng
 						themselves on him they did kill his child: and immediatly their did appere
@@ -33207,7 +33202,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					</p>
 					<p>Before us </p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assis'ts </p>
+						<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assis'ts </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb;
 						Assis'ts</p>
@@ -33229,7 +33224,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					</p>
 					<p>Before us </p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assis'ts </p>
+						<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assis'ts </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb;
 						Assis'ts</p>
@@ -33579,7 +33574,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 								Williams</name> Salem <date value="1692-05-23" certainty="confirmed">May: the.23'd 1692</date>
 						</seg>
 						<seg>
-							<name type="person" key="hawthorne_john">*John Hathorne </name>
+							<name type="person" key="hathorn_john">*John Hathorne </name>
 						</seg>
 						<seg>
 							<name type="person" key="corwil_jonathan">*Jonathan Corwin </name>
@@ -33621,7 +33616,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					<p>[<date value="1692-09-08" certainty="confirmed">(September 8, 1692) </date>]</p>
 					<p>The examination and confession <date value="1692-09-08" certainty="confirmed">(8. Sept. 92.) </date> of <name type="person" key="osgood_mary">Mary
 							Osgood</name> , wife of <name type="person" key="osgood_john">Captain
-							Osgood</name> of Andover, taken before <name type="person" key="hawthorne_john">John Hawthorne </name> and other their Majesties justices. </p>
+							Osgood</name> of Andover, taken before <name type="person" key="hathorn_john">John Hawthorne </name> and other their Majesties justices. </p>
 					<p>She confesses, that about 11 years ago, when she was in a melancholy state
 						and condition, she used to walk abroad in her orchard; and upon a certain
 						time, she saw the appearance of a cat, at the end of the house, which yet
@@ -34371,7 +34366,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						thing not a Reall hog, and did then Really Judge or determine in my mind
 						that it was Either Goody parker or by her meenes, and procureing fearing
 						that she is a Witch, </p>
-					<p>Sworne Salem June 2'd 1692 Before <name type="person" key="hawthorne_john">*John
+					<p>Sworne Salem June 2'd 1692 Before <name type="person" key="hathorn_john">*John
 						Hathorne</name> Assis't </p>
 					<p>
 						<name type="person" key="westgate_john">Jno Wastgate</name> declared the above
@@ -34441,7 +34436,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						Examination of <name type="person" key="parker_mary">mary parker </name> of
 						Andover widow taken before <name type="person" key="gidney_bartholomew">Bartho'
 							Gidny</name>
-						<name type="person" key="hawthorne_john">John Hathorne</name>
+						<name type="person" key="hathorn_john">John Hathorne</name>
 						<name type="person" key="corwil_jonathan">Jonat' Corwin</name> &amp; <name type="person" key="higginson_john">John Higginson</name> Esq'rs ther majesties
 						Justices of the peace for the County of Essex in the forth yeare of their
 						majesties Reigne </p>
@@ -34824,7 +34819,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						<name type="person" key="gidney_bartholomew">*Bartho' Gedney</name>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name>
+						<name type="person" key="hathorn_john">*John Hathorne</name>
 					</p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
@@ -34913,12 +34908,12 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						at Andivor She also told of [of] the 2 <name type="person" key="jackson_john_sr">Jaxons</name>
 						&amp; <name type="person" key="howard_john">Jno Howard</name>
 						of Rowly <pb n="644"/> that they ware witches &amp; 13 of Ipswich as She
-						heard them Say of <name type="person" key="faulkner_abigail">Abigal falkner</name> of
+						heard them Say of Abigal falkner of
 						Andiver now in prison &amp; that <name type="person" key="emerson_martha">Martha
 							Emerson</name> afflicted her there in the Room, &amp; then She wuld goe
 						Shake hands &amp; beg pardon of the afflicted persons &amp; not afflict them
 							<name type="person" key="post_mary">Mary Post</name> at the Same time
-						affirmd that She had Seen Church Clark <name type="person" key="hutchins_frances">Goody Hutchins</name> of Haverill &amp; <name type="person" key="faulkner_abigail">Abigale forkner</name> of andiver &amp; <name type="person" key="wilford_ruth">Wilford</name> &amp; <name type="person" key="eames_rebecca">Goody
+						affirmd that She had Seen Church Clark <name type="person" key="hutchins_frances">Goody Hutchins</name> of Haverill &amp; Abigale forkner of andiver &amp; <name type="person" key="wilford_ruth">Wilford</name> &amp; <name type="person" key="eames_rebecca">Goody
 							Eames</name> &amp; her Son <name type="person" key="eames_daniell">Dan'll</name> at a witch metting at andivor &amp; that She knew them to
 						be witches </p>
 					<p>
@@ -34956,11 +34951,11 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						of our Sovereigne Lord &amp; Lady King William &amp; Queen Mary of England:
 						and to the statutes in that case provided: And also s'd swan haveing given
 						bond, according to Law, of twenty pounds in currant mony of New England for
-						prosecution of s'd complaint to Effect, before the Worshi&pbar;'l <name type="person" key="gidney_bartholomew">Bartholemew Gedney</name> , <name type="person" key="hawthorne_john">John Hathorn</name> , <name type="person" key="corwil_jonathan"> J [Torn] n Corwin</name> &amp; <name type="person" key="higginson_john">John Higginson</name> Esqs their Majesty[es] Justices of
+						prosecution of s'd complaint to Effect, before the Worshi&pbar;'l <name type="person" key="gidney_bartholomew">Bartholemew Gedney</name> , <name type="person" key="hathorn_john">John Hathorn</name> , <name type="person" key="corwil_jonathan"> J [Torn] n Corwin</name> &amp; <name type="person" key="higginson_john">John Higginson</name> Esqs their Majesty[es] Justices of
 						the Peace at [Torn] in the County of Essex. </p>
 					<p>These therefore require you in their Majestyes name to Apprehend and Seise
 						the body of <name type="person" key="post_mary">Mary Post</name> afores'd
-						forthwith and her Safely convey to Salem, before the s'd worshipf'll <name type="person" key="gidney_bartholomew">Barthol. Gedney</name> . <name type="person" key="hawthorne_john">John Hathorn</name> &amp;c Esq. there to be examined and
+						forthwith and her Safely convey to Salem, before the s'd worshipf'll <name type="person" key="gidney_bartholomew">Barthol. Gedney</name> . <name type="person" key="hathorn_john">John Hathorn</name> &amp;c Esq. there to be examined and
 						proceeded with acco&rbar;d to Law: for which this shall be your
 						Justification. Given under my hand and Seal this <date value="1692-08-02" certainty="confirmed">2'd day of August 1692</date> &amp; in the
 						fourth year of the Reighn of our Sovereign Lord &amp; Lady William and Mary
@@ -34969,7 +34964,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						Peace by vertue of the above said warrant I have Seized the Body of <name type="person" key="post_mary">Mary Post</name> of Rowley &amp; brought her
 						to Salem beffore the abovesaid <name type="person" key="gidney_bartholomew">Bartho
 							Gidny</name>
-						<name type="person" key="hawthorne_john">John Hathorne</name>
+						<name type="person" key="hathorn_john">John Hathorne</name>
 						<name type="person" key="corwil_jonathan">Jona' Corwin</name> &amp;c Esq'rs </p>
 					<p>
 						<name type="person" key="jewett_joseph">*Joseph jewett</name>
@@ -35245,7 +35240,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							<name type="person" key="gidney_bartholomew">*Bartho Gedney</name>
 						</seg>
 						<seg>
-							<name type="person" key="hawthorne_john">*John Hathorn</name>
+							<name type="person" key="hathorn_john">*John Hathorn</name>
 						</seg>
 						<seg>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name>
@@ -35447,7 +35442,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						Dated Salem <date value="1692-05-23" certainty="confirmed">May the 23'd.
 							1692 </date>
 					</p>
-					<p>* <name type="person" key="hawthorne_john">John Hathorne</name> , </p>
+					<p>* <name type="person" key="hathorn_john">John Hathorne</name> , </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> . </p>
 					<p>p order of the Gov'r &amp; Councill </p>
@@ -35546,7 +35541,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					<p>To <name type="person" key="herrick_george">George Herick</name> Marshall of the
 						County of essex &rsqb; </p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name>
+						<name type="person" key="hathorn_john">*John Hathorne</name>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb; Assists</p>
 
 					<p>You are like wise to warne &amp; order <name type="person" key="hubbard_elizabeth">Eliz
@@ -35674,7 +35669,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						charge of the afflicted persons, were by the advice of the council all
 						committed by us, </p>
 					<p>
-						<name type="person" key="hawthorne_john">John Hawthorne,</name>
+						<name type="person" key="hathorn_john">John Hawthorne,</name>
 					</p>
 					<p>
 						<name type="person" key="corwil_jonathan">John Corwin,</name> Assistants. </p>
@@ -35699,7 +35694,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					<p>
 						<name type="person" key="russell_james">James Russell</name> -- </p>
 					<p>
-						<name type="person" key="hawthorne_john">John Hathorne</name>
+						<name type="person" key="hathorn_john">John Hathorne</name>
 					</p>
 					<p>
 						<name type="person" key="addington_isaac">Isaac Adington</name>
@@ -37037,9 +37032,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						<name type="person" key="cogswell_john_jr">*John Cogswell Jr; </name>
 					</p>
 					<p>
-						<name type="person" key="2">*John Andrews</name>
-					</p>
-					<p>ch <name type="person" key="ojoh"/>
+						<name type="person" key="andrew_john_sr">*John Andrews</name>
 					</p>
 					<p>
 						<name type="person" key="proctor_joseph">*Joseph prockter</name>
@@ -37537,7 +37530,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					<p>This Compl't was Exhibted Salem <date value="1692-05-21" certainty="confirmed">21'th May 1692</date>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name>
+						<name type="person" key="hathorn_john">*John Hathorne</name>
 					</p>
 					<p>before us </p>
 					<p>
@@ -37626,7 +37619,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					</p>
 					<p>before us. </p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assists </p>
+						<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assists </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb; Assists</p>
 					<p>(Reverse) <name type="person" key="walcott_mary">Mary Walcutt</name> against <name type="person" key="proctor_sarah">sara Procktar</name>
@@ -37765,7 +37758,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							1692</date>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> &rsqb; Assis'ts </p>
+						<name type="person" key="hathorn_john">*John Hathorne</name> &rsqb; Assis'ts </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> &rsqb;
 						Assis'ts</p>
@@ -37785,7 +37778,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 
 						<p><date value="1692-09-17" certainty="confirmed">17 Sept</date>: </p>
 					<p>The Examination of <name type="person" key="proctor_william">William Procter</name>
-						taken before <name type="person" key="hawthorne_john">Jno hauthorn</name> Esq'r and
+						taken before <name type="person" key="hathorn_john">Jno hauthorn</name> Esq'r and
 						other their majesties Justices <date value="1692-09-17" certainty="confirmed">17 September 1692</date>. He being s'd what he was
 						acused of He lookeing upon <name type="person" key="warren_mary">Mary
 							Warrin</name> struck her down and by toucheing of her Recovered her
@@ -38281,7 +38274,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						Salem <date value="1692-05-12" certainty="confirmed">May the .12'th 1692
 						</date>
 					</p>
-					<p> per us <name type="person" key="hawthorne_john">*John: Hathorne</name>
+					<p> per us <name type="person" key="hathorn_john">*John: Hathorne</name>
 						] Assis'ts </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ] Assis'ts </p>
@@ -38326,7 +38319,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						</dateline>
 						<signed>by <name type="person" key="churchill_sarah">Sarah Churchill</name>
 						</signed>
-						<seg part="N">this Confession was taken before <name type="person" key="hawthorne_john">John
+						<seg part="N">this Confession was taken before <name type="person" key="hathorn_john">John
 								Hathorne</name> and <name type="person" key="corwil_jonathan">Jonathan
 							Corwin</name> Esq'rs <date value="1692-06-01" certainty="confirmed">1'0 Junij 1692</date>, as attests </seg>
 						<seg part="N">
@@ -38793,7 +38786,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							<name type="place">Dated Salem </name>
 							<date value="1692-05-28" certainty="confirmed">May 28'th 1692 </date>
 						</dateline>
-						<seg part="N">P us <name type="person" key="hawthorne_john">*John Hathorne</name> ]
+						<seg part="N">P us <name type="person" key="hathorn_john">*John Hathorne</name> ]
 							Assis'ts</seg>
 						<seg part="N">
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ]
@@ -39083,7 +39076,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							Laurence</name> the girle which then lived with <name type="person" key="redd_wilmot">Wilmott Redd</name> had taken up, desired the deponent to
 						goe with her to <name type="person" key="redd_wilmot">Wilmott Redds</name> , and
 						demanding the same, having many words about the same, <name type="person" key="simms_mrs">M'rs Syms</name> told her, that if she would not deliver
-						them she would go to Salem to <name type="person" key="hawthorne_john">mr
+						them she would go to Salem to <name type="person" key="hathorn_john">mr
 						Hathorne</name>, and gett a speciall warrant for her servant girle; upon
 						which the s'd <name type="person" key="redd_wilmot">Redd</name> told her in my
 						hearing, that she wished that she might never mingere [urinate], nor cacare [defecate], if she
@@ -39181,7 +39174,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						hurt: &amp;c in order to her Examination Relateing to the premises
 						aboves'd faile not Dated Salem <date value="1692-05-28" certainty="confirmed">May  </date> <hi rend="underline">28'th 16</hi>92
 					</p>
-					<p>[Pbar ] us <name type="person" key="hawthorne_john">*John Hathorne</name>
+					<p>[Pbar ] us <name type="person" key="hathorn_john">*John Hathorne</name>
 						] Assis'ts </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ] </p>
@@ -39283,7 +39276,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						premises faile not Dated Salem <date value="1692-05-21" certainty="confirmed">May the 21'st 1692</date>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">John Hathorne</name>
+						<name type="person" key="hathorn_john">John Hathorne</name>
 					</p>
 					<p>
 						<name type="person" key="corwil_jonathan">Jonathan. Corwin</name>
@@ -39357,7 +39350,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 
 				<div2 id="n117.1" type="examination" org="uniform" sample="complete" part="N">
 					<head>(Examination of <name type="person" key="salter_henry">Henry Salter</name> ) </head>
-					<p><figure n="S026A"/><figure n="S026B"/>The Examination #(and confession) of <name type="person" key="salter_henry">Henry Salters. </name> Taken before <name type="person" key="hawthorne_john">Jno Hauthorn </name> Esq'r &amp; other their majesties
+					<p><figure n="S026A"/><figure n="S026B"/>The Examination #(and confession) of <name type="person" key="salter_henry">Henry Salters. </name> Taken before <name type="person" key="hathorn_john">Jno Hauthorn </name> Esq'r &amp; other their majesties
 						Justices. </p>
 					<p>In the tyme of his Examination He struck down with his eye <name type="person" key="warren_mary"> Mary warrin</name>
 						<name type="person" key="walcott_mary">mary walcot</name>
@@ -39871,7 +39864,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						premises and hereof you are not to faile Dated Salem <date value="1692-05-08" certainty="confirmed">May 8'th 1692</date>
 					</p>
 					<p>To the Constable of Woburne </p>
-					<p> [pbar ] us <name type="person" key="hawthorne_john">*John: Hathorne</name>
+					<p> [pbar ] us <name type="person" key="hathorn_john">*John: Hathorne</name>
 						] Assis'ts </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ]
@@ -40003,7 +39996,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							<date value="1692-05-13" certainty="confirmed">May the. 13'th 1692
 							</date>
 						</dateline>
-						<seg part="N">[Pbar ] us <name type="person" key="hawthorne_john">*John: Hathorne</name>
+						<seg part="N">[Pbar ] us <name type="person" key="hathorn_john">*John: Hathorne</name>
 							] Assis't </seg>
 						<seg part="N">
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ]
@@ -40289,7 +40282,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					<p><figure n="S044r"/><figure n="S044v"/>
 						<name type="person" key="taylor_mary">Mary Tayler </name> examined before their
 						Majest's Justices: at Salem <date value="1692-09-05" certainty="confirmed">Sept'r 5'th 1692 </date>
-						<name type="person" key="hawthorne_john">Jno Hawthorn </name> Esq'r &amp; others </p>
+						<name type="person" key="hathorn_john">Jno Hawthorn </name> Esq'r &amp; others </p>
 					<p>It was sayd to her: you are acused for afflicting <name type="person" key="marshall_mary">M'rs Mary Marshall</name> by by witch craft: but she s'd she
 						knew nothing of it </p>
 					<p>
@@ -40484,7 +40477,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							<name type="place">Dated Salem </name>
 							<date value="1692-02-29" certainty="confirmed">febr' 29 1691/2 </date>
 						</dateline>
-						<seg part="N"><name type="person" key="hawthorne_john">*John Hathorne</name> ]
+						<seg part="N"><name type="person" key="hathorn_john">*John Hathorne</name> ]
 							Assis'ts </seg>
 						<seg part="N"><name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ]
 							Assis'ts </seg>
@@ -40551,7 +40544,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						Examination titiba acknowledg the same she did formerly and accused the
 						other two-aboves'd -- </p>
 					<p><name type="person" key="tituba">titiba</name> againe s'd the same </p>
-					<p>p us <name type="person" key="hawthorne_john">*John Hathorne</name> ]
+					<p>p us <name type="person" key="hathorn_john">*John Hathorne</name> ]
 						Assis'ts </p>
 					<p><name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ] Assis'ts</p>
 					<p>
@@ -41002,7 +40995,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						abovesaid <name type="person" key="good_sarah">Good</name><name type="person" key="osbourne_sarah"> &amp; Osburne </name> as the persons that afflicted
 						her the aforesaid Indian </p>
 					<p>Sworne Salem <date value="1693-05-23" certainty="confirmed">May the 23'd
-						1692</date> Before us <name type="person" key="hawthorne_john">* John
+						1692</date> Before us <name type="person" key="hathorn_john">* John
 						Hathorne</name>
 					</p>
 					<p>
@@ -41078,7 +41071,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					<figure n="MA026r"/>
 					<p>present <name type="person" key="gidney_bartholomew">Maj'r Bar't Gedney</name>
 						<name type="person" key="corwil_jonathan">Jonat' Corwin</name>
-						<name type="person" key="hawthorne_john">Jno Hathorne</name> ] </p>
+						<name type="person" key="hathorn_john">Jno Hathorne</name> ] </p>
 					<p>
 						<name type="person" key="tuckey_job">Job Tuckey</name> sayth its not he but the
 							<orig reg="devil">divele</orig> in his shape that hurts the people </p>
@@ -41109,7 +41102,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							w't child that was that arose and Cryed Vengance he Answerd, it was
 								<name type="person" key="trask_john">Jno Trasks</name> child. And <name type="person" key="putnam_ann_jr">Ann Putnam.</name> told her that it was
 								<name type="person" key="trask_john">John Trasks</name> child </seg>
-						<seg part="N">Before -- <name type="person" key="hawthorne_john">*John Hathorne</name> Just'
+						<seg part="N">Before -- <name type="person" key="hathorn_john">*John Hathorne</name> Just'
 							peace </seg>
 						<seg part="N">
 							<ref targOrder="U">( <hi rend="italics">Mass. Archives Vol. 135 No. 26 </hi>) </ref>
@@ -41191,7 +41184,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 					<p>
 						<date value="1692-06-07" certainty="confirmed">7 June 1692 </date> Before
 							<name type="person" key="gidney_bartholomew">Major Gidney</name>
-						<name type="person" key="hawthorne_john">Mr Hauthorn</name> &amp; <name type="person" key="corwil_jonathan">mr Corwin</name> The examination of <name type="person" key="tookey_job">Job Stuky </name>
+						<name type="person" key="hathorn_john">Mr Hauthorn</name> &amp; <name type="person" key="corwil_jonathan">mr Corwin</name> The examination of <name type="person" key="tookey_job">Job Stuky </name>
 					</p>
 					<p>After propounding Severall questions and negative answers returned q Did you
 						not say the other day that you saw the Devil. Answer I knew not then what I
@@ -41379,7 +41372,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						Examination and confession of <name type="person" key="toothaker_mary">widow
 							Toothaker</name> Taken before <name type="person" key="gidney_bartholomew">Majo'r
 							Gidney</name>
-						<name type="person" key="hawthorne_john">m'r Hauthorn</name>
+						<name type="person" key="hathorn_john">m'r Hauthorn</name>
 						<name type="person" key="corwil_jonathan">m'r Corwin</name> &amp; <name type="person" key="higginson_john">Cap'n Higginson.</name>
 					</p>
 					<p>After many questiones and negative answe's returned and her stricking down of
@@ -41692,7 +41685,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							<date value="1692-05-18" certainty="confirmed">May 18'th 1692 </date>
 						</dateline>
 						<seg part="N">
-							<name type="person" key="hawthorne_john">*John Hathorne</name> ]
+							<name type="person" key="hathorn_john">*John Hathorne</name> ]
 							#[Assists] </seg>
 						<seg part="N">
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ]
@@ -41747,7 +41740,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 							<date value="1692-05-18" certainty="confirmed">May 18'th 1692 </date>
 						</dateline>
 						<seg part="N">
-							<name type="person" key="hawthorne_john">*John Hathorne</name>
+							<name type="person" key="hathorn_john">*John Hathorne</name>
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ] by
 							order of the Goven'r <hi rend="underline">&amp; Councill</hi> </seg>
 						<seg part="N">(Reverse) </seg>
@@ -41788,7 +41781,7 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						Village <date value="1692-05-20" certainty="confirmed">May. 23'd
 						</date>
 					</p>
-					<p>before us <name type="person" key="hawthorne_john">*John Hathorne</name> ]
+					<p>before us <name type="person" key="hathorn_john">*John Hathorne</name> ]
 						Assists </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ] Assists </p>
@@ -41918,8 +41911,8 @@ Comment: --> &amp; <name type="person" key="barker_mary">Mary
 						<!--
 Comment: --> Where <name type="person" key="wilson_sarah_sr">Sarah Wilson</name>
 						was Confesing to hind'r her--&amp; asked me if I was Willing he Should
-						goe in my Shape She S'd <name type="person" key="faulkner_abigail">Good'e
-						falkner</name> was before her Now on the table to hind'r her She was at a
+						goe in my Shape She S'd Good'e
+						falkner was before her Now on the table to hind'r her She was at a
 						witch metting at Chandler' pasture </p>
 					<p>
 						<name type="person" key="higginson_john">*John Higginson</name>
@@ -42076,7 +42069,7 @@ Comment: --> Where <name type="person" key="wilson_sarah_sr">Sarah Wilson</name>
 					<p><figure n="eia24-9r"/>
 						<date value="1692-09-01" certainty="confirmed">1th Sept 1692</date>. Before
 							<name type="person" key="gidney_bartholomew">Maj'r Gidney</name>
-						<name type="person" key="hawthorne_john">Mr Hathorne</name>
+						<name type="person" key="hathorn_john">Mr Hathorne</name>
 						<name type="person" key="corwil_jonathan">Mr Corwin</name> &amp; <name type="person" key="higginson_john">Jno Higginson</name> Esq'r </p>
 					<p>The Examination &amp; Confession of <name type="person" key="wardwell_mercy">Mercy Wardwel</name> Daughter of <name type="person" key="wardwell_samuel">Sam'll Wardwell</name> of Andivor </p>
 					<p>She Confesses she hath been in the Snare of the <orig reg="Devil">Divel</orig> a quartter of a Year the Cause of her being Inticed was her
@@ -42516,7 +42509,7 @@ Comment: --> Where <name type="person" key="wilson_sarah_sr">Sarah Wilson</name>
 					<p><figure n="eia24-8v"/><figure n="eia24-9r"/>The <date value="1692-09-01" certainty="confirmed">1'rst Septemb'r 1692. </date>
 					</p>
 					<p>Before <name type="person" key="gidney_bartholomew">Maj'r Gidney</name>
-						<name type="person" key="hawthorne_john">Mr Hathorne</name>
+						<name type="person" key="hathorn_john">Mr Hathorne</name>
 						<name type="person" key="corwil_jonathan">Mr Corwin</name>
 						<name type="person" key="higginson_john">Jno Higginson</name> Esq'r The Confession
 						of <name type="person" key="wardwell_sarah">Sarah Wardwel</name> wife of <name type="person" key="wardwell_samuel">Sam'll Wardwel</name> of Andivor after many
@@ -42595,7 +42588,7 @@ Comment: --> Where <name type="person" key="wilson_sarah_sr">Sarah Wilson</name>
 					<p>The Examination of <name type="person" key="warren_mary">Mary Warren </name> At a
 						Court held at Salem Village by </p>
 					<p>
-						<name type="person" key="hawthorne_john">John Hauthorne</name> ] Esq'rs </p>
+						<name type="person" key="hathorn_john">John Hauthorne</name> ] Esq'rs </p>
 					<p>
 						<name type="person" key="corwil_jonathan">Jonath: Corwin</name> ] Esq'rs</p>
 					<p>As soon as she was coming towards the Bar the afflicted fell into fits. </p>
@@ -42680,7 +42673,7 @@ Comment: --> Where <name type="person" key="wilson_sarah_sr">Sarah Wilson</name>
 						persons then present. Wee Committed said <name type="person" key="warren_mary">Mary Warren</name>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John Hathorne</name> ] Assis'ts </p>
+						<name type="person" key="hathorn_john">*John Hathorne</name> ] Assis'ts </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ]
 						Assis'ts </p>
@@ -42952,7 +42945,7 @@ Comment: --> Where <name type="person" key="wilson_sarah_sr">Sarah Wilson</name>
 						mr Hale as soon as I read the Name Parker, She Imediately fell into
 						dreadfull <orig reg="fits">fitts</orig> as she affirmed <pb n="802"/> after
 						his <orig reg="fit">fit</orig> was over by the appearance of Goody Parker:
-						&amp; <name type="person" key="hawthorne_john">mr Hathorne</name> presently but
+						&amp; <name type="person" key="hathorn_john">mr Hathorne</name> presently but
 						nameing <name type="person" key="pudeator_ann">Goody Pudeator</name>
 						&amp; Tormented hir very much. and Goody Parker in the time of
 						hir Examination in one of<name type="person" key="warren_mary"> Warrens</name>
@@ -43134,7 +43127,7 @@ Comment: --> Where <name type="person" key="wilson_sarah_sr">Sarah Wilson</name>
 						1692.</date>
 					</p>
 					<p>
-						<name type="person" key="hawthorne_john">*John: Hathorne</name> ] Assists </p>
+						<name type="person" key="hathorn_john">*John: Hathorne</name> ] Assists </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ] Assists</p>
 					<p>To: <name type="person" key="herrick_george">Geo: Herrick</name> Marshall of Essex
@@ -43153,7 +43146,7 @@ Comment: --> Where <name type="person" key="wilson_sarah_sr">Sarah Wilson</name>
 							<hi rend="underline">1692 </hi>
 						</date>
 					</p>
-					<p>by the worshipful:_ <name type="person" key="hawthorne_john">John Hathorn</name> &amp;
+					<p>by the worshipful:_ <name type="person" key="hathorn_john">John Hathorn</name> &amp;
 							<name type="person" key="corwil_jonathan">Jonathan Corwin.</name>
 					</p>
 					<p>The Sufferers were siezed with sundry[?] the accused came into the Court </p>
@@ -43756,7 +43749,7 @@ who this is?-->
 							<date value="1692-05-10" certainty="confirmed">May. 10'th 1692 </date>
 						</dateline>
 						<seg part="N">
-							<name type="person" key="hawthorne_john">*John Hathorne</name> ]
+							<name type="person" key="hathorn_john">*John Hathorne</name> ]
 							Assis'ts </seg>
 						<seg part="N">
 							<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ] </seg>
@@ -43802,7 +43795,7 @@ who this is?-->
 						untill he be Brought before us or such as may be in Authority There, in Salem
 						and hereof You are not to faile Dated Salem <date value="1692-05-15" certainty="confirmed">May the 15'th 1692 </date>
 					</p>
-					<p>p us <name type="person" key="hawthorne_john">*John Hathorne</name> ]
+					<p>p us <name type="person" key="hathorn_john">*John Hathorne</name> ]
 						Assist's </p>
 					<p>
 						<name type="person" key="corwil_jonathan">*Jonathan. Corwin</name> ]
@@ -43827,7 +43820,7 @@ who this is?-->
 							<name type="person" key="willard_john">John Willard</name> and <name type="person" key="buckley_sarah">Sarah Buckley</name> ) <figure n="B08r"/><figure n="B08v"/></head>
 					<opener>
 						<dateline>
-							<name type="recipient">To: the Hon'ble <name type="person" key="hawthorne_john">John Hathorne</name> and <name type="person" key="corwil_jonathan">Jonathan Corwin</name> Esq'rs att Boston Humbly Thees Dated
+							<name type="recipient">To: the Hon'ble <name type="person" key="hathorn_john">John Hathorne</name> and <name type="person" key="corwil_jonathan">Jonathan Corwin</name> Esq'rs att Boston Humbly Thees Dated
 								Salem Village </name>
 							<date value="1692-05-17" certainty="confirmed">May 17'th 1692 </date>
 						</dateline>
@@ -43957,7 +43950,7 @@ who this is?-->
 						</dateline>
 						<seg part="N">Before us </seg>
 						<seg part="N">
-							<name type="person" key="hawthorne_john">* John Hathorne</name>
+							<name type="person" key="hathorn_john">* John Hathorne</name>
 						</seg>
 						<seg part="N">
 							<name type="person" key="corwil_jonathan">* Jonathan Corwin</name>
@@ -44701,7 +44694,7 @@ separately?-->
 							<name type="person" key="willard_john">John Willard </name> to whome these 4
 						said you have murdered us these 4 haveing said thus to willard thay turned
 						As Red As blood And turning About to look on mee they turned As pale As deth
-						these 4 desiered mee to tell <name type="person" key="hawthorne_john">Mr.
+						these 4 desiered mee to tell <name type="person" key="hathorn_john">Mr.
 							hathorn</name><name type="person" key="willard_john"> J willard </name> hering
 						them pulled out A knif saying If I did hee would Cut my throote the second
 						to be Read </p>
@@ -44710,12 +44703,12 @@ separately?-->
 						it and I would not and then shee Profered mee a blak Peas of monny and seaid
 						I might touch that and I shall be well -- may the 10 on tusday ther a Peared
 						to mee the sam <orig reg="apparitions">appearations</orig> and another with
-						them In the liknes of a man and they seaid I should Gooe and tell <name type="person" key="hawthorne_john">mr hathorn</name> of it then the seaid <name type="person" key="willard_john">willard </name> seaid he would break my head
+						them In the liknes of a man and they seaid I should Gooe and tell <name type="person" key="hathorn_john">mr hathorn</name> of it then the seaid <name type="person" key="willard_john">willard </name> seaid he would break my head
 						and stop my leegs that I should not gooe there did Appeared to Mee a
 						shineing Man whoe tolde I should goe And tell w't I had heard And seen to
-							<name type="person" key="hawthorne_john">Mr hathorn</name> this <name type="person" key="willard_john">willard </name> being there present tould
+							<name type="person" key="hathorn_john">Mr hathorn</name> this <name type="person" key="willard_john">willard </name> being there present tould
 						Mee If I did hee would Cutt my throate At this same time and place this
-						shining man told Mee that If I did goe to tell this to <name type="person" key="hawthorne_john">Mr Hathorn</name> that I should bee well goeing And Coming
+						shining man told Mee that If I did goe to tell this to <name type="person" key="hathorn_john">Mr Hathorn</name> that I should bee well goeing And Coming
 						but I should bee Afflicted there then said I to the shining man hunt willard
 						Away And I would beleve what he said that he might not chock mee with that
 						the shining man held up his hand And willard vanished Away about two hours
@@ -44726,7 +44719,7 @@ separately?-->
 						Southerek and the angell lifted up his winding sheet and out of his left sid
 						hee Poolled out a Pitchfork tiang and Pot it in again and lik wise hee
 						opened all ther winding Sheets and Showed all ther wound and the whit man
-						tould mee to <pb n="838"/> tell <name type="person" key="hawthorne_john">Mr
+						tould mee to <pb n="838"/> tell <name type="person" key="hathorn_john">Mr
 						Hathoren</name> of It and I tould him to hunt willard away and I would and
 						he held up his hand and he vanished away </p>
 					<p>
@@ -44803,7 +44796,7 @@ separately?-->
 						that the shape of <name type="person" key="fuller_samuel">Sam'll Fuller</name>
 						&amp; <name type="person" key="wilkins_lydia">Lidia Wilkins</name> this day
 						told me at my Owne house by the bed side. that #(fi) #(that) who appeared in winding sheets
-						that if I did not Goe &amp; tell <name type="person" key="hawthorne_john">mr
+						that if I did not Goe &amp; tell <name type="person" key="hathorn_john">mr
 							Hathorne </name> that <name type="person" key="willard_john">John Willard
 						</name> had Murdered them. they would tare Me #her) to peices I knew them when
 						they were living &amp; it was Exactly thier resemblance &amp; Shape
@@ -44814,7 +44807,7 @@ separately?-->
 						 Second wife &amp; <name type="person" key="way_aaron">Aron Ways</name> Child &amp; <name type="person" key="fuller_ben">Ben:
 							fullers</name> Child &amp; this deponents Child. Sarah
 						 6 weeks old &amp; <name type="person" key="knight_philip">Phillips Knights</name> Child w'th the help of <name type="person" key="hobbs_william">Wm #Knig) Hobbs</name>. &amp; <name type="person" key="knight_jonathan">Jonathan Knights</name> Child &amp; 2 of <name type="person" key="cheever_ezekiel">Ezek: Cheevers</name> Children with the help
-						of <name type="person" key="hobbs_william">Wm Hobbs</name>. <name type="person" key="elliot_anna">Anna Elliott</name> &amp; <name type="person" key="nicholls_isaac">Isack Nicholls</name> w'th help of <name type="person" key="hobbs_william">Wm Hobbs</name> : shaps &amp; that if <name type="person" key="hawthorne_john">mr Hathorne </name> would not beleive them
+						of <name type="person" key="hobbs_william">Wm Hobbs</name>. <name type="person" key="elliot_anna">Anna Elliott</name> &amp; <name type="person" key="nicholls_isaac">Isack Nicholls</name> w'th help of <name type="person" key="hobbs_william">Wm Hobbs</name> : shaps &amp; that if <name type="person" key="hathorn_john">mr Hathorne </name> would not beleive them
 						(ie) <name type="person" key="fuller_samuel">Sam. Fuller</name> &amp; <name type="person" key="wilkins_lydia">Lida Wilkins </name> [pbar ]haps they
 						would appear to the Majistrates </p>
 					<p>
@@ -45452,12 +45445,12 @@ Comment: --> struck at the <orig reg="apparitions">aperistions</orig>
 						so he hath contineued eversence greviously torturing by times and threating
 						to kill me if I would not write in his book and he also tould me that he had
 						bewitched his grandfather wilknes: and I being caried up to wills hill on
-						the: 16'th of may a litle before night I saw their the Apperishtion of <name type="person" key="willard_john_wilknes">John #[Wilknes] Willard </name> a choaking
+						the: 16'th of may a litle before night I saw their the Apperishtion of <name type="person" key="willard_john">John #[Wilknes] Willard </name> a choaking
 							<name type="person" key="wilkins_david">Daniell wilknes</name> also on the
 						18'th may being the day of his examination I was most greviously <orig reg="tortured">tortored</orig> by him dureing the time of his
 						examination for if he did but look personally upon me he would Immediately
 						strick me down or allmost choak me to death: also severall times during the
-						time of his examination I saw the Apperishtion of <name type="person" key="willard_john_wilknes">John #[Wilk] Willard </name> go from him and <orig reg="afflict">afflect</orig> the bodyes of <name type="person" key="lewis_mercy">mircy lewes</name>
+						time of his examination I saw the Apperishtion of <name type="person" key="willard_john">John #[Wilk] Willard </name> go from him and <orig reg="afflict">afflect</orig> the bodyes of <name type="person" key="lewis_mercy">mircy lewes</name>
 						<name type="person" key="williams_abigail">Abigail williams</name>
 						<name type="person" key="hubbard_elizabeth">Elizabeth Hubburd.</name> and <name type="person" key="putnam_ann_jr">ann putnam</name> Junr </p>
 					<p>
@@ -45480,7 +45473,7 @@ Comment: --> struck at the <orig reg="apparitions">aperistions</orig>
 					</closer>
 				</div2>
 				<div2 id="n137.38" type="section" org="uniform" sample="complete" part="N">
-					<head>( <name type="person" key="williams_abigail">Abigail Williams</name> v. <name type="person" key="willard_john_wilknes">John Willard</name> ) </head>
+					<head>( <name type="person" key="williams_abigail">Abigail Williams</name> v. <name type="person" key="willard_john">John Willard</name> ) </head>
 					<p><figure n="B12r"/><figure n="B12v"/>The Testimony of <name type="person" key="williams_abigail">Abigail Williams </name> witnesseth &amp; saith that
 						sundry times she hath seen &amp; been almost killed by the <orig reg="Apparition">Appartion</orig> of <name type="person" key="willard_john">John Willard </name> of Salem Village Husbandman on &amp; before
 						the 18. May. <hi rend="underline">1692 </hi>. </p>
@@ -50663,7 +50656,7 @@ Comment: -->
                         <date value="1692-03-01" certainty="confirmed">March the 1'st
                             1691/2</date>
                     </p>
-                    <p>Uppon a meeteing of the Majestrates <name type="person" key="hawthorne_john">Mr Jno
+                    <p>Uppon a meeteing of the Majestrates <name type="person" key="hathorn_john">Mr Jno
                             Hathorne</name> and <name type="person" key="corwil_jonathan">Jonathan Corwin
                         </name> Esq'rs in an Inquirere after Witchcraft Expences upon the Countrys
                         Acco't for Majestrates Marshalls Constables &amp; Asistance at my Howse Vizt
@@ -50753,7 +50746,7 @@ Comment: -->
                             </row>
                             <row role="data">
                                 <cell role="data" rows="1" cols="1">A further Accont in Examina[cbar
-                                    ]on of Witchcraft at Salem Villiage before the Worshipfull <name type="person" key="hawthorne_john">John Hathorn</name> and <name type="person" key="corwil_jonathan">Jonathan Corwin</name> Esq'rs
+                                    ]on of Witchcraft at Salem Villiage before the Worshipfull <name type="person" key="hathorn_john">John Hathorn</name> and <name type="person" key="corwil_jonathan">Jonathan Corwin</name> Esq'rs
                                     &amp; Assist: for the County of Essex. </cell>
                                 <cell role="data" rows="1" cols="1"> </cell>
                             </row>
@@ -52010,7 +52003,7 @@ Comment: -->
                         be pleased to consider me and alow me for my charge expended for the
                         Contreys or County by Comand of Authority to me given which charge is as
                         foloweth on the 23 of july 1692 by warrant from <name type="person" key="gidney_bartholomew">bartholomew girdn</name>
-                        <name type="person" key="hawthorne_john">John hathorn</name>
+                        <name type="person" key="hathorn_john">John hathorn</name>
                         <name type="person" key="corwil_jonathan">Jonathan Corwine</name>
                         <name type="person" key="higginson_john">John higgerson</name> Esquiers for the
                         sesuer of <name type="person" key="emerson_martha">martha emerson</name> I brought
@@ -52113,7 +52106,7 @@ Comment: -->
                                 <cell role="data" rows="1" cols="1">01:19:06</cell>
                             </row>
                             <row role="data">
-                                <cell role="data" rows="1" cols="1"><name type="person" key="unknown">Sarah Cole</name> Committed Octobr: 3d: 1692 was by ye
+                                <cell role="data" rows="1" cols="1">Sarah Cole Committed Octobr: 3d: 1692 was by ye
                                     Sheriffe taken out<lb/> said 3d of Janury: wch is 12 weeks &amp;
                                     six days amounting to --------------</cell>
                                 <cell role="data" rows="1" cols="1">01:12:00</cell>
@@ -52121,7 +52114,7 @@ Comment: -->
                             <row role="data">
                                 <cell role="data" rows="1" cols="1"><name type="person" key="dustin_lydia">Lydia Dastin</name>, <name type="person" key="dustin_sarah">Sarah
                                         Dastin</name>, <name type="person" key="colson_elizabeth">Elizabeth
-                                        Colson</name>, <name type="person" key="unknown">Sarah Cole</name><lb/>
+                                        Colson</name>, Sarah Cole<lb/>
                                     <name type="person" key="toothaker_mary">Mary Toothaker</name> &amp;
                                         <name type="person" key="taylor_mary">Mary Taylr</name>: were by
                                     order of ye Sheriffe<lb/> Committed Janury: 28th: 1692/3 &amp;
@@ -52132,17 +52125,17 @@ Comment: -->
                             <row role="data">
                                 <cell role="data" rows="1" cols="1"><name type="person" key="dustin_lydia">Lydia Dastin</name>, <name type="person" key="dustin_sarah">Sarah
                                         Dastin</name>, <name type="person" key="colson_elizabeth">Elizabeth
-                                        Colson</name> &amp; <name type="person" key="unknown">Sarah
-                                        Cole</name><lb/> were by the Sheriffs warrant (after the
+                                        Colson</name> &amp; Sarah
+                                        Cole<lb/> were by the Sheriffs warrant (after the
                                     tryall of said persons)<lb/> Committted Februry: 11th: 1692/3 -
                                         <name type="person" key="colson_elizabeth">Elizabeth Colson</name>
                                     went out of <lb/> Prison ye 2d of March following: <name type="person" key="dustin_lydia">Lydia Dastin</name> dyed ye 10th
                                     of said March <lb/>
-                                    <name type="person" key="unknown">Sarah Cole</name> &amp; <name type="person" key="dustin_sarah">Sarah Dastin</name> went out of
+                                    Sarah Cole &amp; <name type="person" key="dustin_sarah">Sarah Dastin</name> went out of
                                     Prison ye 23d of said March<lb/> the time of said persons
                                     Continuance in Prison from said -<lb/> Committmt: to their going
                                     out is as follows Viz:<lb/>
-                                    <name type="person" key="unknown">Sarah Cole</name> &amp; <name type="person" key="dustin_sarah">Sarah Dastin</name> 5 weeks &amp;
+                                    Sarah Cole &amp; <name type="person" key="dustin_sarah">Sarah Dastin</name> 5 weeks &amp;
                                     5 days wch amounts to-</cell>
                                 <cell role="data" rows="1" cols="1">01:08:04</cell>
                             </row>
@@ -52168,8 +52161,8 @@ Comment: -->
                         prison<lb/> at Cambridge) account of the expense,<lb/> the number of weeks
                         spent in prison,<lb/> and when they left the jail, of persons<lb/> accused
                         of witchcraft. <name type="person" key="dustin_lydia">Lydia</name> &amp; <name type="person" key="dustin_sarah">Sarah Dastin</name>,<lb/>
-                        <name type="person" key="colson_mary">Mary Colison</name>, <name type="person" key="colson_elizabeth">Elizabeth Colison</name>, <name type="person" key="unknown">Sarah
-                            Cole</name>,<lb/>
+                        <name type="person" key="colson_mary">Mary Colison</name>, <name type="person" key="colson_elizabeth">Elizabeth Colison</name>, Sarah
+                            Cole,<lb/>
                         <name type="person" key="toothaker_mary">Mary Toothacre</name>, <name type="person" key="taylor_mary">Mary Taylor</name>, <name type="person" key="dustin_lydia">Lydia
                             Dastin</name> died.<lb/> vol. [<hi rend="italics">words
                         unclear</hi>]</p>
@@ -52759,7 +52752,7 @@ Comment: -->
                         <name type="person" key="esty_isaac_sr">Issac Estey</name>
                     </p>
                     <p>
-                        <name type="person" key="nurse_samuel">Samuel Nurse</name>
+                        <name type="person" key="nurse_samuel_sr">Samuel Nurse</name>
                     </p>
                     <p>
                         <name type="person" key="robinson_phoebe">Phebe Robinson</name>
@@ -54371,7 +54364,7 @@ Comment: -->
                     <figure n="MA154r"/>
                     <figure n="MA154v"/>
                     <p>To the Honourable Committee Sitting in Salem <date value="1710-09-13" certainty="confirmed">Sept. 13, 1710 </date>An Account of the
-                        Sufferings of <name type="person" key="faulkner_abigail">Abigail Faulkner</name> of
+                        Sufferings of Abigail Faulkner of
                         Andover and of <pb n="992"/> 2 of her children for supposed witchcraft, and
                         of the Damage she sustained thereby in the year 1692 </p>
                     <p>1 I suffered imprisonment four moneths and my children were in prison about a
@@ -55619,7 +55612,7 @@ Comment: -->
                             </row>
                             <row role="data">
                                 <cell role="data" rows="1" cols="1">
-                                    <name type="person" key="core_elizabeth">Elizabeth Core</name> . &amp;
+                                    <name type="person" key="corey_elizabeth">Elizabeth Core</name> . &amp;
                                         <name type="person" key="moulton_martha">Martha</name> the wife of
                                         <name type="person" key="moulton_john">Jno Molton</name> he pr'd p </cell>
                                 <cell role="data" rows="1" cols="1">21 0 0 </cell>
@@ -55908,7 +55901,7 @@ Comment: -->
                         his wife. <name type="person" key="nurse_rebecca">Rebeccah Nurse</name> . <name type="person" key="willard_john">John Willard</name> . <name type="person" key="good_sarah">Sarah Good</name> . <name type="person" key="carrier_martha">Martha Carrier</name> . <name type="person" key="wardwell_samuel">Samuell
                             Wardell</name> .. <name type="person" key="proctor_john">John Procter</name> ;
                             <name type="person" key="wilds_sarah">Sarah Wild</name> Condemned &amp; not
-                        Executed <name type="person" key="bradbury_mary">Mrs. Mary Bradbury</name> , <name type="person" key="faulkner_abigail">Abigail Falker</name>
+                        Executed <name type="person" key="bradbury_mary">Mrs. Mary Bradbury</name> , Abigail Falker
                         <name type="person" key="hobbs_abigail">Abigail Hobs</name> . <name type="person" key="foster_ann">Ann Foster</name> : <name type="person" key="eames_rebecca">Rebeccah Eams</name> . <name type="person" key="hoar_dorcas">Dorcas
                             Hoar</name> , <name type="person" key="post_mary">Mary Post</name> Mary
                         Lacey.<!-- Comment:
@@ -55924,8 +55917,8 @@ Comment: -->
                             <name type="person" key="wardwell_samuel">Samuel Wardell</name> &amp; <name type="person" key="wardwell_sarah">Sarah</name> his wife 36.£ 15.s John procter
                         &amp; [Elizabeth] procter his wife 150.£ <name type="person" key="wilds_sarah">Sarah
                             Wild</name> 14.£ <name type="person" key="bradbury_mary">Mrs. Mary
-                            Bradbury</name> . 20£ <name type="person" key="faulkner_abigail">Abigail
-                            Falkner</name> 20.£ <name type="person" key="hobbs_abigail">Abigail Hobs</name>
+                            Bradbury</name> . 20£ Abigail
+                            Falkner 20.£ <name type="person" key="hobbs_abigail">Abigail Hobs</name>
                         . 10.£ <name type="person" key="foster_ann">Ann Foster</name> . 6.£10.s <name type="person" key="eames_rebecca">Rebecca Eams</name> . 10.£ <name type="person" key="hoar_dorcas">Dorcas Hoar</name> . 21.£17.s <name type="person" key="post_mary">Mary Post</name> 8.£14.s Mary
                     	Lacey 8.£10.s the whole amounting unto. 578.£12.s </p>
                     <p>Salem. the <date value="1710-09-15" certainty="confirmed">15th Sept.
@@ -56066,7 +56059,7 @@ Comment: -->
                         <hi rend="underline">
                             <name type="person" key="wardwell_samuel">Wardell</name> , <name type="person" key="parker_mary">Mary Parker</name>
                         </hi>; <hi rend="underline">
-                            <name type="person" key="carrier_martha">Martha Carrier</name> , <name type="person" key="faulkner_abigail">Abigail Falkner</name>
+                            <name type="person" key="carrier_martha">Martha Carrier</name> , Abigail Falkner
                         </hi>: <hi rend="underline">
                             <name type="person" key="foster_ann">Anne Foster</name> , <name type="person" key="eames_rebecca">Rebecca Eames</name> , <name type="person" key="post_mary">Mary Post</name>
                         </hi> and <hi rend="underline">
@@ -56102,7 +56095,7 @@ Comment: -->
                             <name type="person" key="corey_giles">Giles Core</name> and <name type="person" key="corey_martha">[] Core</name> , <name type="person" key="nurse_rebecca">Rebecca Nurse</name> , <name type="person" key="good_sarah">Sarah Good</name> , <name type="person" key="how_elizabeth">Elizabeth
                             How</name> , <name type="person" key="esty_mary">Mary Easty</name> , <name type="person" key="wilds_sarah">Sarah W[ild]</name>
                         <name type="person" key="hobbs_abigail">Abigail Hobbs</name> , <name type="person" key="wardwell_samuel">Samuel Wardell</name> , <name type="person" key="parker_mary">Mary Parker</name> , <name type="person" key="carrier_martha">Martha
-                            Carrier</name> , <name type="person" key="faulkner_abigail">Abigail Falkner</name>
+                            Carrier</name> , Abigail Falkner
                         , <name type="person" key="foster_ann">Anne Foster</name> , <name type="person" key="eames_rebecca">Rebecca Eame[s,]</name>
                         <name type="person" key="post_mary">Mary Post</name> , <name type="person" key="lacey_mary_sr">Mary Lacey</name> , <name type="person" key="bradbury_mary">Mary
                             Bradbury</name> , and <name type="person" key="hoar_dorcas">Dorcas
@@ -57063,7 +57056,7 @@ Comment: -->
                         allow'd by the s'd Court towards restitution to the relations of those whoe
                         suffered in the Sorrowfull times called the Witchcraft times. pleas to pay
                         &amp; deliver what share &amp; proportion belongs to me on that score unto
-                        my Brother <name type="person" key="nurse_samuel">Mr Samuel Nurse</name> of Salem
+                        my Brother <name type="person" key="nurse_samuel_sr">Mr Samuel Nurse of Salem</name>
                         &amp; his receipt shall be a full &amp; sufficient discharge from your
                         friend &amp;c. </p>
                     <closer>
@@ -57679,7 +57672,7 @@ Comment: -->
                     <p>
                         <name type="person" key="how_isaac">*Isaac How</name>
                     </p>
-                    <p>Rec'd for Benj. Nurse fifty four shillings &amp; 6 d May 12, 1712. <name type="person" key="nurse_samuel">*Samuel nurs</name>
+                    <p>Rec'd for Benj. Nurse fifty four shillings &amp; 6 d May 12, 1712. <name type="person" key="nurse_samuel_sr">*Samuel nurs</name>
                     </p>
                     <p>Rec'd for myself the subscriber &amp; for my Bro'r in Law <name type="person" key="thomas_peter">Peter Thomas</name> in right of <name type="person" key="thomas_elizabeth">Elizabeth</name> his wife &amp; my sister <name type="person" key="fox_hannah">Hanah fox</name> wife of <name type="person" key="fox_jabez">mr Jabez fox</name> &amp; <name type="person" key="fowle_rebecca">Rebecca fowles</name> four pounds Ten shillings. </p>
                     <p>
@@ -57688,7 +57681,7 @@ Comment: -->
                     <p>Received for my bro'r <name type="person" key="burroughs_jeremiah">Jeremiah
                             Burroughs</name> &amp; myselfe Two pounds five shillings. <name type="person" key="burroughs_charles">*Charles Burrough</name>
                     </p>
-                    <p>Newbury May 22d, 1712. Rec'ed for &amp; in behalfe of my wife <name type="person" key="true_jane">Jane True</name> &amp; <name type="person" key="stanyon_mary">Mary Stanion</name> daughters of <name type="person" key="bradbury_mary">Mary Bradbury</name> &amp; for <name type="person" key="buss_john">John Buss</name> &amp; <name type="person" key="buss_elizabeth_jr">Eliza Buss</name> Children of <name type="person" key="buss_elizabeth">Elizabeth Buss</name> , the Sum of Nine Poundes fifteen shillings p me
+                    <p>Newbury May 22d, 1712. Rec'ed for &amp; in behalfe of my wife <name type="person" key="true_jane">Jane True</name> &amp; <name type="person" key="stanyon_mary">Mary Stanion</name> daughters of <name type="person" key="bradbury_mary">Mary Bradbury</name> &amp; for <name type="person" key="busse_john_rev">John Buss</name> &amp; <name type="person" key="buss_elizabeth_jr">Eliza Buss</name> Children of <name type="person" key="buss_elizabeth">Elizabeth Buss</name> , the Sum of Nine Poundes fifteen shillings p me
                    <name type="person" key="true_henry">*Henry True</name>
                     </p>
                     <p>May 22d 1712. Recec. for my Brethren &amp; Sisters being six of us in number
@@ -57792,7 +57785,7 @@ Comment: -->
                     </p>
                     <p>
                         <name type="person" key="buss_elizabeth">Elizabeth Buss</name> Decd</p>
-                    <p>] <name type="person" key="buss_john">John Buss</name>
+                    <p>] <name type="person" key="busse_john_rev">John Buss</name>
                     </p>
                     <p> ] <name type="person" key="buss_elizabeth_jr">Elizabeth Buss</name>
                     </p>
@@ -57953,7 +57946,7 @@ Comment: -->
                             <row role="data">
                                 <cell role="data" rows="1" cols="1"> </cell>
                                 <cell role="data" rows="1" cols="1">
-                                    <name type="person" key="nurse_samuel">Samuel Nurse</name>
+                                    <name type="person" key="nurse_samuel_sr">Samuel Nurse</name>
                                 </cell>
                             </row>
                             <row role="data">
