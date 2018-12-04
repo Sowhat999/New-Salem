@@ -2700,8 +2700,8 @@
 						arrest and examination, <ref n="vII164" targOrder="U" 
 							>164-172</ref>, <ref n="vII274" targOrder="U" >274</ref>;
 						execution, <ref n="vII296" targOrder="U" >296</ref>, <ref
-							n="vII312" targOrder="U" >312</ref>, <ref n="vII882"
-							targOrder="U" >882</ref>, <ref n="vII480" targOrder="U"
+							n="vII312" targOrder="U" >312</ref>, <ref n="vII382"
+							targOrder="U" >382</ref>, <ref n="vII480" targOrder="U"
 							>480</ref>.</p>
 					<p>Jacobs, George, Jr., <ref n="vI198" targOrder="U" 
 							>198</ref>; ii. <ref n="vII187" targOrder="U" 
@@ -29247,7 +29247,7 @@
 			</div1>
 			<pb/>
 			<div1 id="d1e6905" type="SUPPLMENT.">
-				<head/>
+				<head>SUPPLEMENT</head>
 				<div2 id="d1e6907" type="segment">
 					<head/>
 					<p>
@@ -32388,7 +32388,7 @@
 				</div2>
 			</div1>
 			<div1 id="d1e8401" type="APPENDIX.">
-				<head/>
+				<head>APPENDIX</head>
 				<p>
 					<figure id="Uphv2536">
 						<figDesc>Page 523.</figDesc>
@@ -32418,6 +32418,7 @@
 				<pb/>
 				<div2 id="d1e8438" type="appendix" n="1">
 					<head>I. PREFATORY ADDRESS.</head>
+					<pb n="525" id="vII525"/>
 					<p>
 						<figure id="Uphv2538">
 							<figDesc>Page 525.</figDesc>

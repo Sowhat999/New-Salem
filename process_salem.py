@@ -91,8 +91,52 @@ def figureMD(figure):
     elif figure.startswith("Uphv"):
         thumb = "archives/upham/gifs/"+figureRename(figure)+".gif"
         large = "archives/upham/large/"+figureRename(figure)+".jpg"
-    return '\n\n<span markdown class="figure">[![Figure '+figure+']('+thumb+')]('+large+')</span>\n\n'
+    return '\n<span markdown class="figure">[![Figure '+figure+']('+thumb+')]('+large+')</span>\n'
 
+def figureDescMD(figure, desc):
+    thumb = "assets/images/thumb/"+figure+".jpg"
+    large = "assets/images/large/"+figure+".jpg"
+    if figure.startswith("H"):
+        thumb = "archives/MassHist/gifs/"+figureRename(figure)+".gif"
+        large = "archives/MassHist/large/"+figureRename(figure)+".jpg"
+    elif figure.startswith("B"):
+        thumb = "archives/BPL/gifs/"+figureRename(figure)+".gif"
+        large = "archives/BPL/LARGE/"+figureRename(figure)+".jpg"
+    elif figure.startswith("S"):
+        thumb = "archives/Suffolk/small/"+figureRename(figure)+".jpg"
+        large = "archives/Suffolk/large/"+figureRename(figure)+".jpg"
+    elif figure.startswith("MA"):
+        thumb = "archives/MA135/small/"+figure+".jpg"
+        large = "archives/MA135/large/"+figure+".jpg"
+    elif figure.startswith("eia"):
+        thumb = "archives/essex/eia/gifs/"+figure+".gif"
+        large = "archives/essex/eia/large/"+figure+".jpg"
+    elif figure.startswith("ecca"):
+        thumb = "archives/ecca/thumb/"+figure+".jpg"
+        large = "archives/ecca/large/"+figure+".jpg"
+    elif figure.startswith("mehs"):
+        thumb = "archives/MEHS/small/"+figureRename(figure)+".jpg"
+        large = "archives/MEHS/large/"+figureRename(figure)+".jpg"
+    elif figure.startswith("NYPL"):
+        thumb = "archives/NYPL/SMALL/"+figureRename(figure)+".jpg"
+        large = "archives/NYPL/LARGE/"+figureRename(figure)+".jpg"
+    elif figure.startswith("SCJ"):
+        thumb = "archives/SCJ/small/"+figureRename(figure)+".jpg"
+        large = "archives/SCJ/large/"+figureRename(figure)+".jpg"
+    elif figure.startswith("Uphv"):
+        thumb = "archives/upham/gifs/"+figureRename(figure)+".gif"
+        large = "archives/upham/large/"+figureRename(figure)+".jpg"
+    return '\n<span markdown class="figure">[![Figure '+figure+']('+thumb+')]('+large+')<br>'+desc+'</span>\n'
+
+
+def refMD(doc,ref,text):
+    return('<a href="'+doc+'.html#'+ref+'">'+text+'</a>')
+
+def pagebreakMD(id):
+    return('<a id="'+id+'"></a>')
+
+def cleanupNewline(text):
+    return re.sub("\n\s*\n\s*\n","\n\n",text)
 
 def processSWPTags(file="swp_new_id", post_tag="div1"):    
     f = open("./cocoon-xml/"+file+".xml", "r")
@@ -192,7 +236,7 @@ def processSWP(file="swp_new_id", post_tag="div1"):
                 doc_content = doc_md.read()
                 for key in persons:
                     doc_content = doc_content.replace(str(hash(key)), mdPerson(persons[key][0],persons[key][1]))
-                pelican_md.write(doc_content)
+                pelican_md.write(cleanupNewline(doc_content))
                 pelican_md.write('\n\n</div>\n\n')
                 doc_md.close()
 
@@ -225,7 +269,7 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
             for figure in figures.get(doc_id) or []:
                 pelican_md.write(figureMD(figure))
             doc_content = doc_md.read()
-            pelican_md.write(doc_content)
+            pelican_md.write(cleanupNewline(doc_content))
             pelican_md.write('</div>')
             doc_md.close()
 
@@ -311,6 +355,14 @@ def processUpham(file="Uph1Wit", post_tag="div1"):
     parser = etree.XMLParser()
     xml = etree.parse("./cocoon-xml/"+file+".xml", parser)
     root = xml.getroot()
+
+    pagebreaks = {}
+    for pagebreak in root.xpath("//pb"):
+        for ancestor in pagebreak.iterancestors():
+            if pagebreak.get("id") and ancestor.tag == post_tag:
+                pagebreaks[pagebreak.get("id")] = ancestor.get("id")
+                pagebreak.text = "pb"+str(hash(pagebreak.get("id")))
+    
     docs = root.xpath("//"+post_tag)
     for doc in docs:
         doc_id = doc.get("id")
@@ -322,8 +374,14 @@ def processUpham(file="Uph1Wit", post_tag="div1"):
             if doc_id not in figures:
                 figures[doc_id] = []
             if figure.get("id"):
-                figures[doc_id].append(figure.get("id"))
+                figures[doc_id].append((figure.get("id"), xmlTextJoin(figure.getchildren()[0])))
             figure.text = str(hash(figure.get("id")))
+        refs = {}
+        for ref in doc.xpath(".//ref"):
+            if ref.get("n") and ref.text:
+                refs[ref.get("n")] = ref.text
+                ref.text = "ref"+str(hash(ref.get("n")))
+        
         doc_p4 = open("./output/"+file+"/_docs_p4/"+doc_id+".xml", 'w')
         doc_p4.write(etree.tostring(doc, encoding='unicode', method='xml'))
         doc_p4.close()
@@ -338,7 +396,20 @@ def processUpham(file="Uph1Wit", post_tag="div1"):
             pelican_md.write('<div markdown class="doc" id="'+doc_id+'">\n\n')
             doc_content = doc_md.read()
             for figure in figures.get(doc_id) or []:
-                doc_content = doc_content.replace(str(hash(figure)), figureMD(figure))
-            pelican_md.write(doc_content)
+                doc_content = doc_content.replace(
+                    str(hash(figure[0])), figureDescMD(figure[0], figure[1]))
+            
+            for ref in refs:
+                if ref not in pagebreaks:
+                    print("Reference to nonexistant page: ",ref)
+                    doc_content = doc_content.replace(
+                        ref, refs[ref])
+                else:
+                    doc_content = doc_content.replace("ref"+str(hash(ref)), refMD(pagebreaks[ref],ref,refs[ref]))
+            
+            for pagebreak in pagebreaks:
+                doc_content = doc_content.replace("pb"+str(hash(pagebreak)), pagebreakMD(pagebreak))
+            
+            pelican_md.write(cleanupNewline(doc_content))
             pelican_md.write('</div>')
             doc_md.close()
