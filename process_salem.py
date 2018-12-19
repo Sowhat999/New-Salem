@@ -198,6 +198,20 @@ def processSWP(file="swp_new_id", post_tag="div1"):
         # assume that title is the contents of the head
         title = "SWP No. "+"".join(case_id_list)[1:]+": "+xmlTextJoin(case.xpath(".//head")[0])
         tags = {x.get("key") for x in case.xpath(".//name[@type='person']")}    #use tag system to index people
+        
+        case_text_element = case.xpath(".//p[1]")
+        if case_text_element:
+            for person in case_text_element[0].xpath(".//name[@type='person']"):
+                personkey = person.get("key")
+                name = " ".join(xmlTextJoin(person).split())
+                link = mdPerson(personkey, name)
+                tail = person.tail
+                person.clear()
+                # drop strikethrough, orig tags
+                person.text = link
+                person.tail = tail
+            case_text = "\n\n"+xmlTextJoin(case_text_element[0])
+        
         docs = case.xpath(".//div2")
         if len(docs)==0:
             continue
@@ -228,6 +242,7 @@ def processSWP(file="swp_new_id", post_tag="div1"):
             doc_ids.append(doc_id)
         with open("./output/"+file+"/pelican_md/"+case_id+".md", 'w') as pelican_md:
             pelican_md.write(mdFrontMatter(case_id,"swp",title,date,tags))
+            pelican_md.write(case_text)
             for doc_id in doc_ids:
                 doc_md = open("./output/"+file+"/_docs_md/"+doc_id+".md", 'r')
                 pelican_md.write('\n\n<div markdown class="doc" id="'+doc_id+'">\n\n<div class="doc_id">SWP No. '+doc_id[1:]+'</div>\n\n')
