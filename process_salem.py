@@ -34,8 +34,14 @@ def mdFrontMatter(slug,cat,title,date,tags):
     fm+="\n\n"
     return(fm)
 
-def mdPerson(key, name):
+def mdPersonLink(key, name):
     return("["+name+"](/tag/"+key+".html)")
+
+def mdDocLink(doc, doc_name):
+    case = doc.split(".")[0]
+    if len(doc.split("."))>1:
+        return("["+doc_name+"](/"+case+".html#"+doc+")")
+    return("["+doc_name+"](/"+case+".html)")
 
 # Join all text within lxml element, ignoring nested child elements
 def xmlTextJoin(element):
@@ -185,7 +191,6 @@ def processSWP(file="swp_new_id", post_tag="div1"):
 
     for case in cases:
         case_id = case.get("id")
-        #print("Processing case: "+case_id)
         dates = case.xpath(".//date")
         date = dates[0].get("value") if len(dates)>0 else "1960-01-01" # use first date found (!) - TODO: No dates in n89!
         case_id_list = re.findall(r"[^\W\d_]+|\d+", case_id)
@@ -201,17 +206,17 @@ def processSWP(file="swp_new_id", post_tag="div1"):
         
         case_text_element = case.xpath(".//p[1]")
         if case_text_element:
-            for person in case_text_element[0].xpath(".//name[@type='person']"):
-                personkey = person.get("key")
-                name = " ".join(xmlTextJoin(person).split())
-                link = mdPerson(personkey, name)
-                tail = person.tail
-                person.clear()
+            for xref in case_text_element[0].xpath(".//xref"):
+                doc = xref.get("doc")
+                doc_name = " ".join(xmlTextJoin(xref).split())
+                link = mdDocLink(doc,doc_name)
+                tail = xref.tail
+                xref.clear()
                 # drop strikethrough, orig tags
-                person.text = link
-                person.tail = tail
-            case_text = "\n\n"+xmlTextJoin(case_text_element[0])
-        
+                xref.text = link
+                xref.tail = tail
+            case_text = "\n\n"+' '.join(xmlTextJoin(case_text_element[0]).split())
+
         docs = case.xpath(".//div2")
         if len(docs)==0:
             continue
@@ -250,7 +255,8 @@ def processSWP(file="swp_new_id", post_tag="div1"):
                     pelican_md.write(figureMD(figure))
                 doc_content = doc_md.read()
                 for key in persons:
-                    doc_content = doc_content.replace(str(hash(key)), mdPerson(persons[key][0],persons[key][1]))
+                    doc_content = doc_content.replace(str(hash(key)), mdPersonLink
+                (persons[key][0],persons[key][1]))
                 pelican_md.write(cleanupNewline(doc_content))
                 pelican_md.write('\n\n</div>\n\n')
                 doc_md.close()

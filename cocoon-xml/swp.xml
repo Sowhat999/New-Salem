@@ -33394,7 +33394,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 				<p>
 					<hi rend="italics"> (See also: <xref doc="n3.50">Tituba -- Warrant; </xref>
 						<xref doc="n3.52">Sarah Good -- Examination;</xref>
-						<xref to="n2.49b">Sarah Good -- Report;</xref>
+						<xref doc="n2.49b">Sarah Good -- Report;</xref>
 					</hi>
 				</p>
 
@@ -34679,7 +34679,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 				</head>
 
 				<p>
-					<hi rend="italics">(See also: <xref to="n2.310"> Benjamin Proctor -- Complaint,
+					<hi rend="italics">(See also: <xref doc="n2.310"> Benjamin Proctor -- Complaint,
 							Warrant.) </xref>
 					</hi>
 				</p>
@@ -40436,7 +40436,7 @@ Comment: --> &amp; <name type="person" key="barmar">Mary
 				</head>
 
 				<p>(<hi rend="italic">See also: Sarah Good -- <xref doc="n2.23" targOrder="U" from="ROOT" to="DITTO">Examination, </xref>
-						<xref doc="n2.25" targOrder="U" from="ROOT" to="DITTO">Mittimus </xref> and <xref to="n2.49b" targOrder="U" from="ROOT">Report</xref>
+						<xref doc="n2.25" targOrder="U" from="ROOT" to="DITTO">Mittimus </xref> and <xref doc="n2.49b" targOrder="U" from="ROOT">Report</xref>
 					</hi>.) </p>
 
 
