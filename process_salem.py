@@ -153,7 +153,7 @@ def processSWPTags(file="swp_new_id", post_tag="div1"):
     # Replace remote entity references with local
     tei = tei.replace('encoding="UTF-8"', '')
     # lxml doesn't like parsing unicode strings if there is an encoding specified
-    parser = etree.XMLParser()
+    parser = etree.XMLParser(resolve_entities=False)
     xml = etree.parse(io.StringIO(tei), parser)
     root = xml.getroot()
     alltags = {}
@@ -184,7 +184,7 @@ def processSWP(file="swp_new_id", post_tag="div1"):
     # Replace remote entity references with local
     tei = tei.replace('encoding="UTF-8"','')
     # lxml doesn't like parsing unicode strings if there is an encoding specified
-    parser = etree.XMLParser()
+    parser = etree.XMLParser(resolve_entities=False)
     xml = etree.parse(io.StringIO(tei),parser)
     root = xml.getroot()
     cases = root.xpath("//"+post_tag)
@@ -264,7 +264,7 @@ def processSWP(file="swp_new_id", post_tag="div1"):
 def processSalVRec(file="SalVRec", post_tag="div3"):
     makedirs(file, ["_docs_p4","_docs_tei","_docs_md","pelican_md"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
-    parser = etree.XMLParser()
+    parser = etree.XMLParser(resolve_entities=False)
     xml = etree.parse("./cocoon-xml/"+file+".xml",parser)
     root = xml.getroot()
     docs = root.xpath("//"+post_tag)
@@ -298,7 +298,7 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
 # Uses web scraping. Won't work after old-salem is deprecated.
 def processBiosWeb(file="bio-index", post_tag="persname"):
     makedirs(file, [])
-    parser = etree.XMLParser()
+    parser = etree.XMLParser(resolve_entities=False)
     #xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
     root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
     persons = root.xpath("//"+post_tag)
@@ -347,7 +347,7 @@ def processBiosWeb(file="bio-index", post_tag="persname"):
 def processBiosLocal(file="bio-index", post_tag="persname"):
     makedirs(file, ["_tei","_html"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
-    parser = etree.XMLParser()
+    parser = etree.XMLParser(resolve_entities=False)
     xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
     root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
     persons = root.xpath("//"+post_tag)
@@ -373,7 +373,7 @@ def processBiosLocal(file="bio-index", post_tag="persname"):
 def processUpham(file="Uph1Wit", post_tag="div1"):
     makedirs(file, ["_docs_p4", "_docs_tei", "_docs_md", "pelican_md"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
-    parser = etree.XMLParser()
+    parser = etree.XMLParser(resolve_entities=False)
     xml = etree.parse("./cocoon-xml/"+file+".xml", parser)
     root = xml.getroot()
 
