@@ -16,6 +16,7 @@ import json
 import re
 from urllib.request import urlopen
 from bs4 import BeautifulSoup, Tag
+import lxml.etree
 
 def mdFrontMatter(slug,cat,title,date,tags):
     #fm = "---\n"
@@ -154,7 +155,7 @@ def processSWPTags(file="swp_new_id", post_tag="div1"):
     tei = tei.replace('encoding="UTF-8"', '')
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
-    xml = etree.parse(io.StringIO(tei), parser)
+    xml = etree.parse(io.StringIO(tei), parser, parser=lxml.etree.XMLParser(resolve_entities=False))
     root = xml.getroot()
     alltags = {}
     # Use LCSH keywords list as definitive name, if the entry exists
@@ -185,7 +186,7 @@ def processSWP(file="swp_new_id", post_tag="div1"):
     tei = tei.replace('encoding="UTF-8"','')
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
-    xml = etree.parse(io.StringIO(tei),parser)
+    xml = etree.parse(io.StringIO(tei),parser, parser=lxml.etree.XMLParser(resolve_entities=False))
     root = xml.getroot()
     cases = root.xpath("//"+post_tag)
 
@@ -265,7 +266,7 @@ def processSalVRec(file="SalVRec", post_tag="div3"):
     makedirs(file, ["_docs_p4","_docs_tei","_docs_md","pelican_md"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
-    xml = etree.parse("./cocoon-xml/"+file+".xml",parser)
+    xml = etree.parse("./cocoon-xml/"+file+".xml",parser, parser=lxml.etree.XMLParser(resolve_entities=False))
     root = xml.getroot()
     docs = root.xpath("//"+post_tag)
     for doc in docs:
@@ -300,7 +301,7 @@ def processBiosWeb(file="bio-index", post_tag="persname"):
     makedirs(file, [])
     parser = etree.XMLParser()
     #xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
-    root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
+    root = etree.parse("./cocoon-xml/"+file+".xml",parser, parser=lxml.etree.XMLParser(resolve_entities=False)).getroot()
     persons = root.xpath("//"+post_tag)
     bios = []
     with open("./output/"+file+"/index.html", 'w') as output:
@@ -348,8 +349,8 @@ def processBiosLocal(file="bio-index", post_tag="persname"):
     makedirs(file, ["_tei","_html"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
-    xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser).getroot()}
-    root = etree.parse("./cocoon-xml/"+file+".xml",parser).getroot()
+    xmls = {"mbio":etree.parse("./cocoon-xml/minibios.xml",parser, parser=lxml.etree.XMLParser(resolve_entities=False)).getroot(),"bio":etree.parse("./cocoon-xml/bios.xml",parser, parser=lxml.etree.XMLParser(resolve_entities=False)).getroot(),"pics":etree.parse("./cocoon-xml/pics.xml",parser, parser=lxml.etree.XMLParser(resolve_entities=False)).getroot(),"crt":etree.parse("./cocoon-xml/courtexams.xml",parser, parser=lxml.etree.XMLParser(resolve_entities=False)).getroot()}
+    root = etree.parse("./cocoon-xml/"+file+".xml",parser, parser=lxml.etree.XMLParser(resolve_entities=False)).getroot()
     persons = root.xpath("//"+post_tag)
     for person in persons:
         if not person.get("mbio"):
@@ -374,7 +375,7 @@ def processUpham(file="Uph1Wit", post_tag="div1"):
     makedirs(file, ["_docs_p4", "_docs_tei", "_docs_md", "pelican_md"])
     # lxml doesn't like parsing unicode strings if there is an encoding specified
     parser = etree.XMLParser()
-    xml = etree.parse("./cocoon-xml/"+file+".xml", parser)
+    xml = etree.parse("./cocoon-xml/"+file+".xml", parser, parser=lxml.etree.XMLParser(resolve_entities=False))
     root = xml.getroot()
 
     pagebreaks = {}
